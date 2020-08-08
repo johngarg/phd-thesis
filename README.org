@@ -1,0 +1,5 @@
+* Thesis
+
+* TODOs
+- [ ] Add papers in and get everything compiling
+- [ ] Write introduction
