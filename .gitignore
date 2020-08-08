@@ -22,4 +22,5 @@
 *.out
 *.synctex.gz
 .DS_Store
+.auctex-auto/
 etc/

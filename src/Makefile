@@ -23,4 +23,4 @@ clean:
 	latexmk -c
 
 cleanall:
-	latexmk -C; $(RM); # $(RMDIR)
+	latexmk -C; $(RM); $(RMDIR)
