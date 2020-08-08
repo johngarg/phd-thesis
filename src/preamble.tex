@@ -1,0 +1,93 @@
+%%
+%% VERSION HISTORY
+%%    22 May 2006 - John Papandriopoulos - Original version
+%%    12 Jul 2007 - John Papandriopoulos - Converted into template
+%%    30 Sep 2015 - Maoyuan Liu - Draft version
+%%    08 Aug 2020 - John Gargalionis - Draft version
+
+% -----
+% Basic
+% -----
+
+\usepackage{amsmath}
+% \usepackage{amssymb}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{color}
+\usepackage[colorlinks=true
+,urlcolor=blue
+,anchorcolor=blue
+,citecolor=blue
+,filecolor=blue
+,linkcolor=blue
+,menucolor=blue
+,pagecolor=blue
+,linktocpage=true
+,pdfproducer=medialab
+,pdfa=true
+]{hyperref}
+\usepackage{url}
+
+% Index
+\usepackage{makeidx}
+\makeindex
+
+% Glossary --> defitions of symbols and acronyms
+\usepackage[toc,nonumberlist,nopostdot]{glossaries}
+\makeglossaries
+\setglossarystyle{treegroup}
+
+% ------
+% Layout
+% ------
+
+% Suppress "This page intentionally left blank."
+\newcommand*\markblankpages{}
+
+% set page margins
+%   these margins are set by the A4 paper ratios, 1:sqrt(2)
+%   paperheight/paperwidth = paperwidth/textwidth = paperheight/textheight = sqrt(2)
+%   outer/inner = bottom/top = sqrt(2)
+\usepackage[outer=36.02988mm,inner=25.47697mm,top=36.0317mm,bottom=50.9565mm]{geometry}
+\newcommand*\symmetricmargin{
+    \newgeometry{outer=30.7534mm,inner=30.7534mm,top=36.0317mm,bottom=50.9565mm}
+}
+\newcommand*\bookmargin{
+    \newgeometry{outer=36.02988mm,inner=25.47697mm,top=36.0317mm,bottom=50.9565mm}
+}
+
+% For testing the formatting
+\usepackage{lipsum}
+
+% ---------
+% Eye candy
+% ---------
+\usepackage[labelfont={bf,singlespacing},
+            textfont={singlespacing},
+            justification={justified,RaggedRight},
+            singlelinecheck=false,
+            margin=0pt,
+            figurewithin=chapter,
+            tablewithin=chapter]{caption}
+\usepackage[titletoc]{appendix}
+
+% fancy chapter titles and quotes at beginning of title
+\usepackage[helvetica]{quotchap} 
+
+% Draft watermark
+\usepackage[contents={}]{background}
+\usepackage[yyyymmdd,hhmmss]{datetime}
+\newcommand*\DraftText{Draft compiled on \today\ at \currenttime}
+\newcommand*\draft{
+  \newcommand*{\archivalpapernote}{}
+  \backgroundsetup{
+    color=lightgray,
+    position=current page.center,
+    angle=90,
+    vshift=0.45\paperwidth,
+    opacity=1,
+    scale=1,
+    contents={\LARGE\ttfamily\DraftText}
+  }
+}

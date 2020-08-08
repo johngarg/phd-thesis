@@ -1,0 +1,69 @@
+\documentclass[12pt,a4paper,twoside,titlepage,openright,fleqn]{book}
+
+\usepackage{thesis}
+
+% User defined commands
+\input{preamble}
+\input{macro}
+
+% set draft watermark
+\draft
+
+\begin{document}
+
+%%
+%% Front matter
+%%
+\begin{frontmatter}
+  \frontmatterheadings
+  \input{frontmatter/metadata.tex}
+  % the title page is centered horizontally
+  \symmetricmargin
+  \maketitle
+  \bookmargin
+  \input{frontmatter/abstract.tex}
+  \makedeclaration
+  \input{frontmatter/acknowledgements.tex}
+  \input{frontmatter/dedication.tex}
+  {\singlespacing
+    \tableofcontents
+    \clearpage
+    \addcontentsline{toc}{chapter}{List of Figures}
+    \listoffigures
+    \clearpage
+    \addcontentsline{toc}{chapter}{List of Tables}
+    \listoftables
+  }
+\end{frontmatter}
+
+%%
+%% Main matter
+%%
+\begin{mainmatter}
+  \mainmatterheadings
+  \include{chapters/chapter_1}
+  \include{chapters/chapter_2}
+\end{mainmatter}
+
+%%
+%% Appendix
+%%
+\begin{appendices}
+  \include{backmatter/appendix_1}
+\end{appendices}
+
+%%
+%% Back matter
+%%
+\glsaddall
+\begin{backmatter}
+    \frontmatterheadings
+    \printglossary[title=Definition of Symbols and Acronyms]
+    \clearpage
+    \addcontentsline{toc}{chapter}{Index}
+    \printindex
+    \bibliographystyle{JHEP}
+    \bibliography{main}
+\end{backmatter}
+
+\end{document}

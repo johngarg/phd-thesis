@@ -1,0 +1,32 @@
+% path to figures directory
+\graphicspath{{img/chapter_1/}}
+
+% \begin{savequote}[75mm]
+%   Nulla facilisi. In vel sem. Morbi id urna in diam dignissim feugiat. Proin
+%   molestie tortor eu velit. Aliquam erat volutpat. Nullam ultrices, diam tempus
+%   vulputate egestas, eros pede varius leo. \qauthor{Quoteauthor Lastname}
+% \end{savequote}
+
+\chapter{Introduction}
+\label{chapter:introduction}
+
+\section{Introduction}
+
+This is a test of \textit{something with an apple} that I would
+like~\cite{Weinberg:1967tq}. The following is $4a + 5 = 13$ some
+inline\index{inline} math and \texttt{this} and we did in in \textsf{Python}.
+\begin{equation}
+  \label{eq:1}
+  \int_{-\infty}^{\infty} \frac{1}{(2\pi \hbar)^{3}} \phi(p) dp \ .
+\end{equation}
+
+\textsf{We need some sans serif \textbf{words} here too.} Then we need to check
+\textbf{what} the bold looks like.
+
+\myglossaryentry{lipsum}{lipsum}{Lorem Ipsum, a special type of fudge}{}
+\myglossaryentry{dolor}{dolor}{No idea why}{parent={lipsum}}
+\myglossaryentry{ibit}{ibit}{Sounds right, doesn't it?}{parent={lipsum}}
+\myacronym{DFT}{density functional theory}
+\myglossaryentry{$\pi$}{pi}{Greek letter pi, \ensuremath{\Pi} does this work?}{symbol={$\pi$}}
+\myacronym{RDF}{radial distribution function}
+\myglossaryentry{radial distribution function}{radialdistributionfunction}{}{symbol={$g(r)$}}
