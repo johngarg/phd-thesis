@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,titlepage,oneside,openright]{book}
+\documentclass[12pt,a4paper,twoside,titlepage,openright,fleqn]{book}
 
 % Use the UniMelb Dissertation Template
 \usepackage{thesis}

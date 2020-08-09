@@ -1,5 +1,11 @@
 * Thesis
 
-* TODOs
-- [ ] Add papers in and get everything compiling
+* Introduction
 - [ ] Write introduction
+
+* Chapter 4: Quirk project
+- [ ] Citations for ATLAS and CMS conf notes look better on CERN document server
+  rather than inspire. Replace these citations and fix up innards with =siunitx=
+  and other math symbols
+- [ ] Get paper in
+- [ ] Fix all cases of Ref, =\textsc= and italic Latin phrases
