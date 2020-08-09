@@ -4,9 +4,11 @@
 - [ ] Write introduction
 
 * Chapter 4: Quirk project
-- [X] Citations for ATLAS and CMS conf notes look better on CERN document server rather than inspire. Replace these citations and fix up innards with =siunitx= and other math symbols
 - [X] Get paper in
 - [X] Fix all cases of Ref, =\textsc= and italic Latin phrases
+
+* References
+- [ ] Citations for ATLAS and CMS conf notes look better on CERN document server rather than inspire. Replace these citations and fix up innards with =siunitx= and other math symbols
 
 * Questions for Ray
 - [ ] For quirk paper, how do I deal with the fact that the excess has gone
