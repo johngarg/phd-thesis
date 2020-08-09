@@ -21,6 +21,7 @@
 *.mtc1
 *.out
 *.synctex.gz
+*_view.pdf
 .DS_Store
 .auctex-auto/
 etc/
