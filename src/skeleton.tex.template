@@ -1,0 +1,39 @@
+\documentclass[11pt,a4paper,titlepage,oneside,openright]{book}
+
+% Use the UniMelb Dissertation Template
+\usepackage{thesis}
+
+% User defined commands
+\input{preamble}
+\input{macro}
+
+% suppress chapter numbering
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\Large\bfseries} % format
+  {}                % label
+  {0pt}             % sep
+  {\huge}           % before-code
+
+% set draft watermark
+\draft
+
+% set symmetric margins
+\symmetricmargin
+
+% packages to play with the layout
+%\usepackage{showframe}
+%\usepackage{layouts}
+
+\begin{document}
+  \begin{mainmatter}
+
+    \mainmatterheadings
+
+    \include{@file}
+
+  \end{mainmatter}
+
+\bibliographystyle{JHEP}
+\bibliography{main}
+\end{document}
