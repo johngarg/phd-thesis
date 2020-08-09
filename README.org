@@ -4,8 +4,18 @@
 - [ ] Write introduction
 
 * Chapter 4: Quirk project
-- [ ] Citations for ATLAS and CMS conf notes look better on CERN document server
-  rather than inspire. Replace these citations and fix up innards with =siunitx=
-  and other math symbols
-- [ ] Get paper in
-- [ ] Fix all cases of Ref, =\textsc= and italic Latin phrases
+- [X] Citations for ATLAS and CMS conf notes look better on CERN document server rather than inspire. Replace these citations and fix up innards with =siunitx= and other math symbols
+- [X] Get paper in
+- [X] Fix all cases of Ref, =\textsc= and italic Latin phrases
+
+* Questions for Ray
+- [ ] For quirk paper, how do I deal with the fact that the excess has gone
+  away? Do I rewrite the tenses and remove phrases like /recently/?
+- [ ] Should Rob's paper be an appendix?
+- [ ] Is part 1 (on neutrino-mass model builing) and part 2 (on connection to
+  the flavour anomalies) a good idea?
+- [ ] What do I do with the introductions to the papers?
+
+* Spin offs
+- [ ] Commandline tool that merges bib files and parses content to fix math and
+  other common things like umlauts?
