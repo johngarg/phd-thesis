@@ -26,3 +26,5 @@
 .auctex-auto/
 etc/
 drafts/
+*.glsdefs
+*.el

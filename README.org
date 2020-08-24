@@ -1,12 +1,13 @@
 * Chapter 1: Introduction
-- [ ] Mathematical notation? Should this be appendix?
 - [ ] The SM?
-- [ ] Operator mixing and running of couplings?
-- [ ] Effective operators, redundancies, bases, integration
-- [ ] Radiative mass generation
 - [ ] Neutrino oscillations, description, experimental situation
+- [ ] Radiative neutrino mass models
+- [ ] Effective operators, redundancies, bases, integration
+- [ ] Operator mixing and running of couplings?
+- [ ] Dimension-6 SMEFT
 - [ ] Hints of LFU violation, description, theory, experimental situation
 - [ ] Leptoquarks, quantum numbers, properties?
+- [ ] Mathematical notation? Should this be appendix?
 
 * Chapter 2: Model building from effective operators
 
@@ -16,19 +17,18 @@
 
 * Chapter 5: Non-minimal scenario
 
-* Chapter 6: Quirk project (Appendix?)
+* Chapter 6: Quirk project
 - [X] Get paper in
 - [X] Fix all cases of Ref, =\textsc= and italic Latin phrases
+- [ ] Introduce as a parenthetical piece of work
 
 * References
 - [ ] Citations for ATLAS and CMS conf notes look better on CERN document server rather than inspire. Replace these citations and fix up innards with =siunitx= and other math symbols
 
 * Questions for Ray
-- [ ] For quirk paper, how do I deal with the fact that the excess has gone
-  away? Do I rewrite the tenses and remove phrases like /recently/?
-- [ ] Should Rob's paper be an appendix?
-- [ ] Is part 1 (on neutrino-mass model builing) and part 2 (on connection to
-  the flavour anomalies) a good idea?
-- [ ] What do I do with the introductions to the papers?
+- [X] For quirk paper, how do I deal with the fact that the excess has gone away? Do I rewrite the tenses and remove phrases like /recently/?
+- [X] Should Rob's paper be an appendix?
+- [X] Is part 1 (on neutrino-mass model builing) and part 2 (on connection to the flavour anomalies) a good idea?
+- [X] What do I do with the introductions to the papers?
 - [ ] Does it make sense, for example, to move much of the discussion of integrating fields out into the general introduction?
-- [ ] Should I be updating plots in older papers?
+- [X] Should I be updating plots in older papers?

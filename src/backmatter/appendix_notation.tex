@@ -1,0 +1,123 @@
+%% path to figures directory
+% \graphicspath{{img/chapter_4/}}
+
+\chapter{Mathematical notation}
+\label{chapter:notation}
+
+Throughout the paper we choose to label representations by their dimension,
+which we typeset in bold. Fields are labelled by their transformation properties
+under the Lorentz group and the SM gauge group $\mathrm{SU}(3)_{c} \otimes
+\mathrm{SU}(2)_{L} \otimes \mathrm{U}(1)_{Y}$. All spinors are treated as
+two-component objects transforming as either $(\mathbf{2}, \mathbf{1})$
+(left-handed) or $(\mathbf{1}, \mathbf{2})$ (right-handed) under the Lorentz
+group, written as $\mathrm{SU}(2)_{+} \otimes \mathrm{SU}(2)_{-}$. The
+left-handed spinors carry undotted spinor indices $\alpha, \beta, \ldots \in
+\{1, 2\}$, while the right-handed spinors carry dotted indices $\dot{\alpha},
+\dot{\beta}, \ldots \in \{\dot{1}, \dot{2}\}$. Wherever possible we attempt to
+conform to the conventions of Ref.~\cite{Dreiner:2008tw} when working with
+spinor fields (see appendix G for the correspondence to four-component notation
+and appendix J for SM-fermion nomenclature). For objects carrying a single
+spacetime index $V_\mu$ we define
+\begin{equation}
+  V_{\alpha \dot{\beta}} = \sigma^\mu_{\alpha \dot{\beta}} V_\mu \quad \text{
+    and
+  } \quad \bar{V}_{\dot{\alpha}\beta } = \bar{\sigma}^\mu_{\dot{\alpha}\beta} V_{\mu}.
+\end{equation}
+Note that in this notation
+\begin{equation}
+  \Box = \partial_{\mu} \partial^{\mu} = \tfrac{1}{2}\text{Tr}[\partial \bar{\partial}] = \tfrac{1}{2}\text{Tr}[\bar{\partial} \partial],
+\end{equation}
+and we will often just use $\Box$ to represent the contraction of two covariant
+derivatives $D_{\mu}D^{\mu}$ where this is clear from context. For
+field-strength tensors, generically $X_{\mu\nu}$, we work with the irreducible
+representations (irreps) $X_{\alpha \beta}$ and
+$\bar{X}_{\dot{\alpha} \dot{\beta}}$, where
+\begin{equation}
+  X_{\{\alpha \beta\}} = 2i [\sigma^{\mu \nu}]^{~\gamma}_\alpha \epsilon_{\gamma \beta} X_{\mu \nu} \quad \text{ and } \quad
+  \bar{X}_{\{\dot{\alpha} \dot{\beta}\}} = 2i [\bar{\sigma}^{\mu \nu}]^{\dot{\gamma}}_{~\dot{\beta}} \epsilon_{\dot{\alpha} \dot{\gamma}} X_{\mu \nu},
+\end{equation}
+or the alternate forms with one raised and one lowered index.
+
+Indices for $\mathrm{SU}(2)_{L}$ (isospin) are taken from the middle of the
+Latin alphabet. These are kept lowercase for the fundamental representation for
+which $i, j, k, \ldots \in \{1, 2\}$ and the indices of the adjoint are
+capitalised $I, J, K, \ldots \in \{1, 2, 3\}$. Colour indices are taken from the
+beginning of the Latin alphabet and the same distinction between lowercase and
+uppercase letters is made. For both $\mathrm{SU}(2)$ and $\mathrm{SU}(3)$, a
+distinction between raised and lowered indices is maintained such that, for
+example, $(\psi^i)^\dagger = (\psi^\dagger)_i$ for an isodoublet field $\psi$.
+However, we often specialise to the case of only raised, symmetrised indices for
+$\mathrm{SU}(2)$, and use a tilde to denote a conjugate field whose
+$\mathrm{SU}(2)_{L}$ indices have been raised:
+\begin{equation}
+  \label{eq:su2l-conj}
+  \tilde{\psi}^{i} \equiv  \epsilon^{i j}\psi^{\dagger}_{j}.
+\end{equation}
+We adopt this notation from the usual definition of $\tilde{H}$, and note that
+throughout the paper we freely interchange between $\tilde{\psi}^{i}$ and
+$\psi^{\dagger}_{i}$. For the sake of tidiness, we sometimes use parentheses
+$(\cdots)$ to indicate the contraction of suppressed indices. Curly braces are
+reserved to indicate symmetrised indices $\{\cdots\}$ and square brackets
+enclose antisymmetrised indices $[\cdots]$, but this notation is avoided when
+the permutation symmetry between indices is clear. We use $\tau^I$ and
+$\lambda^A$ for the Pauli and Gell-Mann matrices, and normalise the non-abelian
+vector potentials of the SM such that
+\begin{equation}
+  (W_{\alpha \dot{\beta}})^i_{\ j} = \frac{1}{2} (\tau^I)^i_{\ j} W^I_{\alpha
+    \dot{\beta}} \quad \text{ and } \quad (G_{\alpha \dot{\beta}})^a_{\ b} =
+  \frac{1}{2} (\lambda^A)^a_{\ b} G^A_{\alpha \dot{\beta}}.
+\end{equation}
+Flavour (or family) indices of the SM fermions are represented by the lowercase
+Latin letters $\{r, s, t, u, v, w\}$.
+
+For the non-gauge degrees of freedom in the SM we capitalise isospin doublets
+($Q$, $L$, $H$), while the left-handed isosinglets are written in lowercase with
+a bar featuring as a part of the name of the field ($\bar{u}$, $\bar{d}$,
+$\bar{e}$). The representations and hypercharges for the SM field content are
+summarised in Table~\ref{tbl:sm}. Our definition of the SM gauge-covariant
+derivative is exemplified by
+\begin{equation}
+  \label{eq:covdi}
+  \bar{D}_{\dot{\alpha}\beta} Q^{\beta a i}_r = \left[ \delta^a_b \delta^i_j (\bar{\partial}_{\dot{\alpha}\beta} + i g_1 Y_Q \bar{B}_{\dot{\alpha} \beta}) + i g_2 \delta^a_b (\bar{W}_{\dot{\alpha} \beta})^i_{\ j} + i g_3 \delta^i_j (\bar{G}_{\dot{\alpha}\beta})^a_{\ b} \right] Q_r^{\beta b j} \ .
+\end{equation}
+Note that the derivative implicitly carries $\mathrm{SU}(2)_{L}$ and
+$\mathrm{SU}(3)_{c}$ indices [explicit on the right-hand side of
+Eq.~\eqref{eq:covdi}] which are suppressed on the left-hand side to reduce
+clutter. Where appropriate we show these indices explicitly.
+
+We represent the SM quantum numbers of fields as a 3-tuple
+$(\mathbf{C}, \mathbf{I}, Y)_{L}$, with $\mathbf{C}$ and $\mathbf{I}$ the
+dimension of the colour and isospin representations, $Y$ the hypercharge of the
+field, and $L$ an (often omitted) label of the Lorentz representation: $S$
+(scalar), $F$ (fermion) or $V$ (vector), although sometimes we use the irrep,
+\textit{e.g.} $(\mathbf{2}, \mathbf{1})$. We normalise the hypercharge such that
+$Q = I_{3} + Y$. Finally, for exotic fields that contribute to dimension-six
+operators at tree-level, we try and adopt names consistent with Table 3 of
+Ref.~\cite{deBlas:2017xtg}.
+\begin{table}[t]
+  \centering
+  \bgroup
+  \def\arraystretch{1.5}%  1 is the default, change whatever you need
+  \begin{tabular}{ccc}
+    \toprule
+    Field                        & $\mathrm{SU}(3)_{c} \otimes \mathrm{SU}(2)_{L} \otimes \mathrm{U}(1)_{Y}$ & $\mathrm{SU}(2)_{+} \otimes \mathrm{SU}(2)_{-}$ \\
+    \midrule
+    $Q^{\alpha a i}$             & $(\mathbf{3}, \mathbf{2}, \tfrac{1}{6})$                                  & $(\mathbf{2}, \mathbf{1})$                      \\
+    $L^{\alpha i}$               & $(\mathbf{1}, \mathbf{2}, -\tfrac{1}{2})$                                 & $(\mathbf{2}, \mathbf{1})$                      \\
+    $\bar{u}^{\alpha}_a$                  & $(\bar{\mathbf{3}}, \mathbf{1}, -\tfrac{2}{3})$                           & $(\mathbf{2}, \mathbf{1})$                      \\
+    $\bar{d}^{\alpha}_a$                  & $(\bar{\mathbf{3}}, \mathbf{1}, \tfrac{1}{3})$                            & $(\mathbf{2}, \mathbf{1})$                      \\
+    $\bar{e}^{\alpha}$                    & $(\mathbf{1}, \mathbf{1}, 1)$                                             & $(\mathbf{2}, \mathbf{1})$                      \\
+    $(G_{\alpha \beta})^a_{\ b}$ & $(\mathbf{8}, \mathbf{1}, 0)$                                             & $(\mathbf{3}, \mathbf{1})$                      \\
+    $(W_{\alpha \beta})^i_{\ j}$ & $(\mathbf{1}, \mathbf{3}, 0)$                                             & $(\mathbf{3}, \mathbf{1})$                      \\
+    $B_{\alpha \beta}$           & $(\mathbf{1}, \mathbf{1}, 0)$                                             & $(\mathbf{3}, \mathbf{1})$                      \\
+    $H^{i}$                      & $(\mathbf{1}, \mathbf{2}, \tfrac{1}{2})$                                  & $(\mathbf{1}, \mathbf{1})$                      \\
+    \bottomrule
+  \end{tabular}
+  \egroup
+  \caption{The SM fields and their transformation properties under the SM gauge
+    group $G_{\text{SM}}$ and the Lorentz group. The final unbolded number in
+    the 3-tuples of the $G_{\text{SM}}$ column represents the $\mathrm{U}(1)_Y$
+    charge of the field, normalised such that $Q = I_{3} + Y$. For the fermions
+    a generational index has been suppressed.}
+  \label{tbl:sm}
+\end{table}
