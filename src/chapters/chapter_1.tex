@@ -189,38 +189,166 @@ $E_{i} = \sqrt{\mathbf{p}^{2} + m_{i}^{2}} \approx |\mathbf{p}| + m_{i}^{2} / (2
 with $E = |\mathbf{p}|$. This gives
 \begin{equation}
   \label{eq:neutrino-osc}
-  \text{P}(\breve{\nu}_{m} \to \breve{\nu}_{n}) = \delta_{mn} - 4 \sum_{i < j} \mathrm{Re}\left( U_{m}^{\ i} U_{m}^{* j} U_{n}^{* i} U_{n}^{\ j}  \right) \sin^{2} \frac{\Delta m_{ij}^{2} L}{4E} + 2 J_{\text{CP}} \sin \frac{\Delta m^{2}_{ji} L}{2E} \ ,
+  \begin{aligned}
+    \text{P}(\breve{\nu}_{m} \to \breve{\nu}_{n}) &= \delta_{mn} - 4 \sum_{i < j} \mathrm{Re}\left( U_{m}^{\ i} U_{m}^{* j} U_{n}^{* i} U_{n}^{\ j}  \right) \sin^{2} \frac{\Delta m_{ij}^{2} L}{4E}\\
+    &\quad + 2 \sum_{i<j} \mathrm{Im}\left( U_{m}^{\ i} U_{m}^{* j} U_{n}^{* i} U_{n}^{\ j}  \right) \sin \frac{\Delta m^{2}_{ji} L}{2E} \ ,
+  \end{aligned}
 \end{equation}
 where $\Delta m_{ij}^{2} \equiv m_{j}^{2} - m_{i}^{2}$ are the squared neutrino
-mass differences, $L = ct$ is the approximate distance travelled by the
-particles, and
+mass differences and $L = ct$, sometimes called the baseline, is the approximate
+distance travelled by the particles. To interpret the results of many
+experiments, it is often sufficient to consider an effective two-flavour
+oscillation paradigm. In this case, the neutrino-oscillation probabilities are
+governed by by a single squared mass difference $\Delta m^{2}$ and a single
+angle $\theta$. Interestingly, the CP-violating phase is completely absent from
+the two flavour formula:
 \begin{equation}
-  J_{\text{CP}} = \mathrm{Im} \left( U_{m}^{\ i} U_{m}^{* j} U_{n}^{* i} U_{n}^{\ j}  \right)
+  \label{eq:two-flavour-osc}
+  \text{P}(\breve{\nu}_{m} \to \breve{\nu}_{n})_{n_{f}=2} = \sin^{2} (2\theta) \sin^{2} \frac{\Delta m^{2} L}{4E} \ .
 \end{equation}
-is the leptonic Jarlskog invariant, a representation-invariant measure of
-CP-violation in neutrino oscillations.
 
-From the expression in Eq.~\eqref{eq:neutrino-osc} a number of properties of the
-vacuum neutrino oscillations become clear.
+From the expressions in Eqs.~\eqref{eq:neutrino-osc} and
+\eqref{eq:two-flavour-osc} a number of properties of the vacuum neutrino
+oscillations become clear.
 \begin{enumerate}
   \item The neutrino oscillation probabilities depend on the neutrino mass
     differences, and not on the absolute mass scale. For three flavours, there
     are only two independent squared mass differences, typically chosen to be
     $\Delta m_{21}^{2}$ and $\Delta m_{31}^{2}$.
-  \item The oscillations only occur if the neutrinos are non-degenerate and the
-    neutrino mixing is non-trivial, \textit{i.e.} if $\Delta m_{ij} \neq 0$ and
+  \item From Eq.~\eqref{eq:neutrino-osc} it is clear that the oscillations only
+    occur if the neutrinos are non-degenerate and the neutrino mixing is
+    non-trivial, \textit{i.e.} if $\Delta m_{ij} \neq 0$ and
     $\mathbf{U} \neq \mathbf{1}$.
   \item The PMNS matrix elements only appear in the combination
     $U_{m}^{\ i} U_{m}^{* i}$, to which the Majorana phases contained within the
     matrix $\mathbf{P}$ do not contribute. This implies that oscillation
     experiments cannot comment on the Dirac or Majorana nature\footnote{Of
     course, this is already clear from the fact that neutrino oscillations
-    conserve total lepton number, despite breaking the individual
-    lepton-family-number symmetries $L_{e, \mu, \tau}$.} of the neutrinos.
-    Oscillations can however probe $\delta_{\text{CP}}$, which appears in
-    $J_{\text{CP}}$.
+    conserve total lepton number, despite breaking the individual familial
+    lepton-number symmetries $L_{e, \mu, \tau}$.} of the neutrinos. Oscillations
+    can however probe $\delta_{\text{CP}}$.
+  \item In the effective two-flavour mixing paradigm, both $\theta$ and
+    $\Delta m^{2}$ appear in such a way that neither the sign of $\Delta m^{2}$
+    nor the octant of $\theta$ can be uniquely determined.
   \end{enumerate}
 
+  Historically, the effective two-flavour mixing paradigm has provided a good
+  framework for interpreting early indications of neutrino oscillations.
+  Specifically, the solar and atmospheric neutrino puzzles have approximate
+  descriptions in terms of a two-flavour picture in which
+  $\nu_{e} \to \nu_{\mu}$ oscillation in both matter and vacuum accounts for the
+  deficit of electron neutrinos measured from the sun, and
+  $\nu_{\mu} \to \nu_{\tau}$ oscillations \textit{in vacuo} explain the shortage
+  of muon neutrinos from cosmic-ray-induced production in the upper atmosphere.
+
+  The measurement and resolution of these puzzles is an interesting and exciting
+  chapter in the recent history of physics. Experiments as early as the 1960s
+  had noticed a shortage of electron neutrinos coming from the sun relative to
+  the predictions of solar models~\cite{RevModPhys.60.297, 1988ApJ...335..415T,
+    RevModPhys.64.885, RevModPhys.67.781}, which themselves were subject to much
+  uncertainty~\cite{}. For detection there were three main approaches: Raymond
+  Davis and collaborators~\cite{} pioneered experiments that measured the solar
+  electron-neutrino flux using Chlorine, the Kamiokande and later
+  super-Kamiokande collaborations used water Cherenkov detectors, and the
+  experiments GALLEX and SAGE had Gallium as the detecting material. All of
+  these experiments showed a deficit of solar electron neutrinos, although they
+  were sensitive to neutrinos of different energies. The Sudbury Neutrino
+  Observatory gave the final word on the oscillation solution to the solar
+  neutrino puzzle with accurate confirmation of the electron-neutrino deficit,
+  along with a measurement of the \textit{total} neutrino flux which was found
+  to be in agreement with the solar models.
+
+  Atmospheric neutrinos were known to come about from helicity-suppressed kaon
+  and pion decays to muons and muon neutrinos. A suppression by about 50\% of
+  the expected flux of atmospheric muon neutrinos was measured by the
+  Kamiokande~\cite{} and Irvine--Michigan--Brookhaven~\cite{} experiments in the
+  early 1990s, and after the upgrade to super-Kamiokande the deficit was
+  confirmed to high precision with results presented at the `Neutrino 2002'
+  conference~\cite{}.
+
+  The pairs of mixing parameters associated with these two classes of
+  measurements are usually dubbed
+  $\theta_{\text{sol}}, \Delta m^{2}_{\text{sol}}$ and
+  $\theta_{\text{atm}}, \Delta m^{2}_{\text{atm}}$. Experimental results find
+  $\Delta m^{2}_{\text{sol}} \ll \Delta m^{2}_{\text{atm}}$ and that both
+  $\theta_{\text{sol}}$ and $\theta_{\text{atm}}$ are large compared to any
+  angles found in the CKM matrix. Interpreted in terms of three-flavour mixing,
+  common convention identifies $\Delta m_{\text{sol}}^{2}$ with the squared mass
+  difference between $\nu_{2}$ and $\nu_{1}$, which is taken to be positive:
+  \textit{i.e.} $\Delta m^{2}_{21} > 0$. The solar mixing angle
+  $\theta_{\text{sol}}$ is then associated with $\theta_{12}$. The atmospheric
+  mixing parameters are identified with $|\Delta m_{31}^{2}|$ or
+  $|\Delta m_{32}^{2}|$ and $\theta_{23}$. Of course, three-flavour effects
+  alter the simplistic picture presented here and must be included to interpret
+  measurements of $\theta_{13}$ and $\delta_{\text{CP}}$, see \textit{e.g.}
+  Ref.~\cite{} for a more detailed discussion. The picture that emerges from
+  these experiments is then
+  \begin{equation}
+    \Delta m^{2}_{\text{sol}} \approx \Delta m^{2}_{21} \ll |\Delta m_{31}^{2}| \approx |\Delta m_{32}^{2}| \approx |\Delta m_{\text{atm}}^{2}| \ ,
+  \end{equation}
+  with which both the \textit{normal mass ordering} $m_{1} < m_{2} < m_{3}$ and
+  the \textit{inverted mass ordering} $m_{3} < m_{1} < m_{2}$ are consistent.
+
+  Neutrino oscillation experiments have continued to probe the squared mass
+  differences and mixing parameters with impressively high precision~\cite{}.
+  Reactor neutrino experiments (\textit{e.g.} KamLAND~\cite{}) and long-baseline
+  accelerator data are sensitive to all of these parameters, although the
+  combinations $\Delta m^{2}_{\text{atm}}$ and $\theta_{13}$ are best measured
+  at short-baseline reactors. Today the octant of $\theta_{12}$ is certainly
+  known, while $\theta_{13}$ is constrained to be close to 0.15. The sign of the
+  atmospheric squared mass difference is still unknown, and therefore so is the
+  mass ordering for the neutrinos. The value of the CP-violating Dirac phase
+  $\delta_{\text{CP}}$ is less clear, although there is a preference for a value
+  somewhere between $\pi$ and $3\pi/2$. The extent of CP-violation in the
+  neutrino sector can be represented in a rephasing-invariant way with the
+  leptonic Jarlskog invariant
+  \begin{equation}
+    J_{CP} = \frac{1}{8} \cos \theta_{13} \sin 2\theta_{12} \sin 2\theta_{13} \sin 2\theta_{23} \sin \delta_{\text{CP}} \ ,
+  \end{equation}
+  so a value of $\pi$ would imply no CP-violating effects, while
+  $\delta_{\text{CP}} = 3\pi/2$ would make these maximal.
+
+  For this work we take the results of the most recent fit to neutrino
+  oscillation data by the NuFit collaboration~\cite{} in the context of the
+  three-flavour paradigm. These results are summarised in
+  Fig.~\ref{fig:nufit-results} separately for the cases of normal and inverted
+  mass ordering. Results including atmospheric neutrino oscillation data from
+  super-Kamiokande and those not are also distinguished. Two-dimensional
+  projections of the $\chi^{2}$ fit for the same parameters are shown in
+  Fig.~\ref{fig:nufit-2d-results}. These data suggest a leptonic mixing matrix
+  that has a very different form to the CKM matrix $\mathbf{V}$. We represent
+  this qualitatively by using boxes whose side lengths are scaled to the
+  absolute values of the best-fit values of the parameters in the matrices:
+  \begin{equation}
+    \label{eq:pmns-ckm-comparison}
+    \mathbf{U} \sim
+    \begin{pmatrix}
+       \rule{0.825146em}{0.825146em} & \rule{0.544911em}{0.544911em} & \rule{0.149018em}{0.149018em} \\
+       \rule{0.271967em}{0.271967em} & \rule{0.607533em}{0.607533em} & \rule{0.746283em}{0.746283em} \\
+       \rule{0.440837em}{0.440837em} & \rule{0.577907em}{0.577907em} & \rule{0.648734em}{0.648734em} \\
+     \end{pmatrix}, \qquad
+     \mathbf{V} \sim
+     \begin{pmatrix}
+       \rule{0.97427em}{0.97427em}  & \rule{0.22534em}{0.22534em} & \rule{0.00351em}{0.00351em} \\
+       \rule{0.22520em}{0.22520em}  & \rule{0.97344em}{0.97344em} & \rule{0.0412em}{0.0412em} \\
+       \rule{0.00867em}{0.00867em}  & \rule{0.0404em}{0.0404em} & \rule{0.999146em}{0.999146em} \\
+     \end{pmatrix} \ .
+  \end{equation}
+  For the PMNS matrix we take the best fit values for the normal mass ordering
+  including the super-Kamiokande results, \textit{i.e.} the numbers in the
+  top-left quadrant of Fig.~\ref{fig:nufit-results}.
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=0.9\linewidth]{v50.tbl-parameters}
+    \caption{The results from NuFit.}
+    \label{fig:nufit-results}
+  \end{figure}
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=0.8\linewidth]{v50.fig-region-glob}
+    \caption{The results from NuFit.}
+    \label{fig:nufit-2d-results}
+  \end{figure}
 
 \subsection{Other experimental probes}
 

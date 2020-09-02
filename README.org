@@ -32,3 +32,6 @@
 - [X] What do I do with the introductions to the papers?
 - [ ] Does it make sense, for example, to move much of the discussion of integrating fields out into the general introduction?
 - [X] Should I be updating plots in older papers?
+
+* Other
+- Quote? https://classical-inquiries.chs.harvard.edu/homo-ludens-in-the-world-of-ancient-greek-verbal-art/
