@@ -1,21 +1,31 @@
 * Chapter 1: Introduction
-- [ ] The SM?
-- [ ] Neutrino oscillations, description, experimental situation
-- [ ] Radiative neutrino mass models
-- [ ] Effective operators, redundancies, bases, integration
+- [X] The SM
+- [X] Neutrino oscillations, description, experimental situation
+- [ ] Other probes of neutrino masses
+- [ ] Tree-level and Radiative neutrino mass models
+- [ ] Effective operators and the SMEFT
+- [ ] Dimension 6 and LNV operators
+- [ ] Redundancies, bases, integration
 - [ ] Operator mixing and running of couplings?
-- [ ] Dimension-6 SMEFT
 - [ ] Hints of LFU violation, description, theory, experimental situation
 - [ ] Leptoquarks, quantum numbers, properties?
 - [ ] Mathematical notation? Should this be appendix?
 
 * Chapter 2: Model building from effective operators
+- [ ] Sort out introduction and appendices
 
 * Chapter 3: Radiative neutrino mass
+- [ ] Paste paper in
 
 * Chapter 4: Reconsidering the BN scenario
+- [ ] Sort out introduction
+- [ ] Remake plots with updated data
 
-* Chapter 5: Non-minimal scenario
+* Chapter 5: Models of neutrino mass and the flavour anomalies
+- [ ] General introduction
+- [ ] Tail end of BN work
+- [ ] Paper with Innes, rewrite introduction and motivation to model
+- [ ] Pure vector operator solution viable now, do something with this?
 
 * Chapter 6: Quirk project
 - [X] Get paper in
@@ -26,12 +36,6 @@
 - [ ] Citations for ATLAS and CMS conf notes look better on CERN document server rather than inspire. Replace these citations and fix up innards with =siunitx= and other math symbols
 
 * Questions for Ray
-- [X] For quirk paper, how do I deal with the fact that the excess has gone away? Do I rewrite the tenses and remove phrases like /recently/?
-- [X] Should Rob's paper be an appendix?
-- [X] Is part 1 (on neutrino-mass model builing) and part 2 (on connection to the flavour anomalies) a good idea?
-- [X] What do I do with the introductions to the papers?
-- [ ] Does it make sense, for example, to move much of the discussion of integrating fields out into the general introduction?
-- [X] Should I be updating plots in older papers?
 
 * Other
 - Quote? https://classical-inquiries.chs.harvard.edu/homo-ludens-in-the-world-of-ancient-greek-verbal-art/
