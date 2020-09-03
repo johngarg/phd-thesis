@@ -1,7 +1,7 @@
 * Chapter 1: Introduction
 - [X] The SM
 - [X] Neutrino oscillations, description, experimental situation
-- [ ] Other probes of neutrino masses
+- [X] Other probes of neutrino masses
 - [ ] Tree-level and Radiative neutrino mass models
 - [ ] Effective operators and the SMEFT
 - [ ] Dimension 6 and LNV operators
@@ -36,6 +36,8 @@
 - [ ] Citations for ATLAS and CMS conf notes look better on CERN document server rather than inspire. Replace these citations and fix up innards with =siunitx= and other math symbols
 
 * Questions for Ray
+- [ ] Is the black box theorem a two way implication?
+- [ ] Can the QCD Axion be a Majoron?
 
 * Other
 - Quote? https://classical-inquiries.chs.harvard.edu/homo-ludens-in-the-world-of-ancient-greek-verbal-art/

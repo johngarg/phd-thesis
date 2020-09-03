@@ -361,7 +361,7 @@ oscillations become clear.
     m_{\text{heaviest}} \leq \sqrt{|\Delta m_{\text{atm}}^{2}|} \approx \SI{0.05}{\eV} \ .
   \end{equation}
 
-  \begin{figure}[t]
+  \begin{figure}
     \centering
     \includegraphics[width=0.9\linewidth]{v50.tbl-parameters}
     \caption{The figure shows a table taken from the latest global fit to
@@ -375,14 +375,14 @@ oscillations become clear.
     \label{fig:nufit-results}
   \end{figure}
  
-  \begin{figure}[t]
+  \begin{figure}
     \centering
     \includegraphics[width=0.8\linewidth]{v50.fig-region-glob}
     \caption{The figure shows the two-dimensional allowed regions obtained by
       the latest fit to the neutrino mass and mixing parameters by the NuFit
       collaboration~\cite{Esteban:2020cvm, nufitweb}. Each plot shows the
       two-dimensional projection of the allowed region after marginalising with
-      respect to the other parameters. The Coloured regions (black contour
+      respect to the other parameters. The coloured regions (black contour
       curves) are obtained by excluding (including) the Super-Kamiomande
       $\chi^{2}$ data. The different contours correspond to the two-dimensional
       allowed regions at $1\sigma$, $90\%$, $2\sigma$, $99\%$, $3\sigma$
@@ -392,27 +392,92 @@ oscillations become clear.
 
 \subsection{Other experimental probes}
 
-% nuclear beta decay, cosmological measurements, neutrinoless double beta decay
+Although neutrino oscillations provide a wealth of evidence for non-zero masses
+for at least two of the neutrino fields, they do not probe the absolute mass
+scale. There are however kinematic and cosmological probes which bound the
+neutrino masses, and some of these are mentioned here.
 
-For example, a study of the kinematics of beta-decay experiments shows that
-differences in the energy distribution of the emitted electron are expected for
-different values of the neutrino mass. Currently these experiments only provide
-upper bounds on the effective neutrino masses: incoherent sums of neutrino
-masses and leptonic mixing parameters. The best results come from tritium
-experiments.
+\subsubsection{Beta decay}
 
-Of course this seems rather cooked up; couldn't one just add the right-handed
-fields $\bar{\nu}_{i}$ and write down a Yukawwa coupling to the SM Higgs field?
-The answer is yes
+A study of the kinematics of beta-decay experiments shows that differences in
+the energy distribution of the emitted electron are expected for different
+values of the neutrino mass. Currently these experiments only provide upper
+bounds on the effective neutrino mass~\cite{Shrock:1980vy}
+\begin{equation}
+  m_{\beta} \equiv \sqrt{\sum_{i} |U_{1}^{\ i}|^{2} m_{i}^{2}} \ .
+\end{equation}
+The best results come from tritium experiments which probe
+${}^{3}\mathrm{H} \to {}^{3}\mathrm{He} + e + \bar{\nu}_{e}$. The KATRIN
+experiment recently presented the most stringent upper bound~\cite{Aker:2019uuj,
+  Aker:2019qfn}
+\begin{equation}
+  \label{eq:2}
+  m_{\beta} < \SI{1.1}{\eV} \ ,
+\end{equation}
+at $90\%$ confidence, with a projected limit of $m_{\beta} < \SI{0.2}{\eV}$ with
+the full dataset.
 
-Essential to the question of neutrino masses is not just why the neutrinos have
-mass, but why the masses are so small.
+Another process with the potential to probe the absolute scale of the neutrino
+masses, as well as the Majorana phases, is neutrinoless double beta decay
+($0\nu\beta\beta$). The process requires the violation of lepton-number by two
+units, and is therefore intimately tied to the neutrinos' possible Majorana
+nature. If double-beta decay is seen, the \textit{black box
+  theorem}~\cite{Schechter:1981bd, Takasugi:1984xr, Hirsch:2006yk} guarantees
+that the neutrinos pick up a radiative Majorana mass, even if the neutrino
+masses vanish at tree level. Graphically this is easy to understand: a
+$0\nu\beta\beta$ operator can always be turned into a neutrino self-energy graph
+with four loops. The amplitude for the process is proportional to
+\begin{equation}
+  \langle m_{\nu} \rangle_{\beta\beta} = \sum_{i} (U_{1}^{\ i})^{2} m_{i} \ ,
+\end{equation}
+which features both the neutrino masses and the Majorana phases. (Of course it
+may be that the four-loop contribution to the neutrino mass implied by the
+double-beta-decay operator represents only a small correction to the neutrino
+masses, which could arise at lower order.) Current limits on
+$\langle m_{\nu} \rangle_{\beta\beta}$ are around \SI{0.2}{\eV}, see
+\textit{e.g.} Ref.~\cite{Dolinski:2019nrj} for a recent review of the
+experimental status and prospects. Constraints on
+$\langle m_{\nu} \rangle_{\beta\beta}$ are usually presented against the mass of
+the lightest neutrino mass eigenstate. The behaviour of
+$\langle m_{\nu} \rangle_{\beta\beta}$ is very sensitive to the neutrino mass
+ordering, in such a way that the inverted scenario implies a minimum allowed
+value of $\langle m_{\nu} \rangle_{\beta\beta}$, which will begin to be probed
+by the next generation of experiments. A combined global limit and the projected
+sensitivity of the DARWIN experiment~\cite{Agostini:2020adk} are shown in
+Fig.~\ref{fig:0vbb-darwin}, which also illustrates the different behaviour of
+the inverted and normal neutrino mass orderings in the
+$\langle m_{\nu} \rangle_{\beta\beta}$ vs. $m_{\text{lightest}}$ plane.
 
-If neutrinos have mass, there is no reason why the flavour eigenstates $\nu_{i} = $
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.6\linewidth]{0vbb_darwin}
+  \caption{The figure shows limits on the effective neutrino mass for different
+    values of $m_{\text{lightest}}$ for both normal and inverted mass ordering.
+    The grey region represents the combined sensitivity from a number of leading
+    experiments~\cite{Agostini:2019hzm}. The yellow regions are projections for
+    the DARWIN experiment under different background hypotheses. The figure is
+    taken from Ref.~\cite{Agostini:2020adk}, and we point the reader there for
+    more information.}
+  \label{fig:0vbb-darwin}
+\end{figure}
+
+\subsubsection{Cosmological limits}
+
+The most stringent limits on the sum of the neutrino masses come from cosmology,
+although they are model-dependent. In the minimal $\Lambda$CDM model adjusted
+for massive neutrinos, the limit implied by the most recent Planck data
+release~\cite{Aghanim:2018eyx} is
+\begin{equation}
+  \sum_{i} m_{i} < \SI{0.12}{\eV} \ ,
+\end{equation}
+at $95\%$ confidence. This is impressively small, and puts pressure on the
+inverted-ordering scenario, for which $\sum_{i} m_{i} \gtrsim \SI{0.1}{\eV}$.
+Excitingly, future cosmological probes will likely make a measurement of the sum
+of the neutrino masses.
 
 \subsection{Models of neutrino masses}
 
-There are also sinsible theoretical arguments for massive neutrinos.
+There are also sensible theoretical arguments for massive neutrinos.
 
 \section{Effective field theories of the SM}
 
