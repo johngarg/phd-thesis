@@ -1,0 +1,33 @@
+\directlua{pdf.setminorversion(4)}
+
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{tikz-feynman}
+
+\begin{document}
+
+\begin{tikzpicture}
+  \begin{feynman}
+    \vertex (A) {$L_{r}$};
+    \vertex [right=2.5em of A] (B);
+    \vertex [below=0.2em of B] (Blabel) {$x_{[rt]}$};
+    \vertex [right=2em of B] (CH);
+    \vertex [right=2em of CH] (C);
+    \vertex [below=2em of C] (CHlabel) {$H$};
+    \vertex [right=2em of C] (DH);
+    \vertex [right=2em of DH] (D);
+    \vertex [below=0.2em of D] (Dlabel) {$y_{ts}$};
+    \vertex [right=1.5em of D] (E) {$L_{s}$};
+    \vertex [above=4em of C] (F);
+    \vertex [above=0.2em of F] (Flabel) {$\mu$};
+    \vertex [below=1em of F] (FH) {$H$};
+    \diagram* {
+      (A) -- [fermion] (B) -- [anti fermion, edge label=$L_{t}$] (C) -- [fermion, edge label=$\bar{e}_{t}$] (D) -- [anti fermion] (E),
+      (B) -- [anti charged scalar, quarter left, edge label=$\mathcal{S}_{1}$] (F) -- [charged scalar, quarter left, edge label=$\varphi$] (D),
+      (CHlabel) -- [charged scalar] (C),
+      (FH) -- [charged scalar] (F),
+    };
+  \end{feynman}
+\end{tikzpicture}
+
+\end{document}

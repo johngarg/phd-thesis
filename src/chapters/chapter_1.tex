@@ -90,32 +90,25 @@ freedom~\cite{Gross:1973id}.
 
 Despite its successes, the SM cannot be the complete theory of fundamental
 particles and their interactions. It does not explain phenomena such as the
-baryon asymmetry present in the Universe or its accelerating expansion.
-Additionally, the particle spectrum contains no viable candidate for dark
-matter, whose existence is strongly suggested by astrophysical and cosmological
-data. The SM cannot explain why the electric dipole moment of the neutron is so
-small, why there are three generations of matter or, notably in our case, the
-origin of neutrino oscillations and the implied small but non-zero neutrino
-masses.
+baryon asymmetry present, and the particle spectrum contains no viable candidate
+for dark matter. The SM cannot explain why the electric dipole moment of the
+neutron is so small, why there are three generations of matter or, notably in
+our case, the origin of neutrino oscillations and the implied small but non-zero
+neutrino masses.
 
 \section{Massive neutrinos in experiment and theory}
 
-In the SM the neutrino fields appear only within the lepton doublet $L$, and one
-cannot write down---in analogy to the up-type Yukawa---a renormalisable operator
-that leads to neutrino masses because of the absence of the right-handed fields.
-The wealth of experimental evidence for massive neutrinos then constitutes clear
-evidence for physics beyond the SM.
-
-This evidence could in principle have come from many kinds of experiments, but
-currently only neutrino oscillations provide strong signs that the masses are
-non-zero. Below we discuss the phenomenon of neutrino oscillations in the
-context of the outstandingly successful three-flavour mixing paradigm. We then
-move on to other probes of neutrino masses, which currently only provide limits
-on the mass scale. On the theory side, we summarise some popular and motivated
-extensions of the SM that accommodate massive neutrinos, placing particular
-emphasis on the direction we have followed in the novel work presented in this
-thesis. This includes an overview of tree- and loop-level models of Majorana
-neutrino mass.
+The minimal SM predicts massless neutrinos, a prediction that today sits in
+contradiction to a wealth of empirical evidence. This evidence could in
+principle have come from many kinds of experiments, but currently only neutrino
+oscillations provide strong signs that the masses are non-zero. Below we discuss
+the phenomenon of neutrino oscillations in the context of the outstandingly
+successful three-flavour mixing paradigm. We then move on to other probes of
+neutrino masses, which currently only provide limits on the mass scale. On the
+theory side, we summarise some popular and motivated extensions of the SM that
+accommodate massive neutrinos, placing particular emphasis on the direction we
+have followed in the novel work presented in this thesis. This includes an
+overview of tree- and loop-level models of Majorana neutrino mass.
 
 \subsection{Neutrino oscillations}
 
@@ -129,7 +122,7 @@ $\nu_{i} = (\nu_{1}, \nu_{2}, \nu_{3})$. In general, the flavour eigenstates
 will be an admixture of the propagating fields
 \begin{equation}
   \label{eq:neutrino-mixing}
-  \breve{\nu}_{i} = U_{i}^{* j} \nu_{j} \ ,
+  \breve{\nu}_{i} = U_{i}^{\ j} \nu_{j} \ ,
 \end{equation}
 where the $U_{i}^{\ j}$ are elements of the unitary
 Pontecorvo--Maki--Nakagawa--Sakata (PMNS) neutrino mixing
@@ -222,7 +215,7 @@ oscillations become clear.
     non-trivial, \textit{i.e.} if $\Delta m_{ij} \neq 0$ and
     $\mathbf{U} \neq \mathbf{1}$.
   \item The PMNS matrix elements only appear in the combination
-    $U_{m}^{\ i} U_{m}^{* i}$, to which the Majorana phases contained within the
+    $U_{m}^{\ i} U_{m}^{* j}$, to which the Majorana phases contained within the
     matrix $\mathbf{P}$ do not contribute. This implies that oscillation
     experiments cannot comment on the Dirac or Majorana nature\footnote{Of
     course, this is already clear from the fact that neutrino oscillations
@@ -236,15 +229,16 @@ oscillations become clear.
   Thus, neutrino oscillations imply that the neutrino masses of at least two of
   the mass eigenstates are non-degenerate, and therefore only one neutrino could
   potentially be massless. The largest squared mass difference can therefore be
-  translated into an upper bound on the mass of the heaviest neutrino, which we
+  translated into an lower bound on the mass of the heaviest neutrino, which we
   present later with modern data.
 
   Historically, the effective two-flavour mixing paradigm has provided a good
   framework for interpreting early indications of neutrino oscillations.
   Specifically, the solar and atmospheric neutrino puzzles have approximate
-  descriptions in terms of a two-flavour picture in which
-  $\nu_{e} \to \nu_{\mu}$ oscillation in both matter and vacuum accounts for the
-  deficit of electron neutrinos measured from the sun, and
+  descriptions in terms of a two-flavour picture. Oscillations
+  $\nu_{e} \to \nu_{\text{active}}$, where $\nu_{\text{active}}$ is a coherent
+  superposition of $\nu_{\mu}$ and $\nu_{\tau}$, in both matter and vacuum
+  account for the deficit of electron neutrinos measured from the sun, and
   $\nu_{\mu} \to \nu_{\tau}$ oscillations \textit{in vacuo} explain the shortage
   of muon neutrinos from cosmic-ray-induced production in the upper atmosphere.
 
@@ -268,12 +262,12 @@ oscillations become clear.
   to be in agreement with the solar models~\cite{Ahmad:2001an, Ahmad:2002jz}.
 
   Atmospheric neutrinos were known to come about from helicity-suppressed kaon
-  and pion decays to muons and muon neutrinos. A suppression by about 50\% of
-  the expected flux of atmospheric muon neutrinos was measured by the
-  Kamiokande~\cite{Hirata:1992ku} and
-  Irvine--Michigan--Brookhaven~\cite{BeckerSzendy:1995vr} experiments in the
-  early 1990s, and after the upgrade to Super-Kamiokande the deficit was
-  confirmed to high precision with results presented at the `Neutrino 2002'
+  and pion decays to muons and muon neutrinos. A zenith-angle and
+  energy-dependent suppression in the flux of atmospheric muon neutrinos was
+  measured by the Kamiokande and Irvine--Michigan--Brookhaven
+  experiments~\cite{Hirata:1992ku, BeckerSzendy:1995vr} in the early 1990s, and
+  after the upgrade to Super-Kamiokande the deficit was confirmed to high
+  precision with results presented at the `Neutrino 1998'
   conference~\cite{Fukuda:1998mi, vonFeilitzsch:2003mh, shiozawa:2002,
     Smy:2002rz}.
 
@@ -283,21 +277,21 @@ oscillations become clear.
   $\theta_{\text{atm}}, \Delta m^{2}_{\text{atm}}$. Experimental results find
   $\Delta m^{2}_{\text{sol}} \ll \Delta m^{2}_{\text{atm}}$ and that both
   $\theta_{\text{sol}}$ and $\theta_{\text{atm}}$ are large compared to any
-  angles found in the CKM matrix. Interpreted in terms of three-flavour mixing,
-  common convention identifies $\Delta m_{\text{sol}}^{2}$ with the squared mass
-  difference between $\nu_{2}$ and $\nu_{1}$, which is known to be
-  positive\footnote{We note that the sign of $\Delta m_{21}^{2}$ can be known
-    since oscillations in matter are also relevant for the solar squared mass
-    difference, which depart from the simple formula of
-    Eq.~\eqref{eq:two-flavour-osc}.} (\textit{i.e.} $\Delta m^{2}_{21} > 0$).
-  The solar mixing angle $\theta_{\text{sol}}$ is then associated with
-  $\theta_{12}$. The atmospheric mixing parameters are identified with
-  $|\Delta m_{31}^{2}|$ or $|\Delta m_{32}^{2}|$ and $\theta_{23}$. Of course,
-  three-flavour effects alter the simplistic picture presented here and must be
-  included to interpret measurements of $\theta_{13}$ and $\delta_{\text{CP}}$,
-  see \textit{e.g.} Ref.~\cite{Giganti:2017fhf} and references therein for a
-  more detailed discussion. The picture that emerges from these experiments is
-  then
+  angles found in the CKM matrix, the quark mixing matrix. Interpreted in terms
+  of three-flavour mixing, common convention identifies
+  $\Delta m_{\text{sol}}^{2}$ with the squared mass difference between $\nu_{2}$
+  and $\nu_{1}$, which is known to be positive\footnote{We note that the sign of
+    $\Delta m_{21}^{2}$ can be known since oscillations in matter are also
+    relevant for the solar squared mass difference, which depart from the simple
+    formula of Eq.~\eqref{eq:two-flavour-osc}.} (\textit{i.e.}
+  $\Delta m^{2}_{21} > 0$). The solar mixing angle $\theta_{\text{sol}}$ is then
+  associated with $\theta_{12}$. The atmospheric mixing parameters are
+  identified with $|\Delta m_{31}^{2}|$ or $|\Delta m_{32}^{2}|$ and
+  $\theta_{23}$. Of course, three-flavour effects alter the simplistic picture
+  presented here and must be included to interpret measurements of $\theta_{13}$
+  and $\delta_{\text{CP}}$, see \textit{e.g.} Ref.~\cite{Giganti:2017fhf} and
+  references therein for a more detailed discussion. The picture that emerges
+  from these experiments is then
   \begin{equation}
     \Delta m^{2}_{\text{sol}} \approx \Delta m^{2}_{21} \ll |\Delta m_{31}^{2}| \approx |\Delta m_{32}^{2}| \approx |\Delta m_{\text{atm}}^{2}| \ ,
   \end{equation}
@@ -476,16 +470,468 @@ Excitingly, future cosmological probes will likely make a measurement of the sum
 of the neutrino masses.
 
 \subsection{Models of neutrino masses}
+\label{sec:models-of-mv}
 
-There are also sensible theoretical arguments for massive neutrinos.
+In the SM the neutrino fields appear only within the lepton doublet $L$, and one
+cannot write down---in analogy to the up-type Yukawa---a renormalisable operator
+that leads to neutrino masses because of the absence of the right-handed fields.
+A simple model of neutrino mass then involves introducing right-handed neutrino
+fields $\bar{\nu} \sim (\mathbf{1}, \mathbf{1}, 0)_{(\mathbf{1}, \mathbf{2})}$,
+extending the Yukawa sector of the SM accordingly to
+\begin{equation}
+  -\mathscr{L}_{Y} \supset y_{e}\bar{e}LH^{\dagger} + y_{d}\bar{d}QH^{\dagger} + y_{u} \bar{u}QH + y_{\nu}\bar{\nu}LH \ ,
+\end{equation}
+in a simplified one-flavour picture. This implies Dirac neutrinos with a mass
+$m_{\nu} \approx y_{\nu} v$, and makes mass generation symmetric between the
+quarks and leptons.
+
+There are a number of problems with this simplistic scenario. First, it is
+perhaps uncomfortable to suppose that the neutrinos are many orders of magnitude
+lighter than the charged fermions only because $y_{\nu}$ is a very small number.
+Indeed, the posited large hierarchy between $y_{\nu}$ and $y_{u}$ seems to spoil
+any aesthetic arguments for quark--lepton symmetry in favour of this hypothesis.
+Although the Yukawa couplings for the other SM fermions span six orders of
+magnitude, couplings within any one generation are all of similar order. We
+illustrate this in Fig.~\ref{fig:fermion-masses}, where the fermion masses are
+plotted by generation. Whereas one could consider that some underlying theory of
+flavour may explain, for example, the disparity in scale between the masses of
+the electron and the top quark, the large mass difference between the electron
+and the lightest neutrino, although technically natural, seems to cry out for
+its own explanation.
+
+A second point of criticism with the simple scenario presented above is that it
+ignores the Majorana mass term for $\bar{\nu}$
+\begin{equation}
+  \label{eq:3}
+  \mathscr{L} \supset - \tfrac{1}{2} \mu \bar{\nu} \bar{\nu} + \text{h.c.}
+\end{equation}
+In order to maintain the Dirac neutrino mass with the relation
+$m_{\nu} \approx y_{\nu}v$, the Majorana mass must be forbidden or else chosen
+to be negligibly small, assumptions adding additional layers of contrivance to
+the theory. A sensible choice for the scale $\mu$ is some high scale $\Lambda$
+associated with the breaking of $\mathrm{U}(1)_{B-L}$. Taking
+$\mu \gg y_{\nu} v$, the neutrino-mass matrix takes on the form
+\begin{equation}
+  \mathbf{m}_{\nu} = \begin{pmatrix}
+    0 & y_{\nu} v \\
+    y_{\nu} v & \mu \\
+  \end{pmatrix} \ ,
+\end{equation}
+with eigenvalues
+\begin{equation}
+  m_{l} \approx \frac{y_{\nu}^{2}v^{2}}{\mu},\quad m_{h} \approx \mu \ .
+\end{equation}
+The assumption $\mu \gg y_{\nu} v$ implies that $m_{l} \ll y_{\nu} v$, and the
+neutrino is successfully arranged to be much lighter than $y_{\nu} v$, which can
+now be taken to be on the order of the charged fermion masses. The theory also
+leaves us with a neutrino whose mass must be significantly larger than the
+electroweak scale: $m_{h} \gtrsim \SI{e14}{\GeV}$, assuming
+$m_{l} = \SI{0.05}{\eV}$ and $y_{\nu} = 1$. After transforming into the
+mass-diagonal basis, the physical fields $\nu_{l}$ and $\nu_{h}$ correspond to
+Majorana particles. Thus, in the most motivated region of parameter space, the
+phenomenology of the light neutrinos in even the $\text{SM} + \bar{\nu}$
+scenario is Majorana. This toy scenario illustrates the mechanism commonly
+called the \textit{seesaw mechanism}: making the neutrinos very light at the
+expense of making other fields very heavy. This is discussed more broadly below.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.7\linewidth]{fermion_mass_plot}
+  \caption{The masses of the SM fermions grouped by generation. While the SM
+    Yukawa couplings span a wide range of values, within any specific generation
+    they are all of similar order. The tiny masses of the neutrinos seem to
+    suggest an alternate mass-generation mechanism.}
+  \label{fig:fermion-masses}
+\end{figure}
+
+\subsubsection{Tree-level models of neutrino mass}
+
+The toy seesaw scenario discussed above can be understood more generally by
+studying the effective theory valid below the scale $\mu$, which does not
+contain the field $\bar{\nu}$. The leading-order lepton-number-violating (LNV)
+effects appear at dimension five in the operator
+\begin{equation}
+  \mathscr{L} \supset \frac{\kappa}{\Lambda} (L^{i}L^{j})H^{k}H^{l} \cdot \epsilon_{ik}\epsilon_{jl} \ ,
+\end{equation}
+with $\kappa$ a dimensionless coefficient. This operator is commonly called the
+\textit{Weinberg operator}. In the broken phase it gives rise to a Majorana mass
+for the neutrinos consistent with the seesaw formula:
+\begin{equation}
+  \label{eq:seesaw-formula}
+  \mathscr{L} \supset \frac{v^{2} \kappa}{\Lambda} \nu \nu \ .
+\end{equation}
+
+The $\text{SM}+\bar{\nu}$ scenario is not the only simplified model that
+generates the Weinberg operator at tree-level. A simple diagram-topology
+analysis suggests there are another two seesaw mechanisms in the UV: a model
+with a scalar isotriplet field $\Xi_{1} \sim (\mathbf{1}, \mathbf{3}, 1)_{S}$,
+called the type-II mechanism, and another with an isotriplet Majorana fermion
+$\Sigma \sim (\mathbf{1}, \mathbf{3}, 0)_{F}$, called type-III. Along with the
+type-I heavy $\bar{\nu}$ model, these are collectively referred to as the
+canonical seesaw mechanisms~\cite{MINKOWSKI1977421, Yanagida:1979as,
+  GellMann:1980vs, PhysRevLett.44.912, Glashow:1979nm, Magg:1980ut,
+  PhysRevD.22.2227, LAZARIDES1981287, Wetterich:1981bx, PhysRevD.23.165,
+  Foot:1988aq} and have been studied at length in the literature. They are
+simple models in that they introduce only very few exotic degrees of freedom and
+free parameters. However, the high seesaw scale makes these models practically
+untestable at current and future collider experiments.
+
+Models of Majorana neutrino mass can be made more testable if, instead of the
+suppression of the neutrino masses coming from a large $\Lambda$ in
+Eq.~\eqref{eq:seesaw-formula}, the coefficient $\kappa$ were somehow arranged to
+be small. Although there are a number of mechanisms to achieve this, we
+concentrate below on radiative models of Majorana neutrino mass, in which
+$\kappa$ is made small through loop and coupling suppression.
+
+\subsubsection{Radiative models and their classification}
+
+It may be the case that the field content of whatever high-energy theory
+describes the neutrino masses is such that no neutrino self-energy diagram can
+be drawn at the tree level. Indeed, this will be the case if there is
+lepton-number violation by two units ($\Delta L = 2$) from interactions other
+than those present in the canonical seesaw models. Such models are called
+radiative, since the neutrino masses arise through loop graphs. The historically
+important Zee~\cite{Zee:1980ai} and Zee--Babu~\cite{Zee:1985id, Babu:1988ki}
+models have come to be archetypal radiative scenarios in which the neutrinos
+gain masses through $\Delta L = 2$ the interactions of exotic scalars at one and
+two loops respectively. In the Zee model, an additional Higgs doublet
+$\varphi \sim (\mathbf{1}, \mathbf{2}, \tfrac{1}{2})$ and a charged scalar
+$\mathcal{S}_{1} \sim (\mathbf{1}, \mathbf{1}, 1)$ are introduced, while the
+Zee--Babu model contains $\mathcal{S}_{1}$ and the doubly-charged scalar
+$\mathcal{S}_{2} \sim (\mathbf{1}, \mathbf{1}, 2)$. The neutrino self-energy
+diagrams for these models are shown in Fig.~\ref{fig:zee-and-zee-babu-diags} as
+examples. The corresponding neutrino-mass matrices are
+\begin{align}
+  [\mathbf{m}^{\text{Zee}}_\nu]_{rs} & = \frac{\mu v^2}{16\pi^2} \sum_t x_{[rt]} I_{t} [\mathbf{m}_e]_t y_{ts} + (r \leftrightarrow s) \ , \label{eq:zee-mv} \\
+  [\mathbf{m}^{\text{Zee--Babu}}_\nu]_{rs} & = \frac{\mu^{\prime} v^2}{(16 \pi^2)^2} \sum_{t,u} x_{[rt]} [\mathbf{m}_e]_t z_{\{tu\}} [\mathbf{m}_e]_u x_{[us]} I^\prime_{tu} + (r \leftrightarrow s) \ , \label{eq:zee-babu-mv}
+\end{align}
+written in terms of the couplings $x,y,z \in \mathbb{C}$ as shown in
+Fig.~\ref{fig:zee-and-zee-babu-diags}, and the associated loop functions $I$ and
+$I^{\prime}$. One can see that in these models, the coefficient of the Weinberg
+operator $\kappa$ is naturally suppressed with respect to the seesaw formula by
+SM-fermion masses (charged-lepton masses in this case), exotic couplings, and
+loop factors.
+
+Such models are economic, since they do not require the imposition of \textit{ad
+  hoc} symmetries, and in many cases make a connection to other unsolved
+problems of the SM such as the nature of dark matter or the matter--antimatter
+asymmetry of the Universe. They are also elegant, since the smallness of the
+neutrino masses emerges as a natural consequence, rather than through the
+imposed requirement of exceedingly small coupling constants. Radiative models
+are easier to probe experimentally since the additional loop suppression and
+products of couplings bring down the allowed scale of the new physics, in some
+cases to LHC-accessible energy ranges~\cite{deGouvea:2007qla}. The Zee--Babu
+model, for example, is non-trivially constrained by same-sign dilepton searches
+performed by ATLAS~\cite{ATLAS:2012hi, ATLAS:2014kca, Aaboud:2017qph} and
+CMS~\cite{Chatrchyan:2012ya, CMS:2016cpz, CMS:2017pet}. Additionally, the
+predicted dependence of the neutrino-mass matrix on SM parameters, as is clear
+from Eqs.~\eqref{eq:zee-mv} and \eqref{eq:zee-babu-mv}, can make these models
+very predictive as far as neutrino phenomenology is concerned. For example, the
+minimal version of the Zee model has the charged-lepton masses arising from
+couplings to $\varphi$, allowing for a simplification of the expression
+Eq.~\eqref{eq:zee-mv} such that the leptonic flavour index $t$ is identified
+with $s$. The antisymmetry in the leptonic flavour indices implied by $x_{[rs]}$
+must be accounted for by an antisymmetry in the loop integral such that
+$I \sim I_{r} - I_{s}$. The flavour structure then
+becomes~\cite{Wolfenstein:1980sy}
+\begin{equation}
+  \label{eq:zee-wolfenstein-mv}
+  [\mathbf{m}_{\nu}^{\text{Min. Zee}}]_{rs} \propto x_{[rs]} ([\mathbf{m}_{e}]_{r}^{2} - [\mathbf{m}_{e}]_{s}^{2}) \ ,
+\end{equation}
+which makes clear predictions relevant to neutrino oscillations that in this
+case rule out the model. For recent reviews of radiative models see
+Refs.~\cite{Boucenna:2014zba, Cai:2017jrq}.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.45\textwidth]{zee_diag}
+  \includegraphics[width=0.45\textwidth]{zee_babu_diag}
+  \caption{The neutrino self-energy diagrams relevant to the Zee (left) and
+    Zee--Babu (right) models.}
+  \label{fig:zee-and-zee-babu-diags}
+\end{figure}
+
+The Zee and Zee--Babu scenarios are only two of a very large number of radiative
+models, none of which are \textit{a priori} more likely to be true than any
+other. In the context of such a large theory-space, it is useful to have an
+organising principle to aid in the study and classification of these models, and
+beginning with $\Delta L = 2$ effective operators has been shown to be an
+effective strategy.
+
+One approach to this model taxonomy involves studying loop-level completions of
+the Weinberg operator, and its dimension-($5+2n$) generalisations
+\begin{equation*}
+ \mathcal{O}_1^{\prime \cdots \prime} = (LL)HH(H^\dagger H)^n  \ .
+\end{equation*}
+Here, models can be systematically written down by studying the various
+topologies able to be accommodated by the operator with increasing number of
+loops. This is done in such a way that models implying lower-order contributions
+to the neutrino mass can be discarded~\cite{Farzan:2012ev}. Such an approach has
+been applied to the Weinberg operator up to three loops~\cite{Bonnet:2012kz,
+  Sierra:2014rxa, Cepedello:2018rfh} and to its dimension-seven generalisation
+at one loop~\cite{Cepedello:2017eqf}. An alternative and complementary method
+begins by considering all of the gauge-invariant $\Delta L = 2$ operators in the
+SM effective field theory (SMEFT), first listed in this context by Babu and
+Leung (BL)~\cite{Babu:2001ex} and extended by de Gouv\^{e}a and Jenkins
+(dGJ)~\cite{deGouvea:2007qla}. Supposing that the tree-level coefficient of one
+of these is non-zero at the high scale, neutrino masses will be generated from
+loop graphs contributing to the mixing of this operator and the Weinberg-like
+operators $\mathcal{O}_1^{\prime \cdots \prime}$. The process of expanding the
+operator into a series of UV-complete, renormalisable models that generate the
+parent operator at tree-level is called \emph{opening up} or \emph{exploding}
+the operator. The remaining external fields must be looped-off, with additional
+loops of SM gauge bosons or Higgs fields added as necessary in order to obtain a
+neutrino self-energy diagram. A model-building formula along these lines has
+been formulated in Ref.~\cite{PhysRevD.87.073007}, and it has been used to write
+down all of the minimal, tree-level UV-completions of $\Delta L = 2$ operators
+at dimension seven~\cite{Cai:2014kra} corresponding to tree-level and radiative
+neutrino-mass models. The tree-level completions of the Weinberg-like operators
+have been written down up to dimension eleven~\cite{Cai:2014kra, Bonnet:2009ej,
+  Anamiati:2018cuq}. The operators $\Delta L = 2$ operators in the SM EFT are
+discussed in more detail in Sec.~\ref{sec:EFT-of-SM}.
+
+We note that an economic classification scheme, separate from an EFT framework,
+was presented in Ref.~\cite{Klein:2019iws} based on the number of exotic degrees
+of freedom by which the SM is extended. There, the method is applied to the case
+of radiative models with two exotics\footnote{Including models with one scalar
+  and one Dirac fermion.}, and has also been used to study minimal neutrino-mass
+models compatible with $\mathrm{SU}(5)$ unification~\cite{Klein:2019jgb}.
 
 \section{Effective field theories of the SM}
 
+In the following we introduce EFTs in general, and then specialise to those
+built out of SM fields: the Standard Model EFT (SMEFT) and the Weak Effective
+Theory (WET). We place particular emphasis on the operators appearing at
+dimension-six, and then at odd mass dimension up to dimension eleven. The
+odd-dimension operators in the SMEFT are those that organise the building of
+neutrino-mass models in the tradition of Refs.~\cite{Babu:2001ex,
+  deGouvea:2007qla, PhysRevD.87.073007, Cai:2014kra}. We begin with prefatory
+comments on the process of tree-level matching, then move on to discuss the
+SMEFT and peripheral concepts.
+
+\subsection{Tree-level matching}
+
+Suppose one has a theory with light particle states described by fields
+$\pi_{i}$ and heavy states described by $\Pi_{i}$ with a Lagrangian of the form
+\begin{equation}
+  \begin{aligned}
+  \mathscr{L}_{\text{UV}}[\pi, \Pi] &= \mathscr{L}_{\text{kin}}[\pi, \Pi] + \mathscr{L}_{\text{int}}[\pi, \Pi], \text{ with } \\
+  \mathscr{L}_{\text{int}}[\pi, \Pi] &= \mathscr{L}^{l}[\pi] + \mathscr{L}^{h}[\Pi] +  \mathscr{L}^{lh}[\pi, \Pi].
+  \end{aligned}
+\end{equation}
+Below the threshold for $\Pi_{i}$ production, an effective description of the
+theory can be used that involves interactions only between the light fields.
+This effective theory is described by a Lagrangian
+$\mathscr{L}_{\text{eff}}[\pi]$ involving interactions between the
+$\pi_{i}$ that correspond to diagrams in the full theory containing only heavy
+internal propagators and light external states. At the classical level,
+$\mathscr{L}_{\text{eff}}$ can be written down by integrating out the
+$\Pi_{i}$. Perturbatively this corresponds to expanding the heavy propagators
+$\Delta$ in powers of momenta on the heavy mass scale\footnote{We note that some
+  UV scenarios may have more than one characteristic scale. In this case
+  $\Lambda$ can be understood as an effective scale which may not necessarily
+  correspond to the mass of a specific particle.} $\Lambda$, such
+that
+\begin{equation}
+  \label{eq:prop}
+  \Delta = \begin{dcases}
+    -\frac{1}{\Lambda^{2}}\left(1 + \frac{p^2}{\Lambda^{2}} + \cdots \right) & \text{for
+    }\quad \includegraphics[width=0.17\linewidth]{scalar_prop.pdf} \\
+    -\frac{\delta_{\alpha}^{\ \beta}}{\Lambda} \left( 1 + \frac{p^2}{\Lambda^{2}} + \cdots \right) & \text{for
+    }\quad \includegraphics[width=0.17\linewidth]{fermion_mprop.pdf} \\
+    -\frac{i p \cdot \bar{\sigma}^{\dot{\alpha}\beta}}{\Lambda^{2}} \left( 1 + \frac{p^2}{\Lambda^{2}} + \cdots \right) & \text{for
+    }\quad \includegraphics[width=0.17\linewidth]{fermion_pprop.pdf}
+  \end{dcases}
+  \ .
+\end{equation}
+In this notation, the arrow-preserving propagator corresponds to the part of the
+regular four-component fermion propagator proportional to momentum, while the
+arrow-violating one is the part proportional to the fermion mass. Expressions
+for the fermion propagators with reversed arrows follow from
+$\bar{\sigma}^{\mu} \to \sigma^{\mu}$ and interchanging dotted and undotted
+indices (see Ref.~\cite{Dreiner:2008tw} Sec.~4.2 for the Lorentz structure).
+
+Equivalently, the integration can be performed using the classical EOM of the
+$\Pi_{i}$. For some heavy field $\Pi$, the linearised solution to its classical
+EOM can be used to remove it from the Lagrangian completely. This procedure is
+mildly different for scalars and fermions, and we briefly outline these
+separately below. In both cases, we begin with a Lagrangian
+$\mathscr{L}_{\text{UV}}$ for which we imagine that kinetic and mass mixing
+terms between heavy and light fields have been removed.
+
+There are tree-level contributions to $\mathscr{L}^{\text{eff}}$ as long as
+there are interaction terms linear in $\Pi$. For scalar $\Pi$, the UV Lagrangian
+contains the terms
+\begin{equation}
+  \label{eq:scalar-lag}
+ \mathscr{L}_{\text{UV}}[\Pi, \pi] \supset \Pi^{\dagger} (- D^{2} - m_{\Pi}^{2}) \Pi + \left(\Pi \frac{\partial \mathscr{L}^{lh}}{\partial \Pi} + \text{h.c.} \right) \ ,
+\end{equation}
+where $\partial \mathscr{L}^{lh} / \partial \Pi$ is a function only of
+light fields, and we are neglecting interactions of the form
+$\Pi^{\dagger} \Pi f(\pi)$ for the sake of conciseness. The EOM are
+\begin{equation}
+  \label{eq:scalar-eom}
+ (- D^{2} - m_{\Pi}^{2}) \Pi = - \frac{\partial \mathscr{L}^{lh}}{\partial \Pi^{\dagger}} + \mathcal{O}(\Pi^{2}) \ ,
+\end{equation}
+which can be solved for $\Pi^{\text{cl}}$, the classical field configuration, by
+inverting the differential operator on the LHS of Eq.~\eqref{eq:scalar-eom} and
+expanding in $D^{2} / m_{\Pi}^{2}$:
+\begin{equation}
+  \label{eq:scalar-repl}
+  \Pi^{\text{cl}} = - \frac{1}{m_{\Pi}^{2}} \left( 1 - \frac{D^{2}}{m_{\Pi}^{2}}  + \cdots \right) \frac{\partial \mathscr{L}^{lh}}{\partial \Pi^{\dagger}} \ .
+\end{equation}
+This solution can be substituted back into Eq.~\eqref{eq:scalar-lag} to give
+interactions between light fields in the tree-level effective Lagrangian:
+\begin{equation}
+  \label{eq:classical-efflag-scalar}
+  \mathscr{L}_{\text{eff}}[\pi] \supset - \frac{\partial \mathscr{L}^{lh}}{\partial \Pi} \frac{1}{m_{\Pi}^{2}} \left( 1 - \frac{D^{2}}{m_{\Pi}^{2}} + \cdots \right) \frac{\partial \mathscr{L}^{lh}}{\partial \Pi^{\dagger}} \ .
+\end{equation}
+Many concrete examples of this procedure can be found in the literature, see
+\textit{e.g.} Ref.~\cite{Henning:2014wua}. The expansion in $D^{2}/m_{\Pi}^{2}$
+corresponds to the expansion in $p^{2} / \Lambda^{2}$ in the first case of
+Eq.~\eqref{eq:prop}, showing the expansion of the scalar propagator.
+
+Next we sketch out the procedure for a Dirac fermion
+$\Pi + \bar{\Pi}^{\dagger}$, where $\Pi$ and $\bar{\Pi}$ are separate
+two-component spin-$\tfrac{1}{2}$ fields transforming oppositely under
+$G_{\text{SM}}$. In this case, the UV theory is described by a Lagrangian like
+\begin{equation}
+  \label{eq:fermion-lag}
+  \mathscr{L}_{\text{UV}}[\Pi, \pi] \supset i \Pi^{\dagger} \bar{\sigma}^{\mu} D_{\mu} \Pi + i \bar{\Pi}^{\dagger} \bar{\sigma}^{\mu} D_{\mu} \bar{\Pi} + \left( \Pi \frac{\partial \mathscr{L}^{lh}}{\partial \Pi} + \bar{\Pi} \frac{\partial \mathscr{L}^{lh}}{\partial \bar{\Pi}} - m_{\Pi} \bar{\Pi} \Pi  + \text{h.c.} \right)
+\end{equation}
+Varying the action with respect to the heavy fields gives two coupled EOM:
+\begin{align}
+ i \bar{\sigma}^{\mu} D_{\mu} \Pi - m \bar{\Pi}^{\dagger} + \frac{\partial \mathscr{L}^{lh}}{\partial \Pi^{\dagger}} &= 0 \ , \label{eq:pi-fermion-eom} \\
+ i \bar{\sigma}^{\mu} D_{\mu} \bar{\Pi} - m \Pi^{\dagger} + \frac{\partial \mathscr{L}^{lh}}{\partial \bar{\Pi}^{\dagger}} &= 0 \ . \label{eq:pibar-fermion-eom}
+\end{align}
+Substituting Eq.~\eqref{eq:pi-fermion-eom} into Eq.~\eqref{eq:pibar-fermion-eom}
+gives a second-order partial differential equation in $\Pi$, analogous to
+Eq.~\eqref{eq:scalar-eom}. Inverting the differential operator in a similar way
+gives
+\begin{equation}
+  \label{eq:fermion-repl}
+  \Pi^{\text{cl}}_{\beta} = \frac{1}{m_{\Pi}^{2}} \left( \epsilon_{\alpha \beta} + \frac{ \tfrac{1}{2} X_{\alpha \beta} - D^{2} \epsilon_{\alpha \beta}}{m_{\Pi}^{2}} + \cdots \right) \left( i D^{\alpha \dot{\alpha}} \frac{\partial \mathscr{L}^{lh}}{\partial \Pi^{\dagger}_{\dot{\beta}}} \epsilon_{\dot{\alpha} \dot{\beta}} + m_{\Pi} \frac{\partial \mathscr{L}^{lh}}{\partial \bar{\Pi}_{\alpha}} \right) \ ,
+\end{equation}
+where the field-strength tensor comes about from a structure like
+\begin{align}
+  [\sigma^{\mu} \bar{\sigma}^{\nu}]_{\alpha}^{\ \beta} D_{\mu} D_{\nu} &= \eta^{\mu\nu} D_{\mu} D_{\nu} \delta_{\alpha}^{\ \beta} - 2i [\sigma^{\mu\nu}]_{\alpha}^{\ \beta} D_{\mu} D_{\nu} \\
+  &= D^{2} \delta_{\alpha}^{\ \beta} - \tfrac{1}{2} X_{\alpha}^{\ \beta} \ .
+\end{align}
+Here, and later in this section, the replacement $\bar{\Pi} \to \Pi$ should be
+understood for Majorana $\Pi$. Each contribution corresponds to a particular
+kind of propagator in the perturbative picture. The first term in the last
+parenthesis of Eq.~\eqref{eq:fermion-repl} results from the fermion propagator
+proportional to momentum: the arrow-preserving fermion propagator shown as the
+last case of Eq.~\eqref{eq:prop}. The second term in the same parentheses stems
+from the fermion propagator proportional to the mass, corresponding to the
+arrow-violating propagator shown in the middle case of Eq.~\eqref{eq:prop}.
+Replacing $\Pi$ in Eq.~\eqref{eq:fermion-lag} gives the tree-level effective
+Lagrangian with the heavy fermion integrated out:
+\begin{equation}
+  \begin{aligned}
+  \label{eq:classical-efflag-fermion}
+  \mathscr{L}_{\text{eff}}[\pi] &\supset \frac{\partial \mathscr{L}^{lh}}{\partial \Pi_{\beta}} \frac{1}{m_{\Pi}^{2}} \left(\epsilon_{\alpha \beta} + \frac{ \tfrac{1}{2} X_{\alpha \beta} - D^{2} \epsilon_{\alpha \beta}}{m_{\Pi}^{2}} +  \cdots \right) i D^{\alpha \dot{\alpha}} \frac{\partial \mathscr{L}^{lh}}{\partial \Pi^{\dagger}_{\dot{\beta}}} \epsilon_{\dot{\alpha} \dot{\beta}}\\
+  &\quad + \frac{\partial \mathscr{L}^{lh}}{\partial \Pi_{\beta}} \frac{1}{m_{\Pi}^{2}} \left(\epsilon_{\alpha \beta} + \frac{ \tfrac{1}{2} X_{\alpha \beta} - D^{2} \epsilon_{\alpha \beta}}{m_{\Pi}^{2}} + \cdots \right) \frac{\partial \mathscr{L}^{lh}}{\partial \bar{\Pi}_{\alpha}} \ .
+  \end{aligned}
+\end{equation}
+
+As shown in Eqs.~\eqref{eq:classical-efflag-scalar} and
+\eqref{eq:classical-efflag-fermion}, expanding in powers of derivatives on heavy
+masses leads to a tower of local operators of increasing mass dimension $d_{i}$
+organised as a power series in the inverse heavy scale:
+\begin{equation}
+  \mathscr{L}_{\text{eff}}[\pi] = \mathscr{L}^{l}[\pi] + \sum_{i} \frac{C_{i}}{\Lambda^{d_{i}-4}} \mathcal{O}_{i}[\pi].
+\end{equation}
+The $C_{i}$ are dimensionless coefficients which are in general calculable if
+one knows the high-energy theory.
+
+\subsection{Effective field theories of the SM}
+\label{sec:EFT-of-SM}
+
+Below we discuss EFTs constructed from SM fields and invariant under SM
+symmetries. The main theory of study is the SMEFT: the gauge- and
+Lorentz-invariant EFT built from the fields listed in Table~\ref{tab:sm-fields}.
+We also mention the WET, also known as the LEFT (Low-energy Effective Field
+Theory), for which invariance under
+$\mathrm{SU}(2)_{+} \otimes \mathrm{SU}(2)_{-} \otimes \mathrm{SU}(3)_{c} \otimes \mathrm{U}(1)_{\text{EM}}$
+is required. In addition to the difficulties associated with constructing the
+invariants in an EFT, there are additional intricacies associated with
+redundancies among operators. These are also discussed below in the context of
+the SMEFT, although the principles discussed apply more generally. We tie off
+this section with a discussion of the $\Delta L = 2$ operators in the SMEFT.
+
+\subsubsection{The SMEFT at dimension six}
+
+Given the broad experimental success of the SM, it is perhaps a sensible
+assumption that there should be a sizeable mass gap between the electroweak
+scale and the mass-scale characterising any new physics. In this context, the
+SMEFT can be a powerful tool for constraining what this new physics might look
+like in a model-independent way. Indeed, the SMEFT operators at dimension six
+are already coming to play an increasingly important role in particle
+phenomenology, and they have become the \textit{de facto} framework for
+interpreting low-energy constraints on theoretical models, and experimental
+deviations from SM predictions. For an extensive review, we point the reader to
+Ref.~\cite{Brivio:2017vri}.
+
+It has not been easy to write down a complete basis of operators in the
+SMEFT~\cite{}, although this is now a mostly solved problem~\cite{}. The
+lowest-dimensional operator appearing in the EFT is also the only dimension-five
+operator:
+\begin{equation}
+  \mathscr{L}^{(5)} = [C_{5}]_{\{rs\}} (L^{i}_{r} L^{j}_{s}) H^{k} H^{l} \epsilon_{ik} \epsilon_{jl} + \text{h.c.} \ ,
+\end{equation}
+already discussed briefly in Sec.~\ref{sec:models-of-mv}. The matrix of operator
+coefficients is necessarily symmetric by Fermi--Dirac statistics. The operator
+violates lepton-number by two units, and usually gives the dominant contribution
+to the neutrino mass in Majorana models. Ref.~\cite{Kobach:2016ami} shows that
+operators in the SMEFT of dimension $d$ satisfy
+\begin{equation}
+  \frac{1}{2} (\Delta B - \Delta L) = d \mod 2 \ ,
+\end{equation}
+and thus odd mass-dimension operators must violate $B - L$ by two units, while
+operators of even mass-dimension cannot violate $B - L$. So, aside from
+lepton-number-violating effects, the leading-order deviations from the SM appear
+at dimension six, where there are many more operators.
+
+The dimension-six operators come in eight general classes: $X^{3}$, $H^{6}$,
+$H^{4}D^{2}$, $X^{2}H^{2}$, $\psi^{2}H^{3}$, $\psi^{2}XH$, $\psi^{2}H^{2}D$ and
+$\psi^{4}$. (Here, $X$ represents a general field-strength tensor, $D$ is a
+covariant derivative and $\psi$ is a fermion field.) The most common basis found
+in the literature is the Warsaw basis, which tends to prefer not mixing colour
+indices in fermion currents.
+
+We do not give a complete listing of these operators here, but instead define
+them as necessary in the chapters they appear. For the SMEFT we attempt to
+adhere to the conventions of Ref.~\cite{} relevant for the Warsaw basis.
+
+The operators in the notation that we use them throughout the rest of this work
+are listed in Table~\ref{tab:smeft-d6-psi4}. Each operator is given in
+four-component notation along with the number of operators for $n_{f} = 3$
+SM-fermion flavours and the operator class.
+
+
+\subsubsection{Operator redundancies and the Hilbert series}
+\lipsum[2]
+
+\subsubsection{The WET}
+\lipsum[2]
+
+\subsubsection{Lepton-number-violating SMEFT}
 \lipsum[2]
 
 \section{The flavour anomalies and their explanation}
-
 \lipsum[2]
+
+\subsection{Neutral-current anomalies}
+\lipsum[2]
+
+\subsection{Charged-current anomalies}
+\lipsum[2]
+
+\subsection{Anomalous magnetic moment of the muon}
+\lipsum[2]
+
+\subsection{Scalar and Vector leptoquarks}
 
 \myglossaryentry{lipsum}{lipsum}{Lorem Ipsum, a special type of fudge}{}
 \myglossaryentry{dolor}{dolor}{No idea why}{parent={lipsum}}

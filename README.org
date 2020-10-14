@@ -2,7 +2,8 @@
 - [X] The SM
 - [X] Neutrino oscillations, description, experimental situation
 - [X] Other probes of neutrino masses
-- [ ] Tree-level and Radiative neutrino mass models
+- [X] Tree-level and Radiative neutrino mass models
+- [ ] Fix comments about solar-neutrino oscillations
 - [ ] Effective operators and the SMEFT
 - [ ] Dimension 6 and LNV operators
 - [ ] Redundancies, bases, integration
@@ -13,31 +14,43 @@
 
 * Chapter 2: Model building from effective operators
 - [ ] Sort out introduction and appendices
+- [ ] Sort out references
+- [ ] Paste in
 
 * Chapter 3: Radiative neutrino mass
 - [ ] Paste paper in
 
 * Chapter 4: Reconsidering the BN scenario
 - [ ] Sort out introduction
-- [ ] Remake plots with updated data
+- [ ] Replace fit with recent one from paper with Innes
+- [ ] Make new plots with updated measurements
+  - RKStar_nunu < 2.7 (!) (1702.03224)
+  - UTfit updated CBs and phi_Bs (http://www.utfit.org/UTfit/ResultsSummer2018NP)
+  - D_s to mu nu: 5.49 pm 0.16 (new measurement in 2019, take from PDG)
+  - Measurement of B to tau nu: 1712.04123
 
 * Chapter 5: Models of neutrino mass and the flavour anomalies
 - [ ] General introduction
 - [ ] Tail end of BN work
 - [ ] Paper with Innes, rewrite introduction and motivation to model
-- [ ] Pure vector operator solution viable now, do something with this?
 
 * Chapter 6: Quirk project
 - [X] Get paper in
 - [X] Fix all cases of Ref, =\textsc= and italic Latin phrases
+- [ ] Move out of appendix
+- [ ] Redo scans with new nufit results?
 - [ ] Introduce as a parenthetical piece of work
 
 * References
 - [ ] Citations for ATLAS and CMS conf notes look better on CERN document server rather than inspire. Replace these citations and fix up innards with =siunitx= and other math symbols
 
 * Questions for Ray
-- [ ] Is the black box theorem a two way implication?
-- [ ] Can the QCD Axion be a Majoron?
+- [X] Citations: Do I need to cite work that has come out more recently than when we published the paper?
+  - Cite all work before thesis
+- [X] Four component notation in LQ work
+  - As convenient we will use four or two component
+- [X] Pure vector operator solution viable now for S1 + S3 model
+  - Add a footnote saying "At the time the work was published"
 
 * Other
 - Quote? https://classical-inquiries.chs.harvard.edu/homo-ludens-in-the-world-of-ancient-greek-verbal-art/
