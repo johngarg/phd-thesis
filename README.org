@@ -4,11 +4,25 @@
 - [X] Other probes of neutrino masses
 - [X] Tree-level and Radiative neutrino mass models
 - [ ] Fix comments about solar-neutrino oscillations
-- [ ] Effective operators and the SMEFT
-- [ ] Dimension 6 and LNV operators
-- [ ] Redundancies, bases, integration
-- [ ] Operator mixing and running of couplings?
+- [ ] Check normalisation of $T^A$ and $\lambda^A$ in table 1.2
+- [ ] Add "Correspondence to four-component notation" in mathematical notation appendix
+- [X] Effective operators and the SMEFT
+- [ ] Define $\bar{D}$ in SMEFT tables
+- [ ] Make sure that conventions in table actually comply with WCxF
+- [ ] Add =math-notation= as appendix
+- [X] Dimension 6 operators
+- [X] Redundancies, bases, integration
+- [X] Write Hilbert series section
+- [X] (Not including) Operator mixing and running of couplings?
 - [ ] Hints of LFU violation, description, theory, experimental situation
+- [ ] Flavour anomalies
+  + [ ] Neutral current anomalies
+    - [ ] Table of most discrepant measurements
+    - [ ] Discussion of uncertainties
+    - [ ] Discuss $R_K$ and $R_K^*$ in more detail
+    - [ ] Fits
+  + [ ] Charged current anomalies
+  + [ ] g-2
 - [ ] Leptoquarks, quantum numbers, properties?
 - [ ] Mathematical notation? Should this be appendix?
 
@@ -45,6 +59,7 @@
 - [ ] Citations for ATLAS and CMS conf notes look better on CERN document server rather than inspire. Replace these citations and fix up innards with =siunitx= and other math symbols
 
 * Questions for Ray
+- [ ] What role do the sources play in the path integral formulation?
 - [X] Citations: Do I need to cite work that has come out more recently than when we published the paper?
   - Cite all work before thesis
 - [X] Four component notation in LQ work
