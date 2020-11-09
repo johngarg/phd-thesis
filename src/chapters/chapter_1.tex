@@ -1539,7 +1539,7 @@ The contour integrals can be done by expanding the integrand in $H$ and
 $\tilde{H}$, and integrating up to the required order~\cite{Pouliot:1998yv}. For
 this example, the first few terms in the HS are
 \begin{equation}
-  \mathfrak{H}(H, \tilde{H}) = \ .
+  \mathfrak{H}(H, \tilde{H}) = \text{\color{red}Fill this in}\ .
 \end{equation}
 
 The HS approach has an attractive module structure. For example, if one wanted
@@ -1593,10 +1593,10 @@ there has been much recent progress using on-shell methods,
 
 \section{The flavour anomalies and their explanation}
 
-In recent years, measurements involving leptons have established a number of
-significant and unresolved deviations from SM predictions. Many of these
-measurements involve semileptonic $B$-meson decays, and these can be placed into
-two broad classes:
+In recent years, measurements of a number of processes involving leptons have
+established a large set of significant and unresolved deviations from SM
+prediction. Many of these measurements involve semileptonic $B$-meson decays,
+and these can be placed into two broad classes:
 \begin{description}
   \item[Neutral-current] These involve flavour-changing neutral-current (FCNC) $b \to s$ transitions and include branching-ratio measurements in final states with muons, anomalous angular observables in $B \to K^{*} \mu\mu$, and violations of $\mu$--$e$ LFU in $B \to K^{(*)} \ell \ell$ processes. This class corresponds to hundreds of discrepant measurements in total, and single-operator fits suggest a preference for new-physics at roughly $6\sigma$, \textit{e.g.}~\cite{Aebischer:2019mlg}.
   \item[Charged-current] These involve $b \to c \ell \nu$ transitions and shown apparent deviations from $\tau$--$\mu$ and $\tau$--$e$ LFU. The main observables measured in this case are LFU ratios in $B \to D^{(*)} \ell \nu$, for which the combined deviation from the SM expectation is just over $3\sigma$~\cite{Amhis:2019ckw}.
@@ -1607,7 +1607,7 @@ coherent and theoretically well-motivated patterns when interpreted in terms of
 deviations in four-fermion operator coefficients.
 
 In addition to these classes, the most precise measurement of the anomalous
-magnetic moment of the muon [$(g-2)_{\mu}$]~\cite{Bennett:2006fi}, is in tension
+magnetic moment of the muon $(g-2)_{\mu}$~\cite{Bennett:2006fi}, is in tension
 with the SM expectation~\cite{Blum:2013xva} at roughly $3.5\sigma$. More
 recently, a smaller discrepancy has also been measured in
 $(g-2)_{e}$~\cite{Parker_2018}. Taken together, these anomalies paint a picture
@@ -1630,32 +1630,54 @@ $B_{s} \to \phi \mu\mu$~\cite{Aaij:2015esa}, the leptonic decay
 $B_{s} \to \mu\mu$~\cite{CMS-PAS-BPH-16-004, Aaij:2012nna, Aaij:2017vad,
   Aaboud:2018mst}, and the hyperon channels
 $\Lambda_{b} \to \Lambda \mu\mu$~\cite{Aaij:2015xza}. In all cases, the measured
-values fall short of the respective SM expectations by roughly $20\%$. The
-differential decay rate for $B^{+} \to K^{+} \ell\ell$ is~\cite{}
+values tend to fall short of the respective SM expectations.
+
+The differential decay rate for $B^{+} \to K^{+} \ell\ell$ is~\cite{}
 \begin{equation}
+  \label{eq:dGdq2-bkmumu}
   \begin{aligned}
     \frac{d\Gamma}{dq^{2}} &= \frac{G_{F}^{2} \alpha^{2} |V_{tb}V_{ts}^{*}|^{2}}{128\pi^{5}} |k| \beta \Bigg[ \frac{2}{3}|k|^{2}\beta^{2}|C_{10} f_{+}(q^{2})|^{2} + \frac{4m_{\ell}^{2}(m_{B}^{2} - m_{K}^{2})^{2}}{q^{2}m_{B}^{2}}|C_{10}f_{0}(q^{2})|^{2}\\
     &\quad + |k^{2}| \left(1 - \frac{1}{3}\beta^{2}\right) \left|C_{9}f_{+}(q^{2}) + 2C_{7}\frac{m_{b} + m_{s}}{m_{B} + m_{K}} f_{T}(q^{2})\right|^{2} \Bigg] \ ,
   \end{aligned}
 \end{equation}
-where $k$ is the Kaon momentum, $\beta = (1 - 4 m_{\ell}^{2} q^{-2})^{1/2}$, and
-$f_{0, +, T}$ are the $B\to K$ scalar, vecor and tensor form factors~\cite{}.
-The expression is roughly representative for the structure of the whole class of
+where $k$ is the kaon momentum, $\beta = (1 - 4 m_{\ell}^{2} q^{-2})^{1/2}$, and
+$f_{0, +, T}$ are the $B\to K$ scalar, vector and tensor form factors. The
+expression is roughly representative of the structure of the whole class of
 relevant semileptonic decays. The strongest dependence is on the operator
 coefficients $C_{9}$ and $C_{10}$ in the WET, defined as
+\begin{align}
+  \mathcal{O}_{9} &= (\bar{s}\gamma^\mu P_L b) (\bar{\mu} \gamma_\mu \mu) \ , \\
+  \mathcal{O}_{10} &= (\bar{s}\gamma^\mu P_L b) (\bar{\mu} \gamma_\mu \gamma_5 \mu) \ ,
+\end{align}
+with the coefficients usually normalised such that
 \begin{equation}
-  \mathscr{L} = \sum_{i} C_{i} \mathcal{O}_{i} \ .
+  \mathscr{L} = \frac{4 G_{F}}{\sqrt{2}}V_{tb}V_{ts}^{*}\frac{e^{2}}{16\pi^{2}} \sum_{i} C_{i} \mathcal{O}_{i} \ .
 \end{equation}
+Experimentally, semileptonic process like $B \to K \mu\mu$ are difficult to
+separate from the corresponding background processes like
+$B \to K \psi (\to \mu^{+}\mu^{-})$, where $\psi$ represents any of the vector
+charmonium resonances. For this reason, kinematic regions close to the narrow
+charmonium resonances are excluded from experimental analyses. The most
+significant single deviation is in the semileptonic decay
+$B_{s} \to \phi \mu\mu$, for which the data depart from the SM prediction by
+more than $3\sigma$ in the $q^{2} \in [1, 5]$ bin. A problematic feature of this
+and many of these channels is that the SM prediction is plagued by hadronic
+uncertainties, which can be difficult to calculate. We show the differential
+branching ratio for $B_{s} \to \phi \mu\mu$ measured by LHC$b$ in Fig.~\ref{}
+along with the SM predictions made using different methods: lightcone sum rules
+(LCSR)~\cite{}, blah~\cite{} and blah~\cite{}. Both the large uncertainties on
+the theory side and the apparent suppression of the measured values are clear.
+The discrepancy with the SM is largest in the central bin.
 
-The most significant single deviation is in the semileptonic decay
-$B_{s} \to \phi \mu\mu$, for which . A problematic feature of this and many of
-these channels is that the SM prediction is plagued by hadronic uncertainties,
-which can be difficult to calculate. We show the differential branching ratio
-for $B_{s} \to \phi \mu\mu$ measured by LHC$b$ in Fig.~\ref{} along with the SM
-predictions made using different methods: lightcone sum rules (LCSR)~\cite{},
-blah~\cite{} and blah~\cite{}. Both the large uncertainties on the theory side
-and the apparent suppression of the measured values are clear. The discrepancy
-with the SM is largest in the $q^{2} \in [1, 5]$ bin.
+
+The form factors featuring in Eq.~\eqref{eq:dGdq2-bkmumu} are a large source of
+theoretical uncertainty.
+
+One expects these backgrounds to be suppressed below the
+$\bar{c}c$ kinematic limit, although the same cannot be said of loops of charm
+quarks, the extent of whose effects on the SM prediction is the subject of
+ongoing debate~\cite{}.
+
 
 The decay $B_{s} \to \mu \mu$ is cleaner theoretically since the final state is
 leptonic and the only non-perturbative physics needed is the $B_{s}$ decay
