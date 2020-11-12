@@ -687,9 +687,9 @@ been used to write down all of the minimal, tree-level UV-completions of
 $\Delta L = 2$ operators at dimension seven~\cite{Cai:2014kra} corresponding to
 tree-level and radiative neutrino-mass models. The tree-level completions of the
 Weinberg-like operators have been written down up to dimension
-eleven~\cite{Cai:2014kra, Bonnet:2009ej, Anamiati:2018cuq}. The operators
-$\Delta L = 2$ operators in the SM EFT are discussed in more detail in
-Sec.~\ref{sec:EFT-of-SM}.
+eleven~\cite{Cai:2014kra, Bonnet:2009ej, Anamiati:2018cuq}. {\color{red}The
+  $\Delta L = 2$ operators in the SM EFT are discussed in more detail in
+  Sec.~\ref{sec:EFT-of-SM}.}
 
 We note that an economic classification scheme, separate from an EFT framework,
 was presented in Ref.~\cite{Klein:2019iws} based on the number of exotic degrees
@@ -1110,10 +1110,10 @@ Ref.~\cite{Aebischer:2017ugx}.
       \bottomrule
     \end{tabular}
     \caption{The table shows the four-fermion operators in the dimension-six
-      SMEFT in the Warsaw basis~\cite{Buchmuller:1985jz, Grzadkowski:2010es}. The operators are listed in
-      four-component spinor notation, and a full correspondence to the
-      two-component notation we use elsewhere can be found in
-      Appendix~\ref{chapter:math-notation}. We remind the reader that
+      SMEFT in the Warsaw basis~\cite{Buchmuller:1985jz, Grzadkowski:2010es}.
+      The operators are listed in four-component spinor notation, and a full
+      correspondence to the two-component notation we use elsewhere can be found
+      in Appendix~\ref{chapter:math-notation}. We remind the reader that
       combinations like $(Q Q)$ stand for $(\bar{Q}^{C} Q)$, where $Q^{C}$ is
       the charge-conjugated spinor. Flavor indices are omitted, and should be
       understood to label the fermions in the order $\{r, s, t, u\}$ as they
@@ -1307,8 +1307,8 @@ assumptions underlying SMEFT. The symmetries of the theory are only those of QCD
 and electromagnetism, and the fermions are the usual quarks and leptons with the
 top quark excluded from the theory. At dimension six there are 3,631
 $\Delta B = \Delta L = 0$ operators~\cite{Jenkins:2017jig}, and we do not list
-them all here. Rather, we introduce the relevant operators within the discussion
-of each specific phenomenological process we study in this work.
+them all here. Rather, we introduce the pertinent operators within the
+discussion of each specific phenomenological process we study in this work.
 
 \subsection{Operator redundancy and the Hilbert series}
 
@@ -1531,7 +1531,9 @@ for $x,y \in \mathbb{C}$. This gives~\cite{Henning:2017fpj}
   \end{aligned}
 \end{equation}
 for the Hilbert series, where we have accounted for $H$ and it's conjugate
-$\tilde{H}$ separately, and included the possibility of $n_{f}$ flavours. The last term in parentheses is the relevant part of $\Delta \mathfrak{H}$ in this case, and $\chi_{(0,0)}$ is the scalar character function:
+$\tilde{H}$ separately, and included the possibility of $n_{f}$ flavours. The
+last term in parentheses is the relevant part of $\Delta \mathfrak{H}$ in this
+case, and $\chi_{(0,0)}$ is the scalar character function:
 \begin{equation}
   \chi_{(0,0)} = D P(D, x_{+}, x_{-}) (1 - D^{2}) \ .
 \end{equation}
@@ -1632,7 +1634,12 @@ $B_{s} \to \mu\mu$~\cite{CMS-PAS-BPH-16-004, Aaij:2012nna, Aaij:2017vad,
 $\Lambda_{b} \to \Lambda \mu\mu$~\cite{Aaij:2015xza}. In all cases, the measured
 values tend to fall short of the respective SM expectations.
 
-The differential decay rate for $B^{+} \to K^{+} \ell\ell$ is~\cite{}
+Semileptonic $B$ decays like $B \to K^{(*)} \mu\mu$ had already been recognised
+as good probes of new physics even before the start of the LHC,
+\textit{e.g.}~\cite{Kruger:1999xa}. This is because, being FCNC processes, they
+are additionally suppressed in the SM by off-diagonal CKM matrix elements, weak
+couplings, and a loop factor. The differential decay rate for
+$B^{+} \to K^{+} \ell\ell$ is~\cite{Egede:2020ubh}
 \begin{equation}
   \label{eq:dGdq2-bkmumu}
   \begin{aligned}
@@ -1642,10 +1649,11 @@ The differential decay rate for $B^{+} \to K^{+} \ell\ell$ is~\cite{}
 \end{equation}
 where $k$ is the kaon momentum, $\beta = (1 - 4 m_{\ell}^{2} q^{-2})^{1/2}$, and
 $f_{0, +, T}$ are the $B\to K$ scalar, vector and tensor form factors. The
-expression is roughly representative of the structure of the whole class of
-relevant semileptonic decays. The strongest dependence is on the operator
-coefficients $C_{9}$ and $C_{10}$ in the WET, defined as
+expression is representative of the structure of the whole class of relevant
+semileptonic decays. The strongest dependence is on the operator coefficients
+$C_{9}$ and $C_{10}$ in the WET, defined as
 \begin{align}
+  \label{eq:c9-c10}
   \mathcal{O}_{9} &= (\bar{s}\gamma^\mu P_L b) (\bar{\mu} \gamma_\mu \mu) \ , \\
   \mathcal{O}_{10} &= (\bar{s}\gamma^\mu P_L b) (\bar{\mu} \gamma_\mu \gamma_5 \mu) \ ,
 \end{align}
@@ -1655,156 +1663,322 @@ with the coefficients usually normalised such that
 \end{equation}
 Experimentally, semileptonic process like $B \to K \mu\mu$ are difficult to
 separate from the corresponding background processes like
-$B \to K \psi (\to \mu^{+}\mu^{-})$, where $\psi$ represents any of the vector
+$B \to K \psi (\to \mu\mu)$, where $\psi$ represents any of the vector
 charmonium resonances. For this reason, kinematic regions close to the narrow
 charmonium resonances are excluded from experimental analyses. The most
 significant single deviation is in the semileptonic decay
 $B_{s} \to \phi \mu\mu$, for which the data depart from the SM prediction by
-more than $3\sigma$ in the $q^{2} \in [1, 5]$ bin. A problematic feature of this
-and many of these channels is that the SM prediction is plagued by hadronic
-uncertainties, which can be difficult to calculate. We show the differential
-branching ratio for $B_{s} \to \phi \mu\mu$ measured by LHC$b$ in Fig.~\ref{}
-along with the SM predictions made using different methods: lightcone sum rules
-(LCSR)~\cite{}, blah~\cite{} and blah~\cite{}. Both the large uncertainties on
-the theory side and the apparent suppression of the measured values are clear.
-The discrepancy with the SM is largest in the central bin.
+more than $3\sigma$ in the $q^{2} \in [1, 5]~\GeV^{2}$ bin~\cite{Aaij:2015esa}. A
+problematic feature of this and many of these channels is that the SM prediction
+is plagued by hadronic uncertainties, which can be difficult to calculate. We
+show the differential branching ratio for $B_{s} \to \phi \mu\mu$ measured by
+LHC$b$ in Fig.~\ref{fig:phimumu_branching}, taken from
+Ref.~\cite{Blake:2017wjz}, along with the SM predictions using different methods
+to deal with the form factors~\cite{Straub:2015ica, Altmannshofer:2014rta,
+  Horgan:2013pva}. Both the large uncertainties on the theory side and the
+apparent suppression of the measured values are clear. The discrepancy with the
+SM is largest in the aforementioned $q^{2}$ bin.
 
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figs_phimumu_branching}
+  \caption{The figure shows the measured and predicted values for the
+    differential branching ratio for $B_{s} \to \phi \mu\mu$ by bins of $q^{2}$.
+    The data points are the LHC$b$ measurements, while the coloured rectangles
+    are the SM predictions with form factors calculated using light-cone sum
+    rules~\cite{Straub:2015ica, Altmannshofer:2014rta} and lattice
+    QCD~\cite{Horgan:2013pva}. The greyed out regions correspond to charmonium
+    resonances, exluded from the analysis as discussed in the main text. The
+    LHC$b$ data points are generally lower than the SM expectation, especially
+    in the $q^{2} \in [1, 5]~\GeV^{2}$ bin where the discrepancy is larger than
+    $3\sigma$. The plot is taken from Ref.~\cite{Blake:2017wjz}.}
+  \label{fig:phimumu_branching}
+\end{figure}
 
-The form factors featuring in Eq.~\eqref{eq:dGdq2-bkmumu} are a large source of
-theoretical uncertainty.
+The decay $B_{s} \to \mu \mu$ is cleaner than the semileptonic decays on the
+theory side: the final state is leptonic and the only non-perturbative physics
+needed is the $B_{s}$ decay constant, which can be calculated to high precision
+on the lattice~\cite{Bobeth:2013uxa}. The measurements performed by
+ATLAS~\cite{Aaboud:2018mst}, LHC$b$~\cite{Aaij:2012nna, Aaij:2017vad} and
+CMS~\cite{CMS-PAS-BPH-16-004} are shown in Fig.~\ref{fig:Bsmumu_cms}, along with
+correlated limits on $B^{0}\to \mu\mu$. The combination of the measurements
+shown is taken from Ref.~\cite{Aebischer:2019mlg}, and suggests a compatibility
+with the SM at close to $2\sigma$. Currently, measurements of $B_{s} \to \mu\mu$
+are statistically limited; the branching ratio in the SM is very small because
+it is chirality suppressed, but this also makes it a promising mode for
+measuring new-physics effects.
 
-One expects these backgrounds to be suppressed below the
-$\bar{c}c$ kinematic limit, although the same cannot be said of loops of charm
-quarks, the extent of whose effects on the SM prediction is the subject of
-ongoing debate~\cite{}.
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Bsmumu}
+  \caption{The figure shows the two-dimensional likelihood contours in
+    $\mathrm{Br}(B^{0} \to \mu\mu)$ and $\mathrm{Br}(B_{s} \to \mu\mu)$. The
+    thin contours are individual measurements, while the thick contours are the
+    combination. A Gaussian approximation to the combined fit is shown with
+    thick dashed contours. For more details see Ref.~\cite{Aebischer:2019mlg},
+    from where the figure is taken. The SM prediction (shown with a star) is
+    compatible with the combined fit at $2\sigma$.}
+  \label{fig:Bsmumu_cms}
+\end{figure}
 
-
-The decay $B_{s} \to \mu \mu$ is cleaner theoretically since the final state is
-leptonic and the only non-perturbative physics needed is the $B_{s}$ decay
-constant, which can be calculated to high precision on the lattice~\cite{}. The
-measurements performed by ATLAS~\cite{Aaboud:2018mst},
-LHC$b$~\cite{Aaij:2012nna, Aaij:2017vad} and CMS~\cite{CMS-PAS-BPH-16-004} are shown in
-Fig.~\ref{}, along with correlated limits on $B^{0}\to \mu\mu$. The combination
-of the measurements shown is taken from Ref.~\cite{}, and suggests a
-compatibility with the SM at close to $2\sigma$.
-
-
-Currently, measurements of $B_{s} \to \mu\mu$ are statistically limited; the
-branching ratio in the SM is very small because it is chirality suppressed, but
-this also makes it a promising mode for measuring new-physics effects.
-
-Semileptonic $B$ decays like $B \to K^{*} \mu\mu$ had already been recognised as
-good probes of new physics even before the start of the LHC,
-\textit{e.g.}~\cite{Kruger:1999xa}. This is because, being FCNC processes, they
-are additionally suppressed in the SM by off-diagonal CKM matrix elements, weak
-couplings, and a loop factor.
-
-As early as 2013, LHC$b$ measured a sizeable anomaly in the optimised varuable
-$P_{5}^{\prime}$~\cite{}, whose value differed from the
-
-
-
-
-An important example is the LHC\textit{b} collaboration's measured suppression
-in the ratios
+The large theoretical uncertainties featuring in the expressions for the decay
+rates $\Gamma[B\to K^{(*)} \mu\mu]$ can be tamed in a more direct way by
+constructing a ratio with the electronic mode $B\to K^{(*)} ee$, in which many
+sources of uncertainty cancel in the regime where new-physics effects are
+small~\cite{Hiller:2003js, Capdevila:2017bsm, Capdevila:2016ivx}. Interestingly,
+the LHC\textit{b} collaboration has measured a suppression in the ratios
 \begin{equation}
   \label{eq:RK}
-  R_{K^{(*)}} = \frac{\Gamma(\bar B\to\bar K^{(*)}\mu^+\mu^-)}{\Gamma(\bar B\to\bar K^{(*)} e^+ e^-)},
+  R_{K^{(*)}} = \frac{\Gamma[B\to K^{(*)}\mu\mu]}{\Gamma[B\to K^{(*)} ee]}
 \end{equation}
-hinting towards a violation of lepton flavor universality (LFU). Although the
-prediction of each individual decay rate is plagued by hadronic uncertainties,
-these cancel out in the ratios $R_K$ and $R_{K^{*}}$ in the regime where
-new-physics effects are small~\cite{Hiller:2003js, Capdevila:2017bsm,
-  Capdevila:2016ivx}. In the SM the prediction of the observables outside of the
-low-$q^2$ region is determined by physics which is wholly independent of the
-flavor of the lepton pair in the final state, making $R_K$ and $R_{K^*}$ finely
-sensitive to violations of LFU. LHC\textit{b} finds~\cite{Aaij:2014ora}
-\begin{equation}\label{eq:RK2}
-  R_K = 0.745\,_{-0.074}^{+0.090}\pm 0.036,
+in the $q^{2} \in [1, 6]~\GeV^{2}$ bin. In the SM the prediction of the
+observables outside of the low-$q^2$ region is determined by physics which is
+wholly independent of the flavor of the lepton pair in the final state, making
+$R_K$ and $R_{K^*}$ finely sensitive to violations of LFU. LHC\textit{b}
+finds~\cite{Aaij:2019wad}
+\begin{equation}
+  \label{eq:RK2}
+  R_K = 0.846\,_{-0.054-0.014}^{+0.060+0.016} \ ,
 \end{equation}
-for dilepton invariant mass squared range $1 \text{ GeV}^2 < q^2 < 6 \text{
-  GeV}^2$, while the SM demands $R^{\text{SM}}_K = 1.0003 \pm
-0.0001$~\cite{Bobeth:2007dw}. More recently, LHC\textit{b} have also measured
-$R_{K^{*}}$~\cite{newRkstar}:
-\begin{equation}\label{eq:RKstar}
-    R_{K^*} =\begin{cases}
-     0.660\,_{-0.070}^{+0.110}\pm 0.024 & \text{ for $0.045 \text{ GeV}^2 < q^2 < 1.1 \text{
-  GeV}^2$} \\
-    0.685\,_{-0.069}^{+0.113}\pm 0.047 & \text{ for $1.1 \text{ GeV}^2 < q^2 < 6 \text{
-  GeV}^2$}
-  \end{cases},
-\end{equation}
-a deviation from the SM prediction~\cite{Bordone:2016gaq} at the $10\%$ level
-and a clear signpost to new physics. A number of analyses have argued that each
-of these $\sim 2.5 \sigma$ discrepancies can be eliminated through a
-four-fermion effective operator $(\bar{s}\gamma_\mu P_L b) (\bar{\mu}\gamma^\mu
-P_L \mu)$, leading to new contributions to the muonic decay mode of the $B$
-meson~\cite{Descotes-Genon:2013wba, Descotes-Genon:2015uva,
-  PhysRevLett.113.241802, Hiller:2014yaa, Ghosh:2014awa, Hurth:2014vma,
-  Altmannshofer:2014rta, Glashow:2014iga, Altmannshofer:2017yso,
-  Capdevila:2017bsm, Ciuchini:2017mik, Geng:2017svp, DAmico:2017mtc}. Such an
-effective operator can also ameliorate other tensions in the measurements of
-angular observables and branching ratios involving the $b \rightarrow s$
-transition, although these are subject to sizeable hadronic
-uncertainties~\cite{Straub:2015ica, Lyon:2014hpa, Descotes-Genon:2014uoa,
-  Jager:2014rwa}. Currently, global fits suggest new physics in
-$(\bar{s}\gamma_\mu P_L b) (\bar{\mu}\gamma^\mu P_L \mu)$ is preferred at
-between $4.2$ and $6.2\sigma$~\cite{Altmannshofer:2017yso, Capdevila:2017bsm,
-  Ciuchini:2017mik, Geng:2017svp, DAmico:2017mtc} over the SM, and many
-new-physics models attempting to explain this deviation exist.
+for dilepton invariant mass squared range $q^2 \in [1.1, 6]~\GeV^{2}$, while the
+SM demands $R^{\text{SM}}_K = 1.0003 \pm 0.0001$~\cite{Bobeth:2007dw}. The
+analysis accounts for systematic differences in the reconstruction of muons and
+electrons by LHC$b$ by first normalising the decay rates to the
+$B^{+} \to K^{+} J/\psi (\to \mu\mu/ee)$ rates. The measurement is then a double
+ratio in which many theoretical and experimental uncertainties cancel. The ratio
+$R_{K}$ has also been measured by Belle~\cite{Abdesselam:2019lab} and BaBar~\cite{Lees:2012tva} to
+be suppressed, although with larger uncertainties.
 
+The $K^{*}$ ratio has also been measured by LHC\textit{b}~\cite{Aaij:2017vbb} to
+show an approximately $2.5 \sigma$ discrepancy in the central $q^{2}$ bin:
+\begin{equation}
+  \label{eq:RKstar-lhcb}
+    R_{K^*} = \begin{cases}
+     0.660\,_{-0.070}^{+0.110}\pm 0.024 & \text{ for $\SI{0.045}{\GeV^{2}} < q^2 < \SI{1.1}{\GeV^{2}}$} \\
+    0.685\,_{-0.069}^{+0.113}\pm 0.047 & \text{ for $\SI{1.1}{\GeV^{2}} < q^2 < \SI{6}{\GeV^{2}}$}
+  \end{cases} \ .
+\end{equation}
+The Belle measurement~\cite{Abdesselam:2019wac} is consistent with the SM
+prediction at $\lesssim 2\sigma$:
+\begin{equation}
+  \label{eq:RKstar-belle}
+    R_{K^*} = \begin{cases}
+     0.90\,_{-0.21}^{+0.27} \pm 0.10 & \text{ for $\SI{0.1}{\GeV^{2}} < q^2 < \SI{8}{\GeV^{2}}$} \\
+    1.18\,_{-0.32}^{+0.52} \pm 0.10 & \text{ for $\SI{15}{\GeV^{2}} < q^2 < \SI{19}{\GeV^{2}}$}
+  \end{cases} \ .
+\end{equation}
+Although the error bars are large, the central value is still suppressed with
+respect to the SM prediction in the low-$q^{2}$ region. A summary of the
+experimental situation relevant to $R_{K}$ and $R_{K^{*}}$ is presented in
+Fig.~\ref{fig:rkrkstar-summary}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{RK-lowQ2}
+  \includegraphics[width=0.7\textwidth]{RKstar-lowQ2}
+  \caption{(top) The measurements of the LFU $R_{K}$ by
+    LHC$b$~\cite{Aaij:2019wad}, Belle~\cite{Abdesselam:2019lab} and
+    BaBar~\cite{Lees:2012tva}. All measurements are suppressed relative to the
+    SM prediction, shown in red. (bottom) The figure shows the experimental
+    situation for $R_{K^{*}}$~\cite{Lees:2012tva, Abdesselam:2019wac,
+      Aaij:2017vbb}. Like $R_{K}$, the measured values are found to be smaller
+    than the SM value, shown in red. Both figures are taken from
+    Ref.~\cite{Koppenburg:2016rji}.}
+  \label{fig:rkrkstar-summary}
+\end{figure}
+
+The distribution of final-state particles in the semileptonic decays
+$B \to K^{*} \mu \mu$ define a number of angular observables, some of which have
+also been measured to be in disagreement with SM predictions. The
+$P_{5}^{\prime}$ asymmetry~\cite{Ali:1991is, Egede:2008uy,
+  Descotes-Genon:2013vna} is constructed as a ratio of angular observables to
+minimise from-factor uncertainties. Measurements show a significant deviation
+from the SM at around $q^{2} \sim \SI{5}{\GeV^{2}}$~\cite{Aaij:2013qta,
+  Aaij:2020nrf, Wehle:2016yoi, Aaboud:2018krd} as shown in
+Fig.~\ref{fig:p5p-exp}, although the CMS measurement~\cite{Sirunyan:2017dhj} is
+consistent with the SM prediction~\cite{Straub:2015ica, Altmannshofer:2014rta,
+  Descotes-Genon:2014uoa, Khodjamirian:2010vf} in this region. The hadronic
+uncertainties are still sizeable in this case.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.7\textwidth]{P5prime}
+  \caption{The figure shows the measured values of the $P_{5}^{\prime}$ angular
+    observable in the decays $B \to K^{*} \mu\mu$ binned by $q^{2}$. With the
+    exception of the CMS measurements, there is an enhancement with respect to
+    the SM prediction (green) around $q^{2} \sim \SI{5}{\GeV^{2}}$. The plot is
+    taken from Ref.~\cite{Koppenburg:2016rji}.}
+  \label{fig:p5p-exp}
+\end{figure}
+
+\subsubsection{Fits}
+
+The picture of the neutral-current anomalies given above is still only a small
+cross-section of the several hundred observables that are in tension with the SM
+predictions. A large number of global-fit analyses have been conducted in which
+these anomalies are interpreted in terms of deviations in the operators $C_{9}$
+and $C_{10}$, introduced above in Eq.~\eqref{eq:c9-c10}. These analyses are all
+in mutual agreement, and generally find that a sizeable negative value for
+$C_{9}$ is preferred over the SM value at between 4 and
+$7\sigma$~\cite{Aebischer:2019mlg, Alguero:2019ptt, Arbey:2019duh,
+  Ciuchini:2019usw}. (This was first pointed out in
+Ref.~\cite{Descotes-Genon:2013wba}, which analysed the 2013 data.) This wide
+range is largely due to differences in dealing with uncertainties in the
+semileptonic decays. Importantly, no large deviation in the electronic modes is
+necessary for a good fit. An example of one of the recent global
+fits~\cite{Aebischer:2019mlg} to $C_{9}$ and $C_{10}$ is shown in
+Fig.~\ref{fig:c9-c10-fit}. The authors find the single-operator best-fit
+scenario to be in the $\mathrm{SU}_{L}(2)$-invariant direction
+$C_{9} = -C_{10}$, with $C_{9} = -C_{10} = -0.53$ giving a pull from the SM of
+$6.6\sigma$. We note that following the updated measurements of
+$R_{K}$~\cite{Aaij:2019wad} and $R_{K^{*}}$~\cite{Abdesselam:2019wac} presented
+at the 2019 Moriond conference, there is a slight tension between explaining the
+LFU ratios and the rest of the $b\to s$ data. We point the reader to
+Ref.~\cite{Aebischer:2019mlg} for a more detailed discussion on this point.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.7\textwidth]{bsmumu_C9_C10}
+  \caption{The figure shows the results of the global fit conducted in
+    Ref.~\cite{Aebischer:2019mlg} in the $C_{9}$--$C_{10}$ plane. The fit to
+    just the LFU ratios is shown in blue, while that for the other $b\to s$ data
+    is shown in yellow, with the combined fit shown in red. The
+    $\mathrm{SU}(2)_{L}$-invariant direction $C_{9}=-C_{10}$ gives a good fit to
+    the data, and any acceptible fit requires a sizeable negative value for
+    $C_{9}$. The plot is taken from Ref.~\cite{Aebischer:2019mlg}.}
+  \label{fig:c9-c10-fit}
+\end{figure}
+
+That much of the tension is driven by a deviation in $C_{9}$ also allows for an
+explanation of many of the anomalies in a way that does not require the
+introduction of new physics. The deviation in $C_{9}$ necessary to explain much
+of the anomalous $b \to s$ data can be mimicked by non-perturbative effects
+associated with loops of charm quarks, \textit{e.g.}~\cite{Blake:2017wjz}, and
+the data seem to be currently consistent with both
+hypotheses~\cite{Altmannshofer:2015sma, Descotes-Genon:2015uva}. Such effects
+cannot account for the violation of LFU seen in the ratios $R_{K^{(*)}}$, again
+highlighting their importance in understanding the potential role of new physics
+in explaining the neutral-current anomalies.
 
 \subsection{Charged-current anomalies}
 
-Another intriguing anomaly is the long-standing deviation in the ratios
+The class of charged-current anomalies in the $b \to c$ transition consists of a
+smaller number of measurements and processes. The primary observables of
+interest are the LFU ratios
 \begin{equation}
-  R^{\tau/\ell}_{D^{(*)}} = \frac{\Gamma(B \rightarrow D^{(*)} \tau \bar{\nu})}{\Gamma(B \rightarrow D^{(*)} \ell \bar{\nu})},
+  \label{eq:1}
+  R_{D^{(*)}} = \frac{\mathrm{Br}[B \to D^{(*)} \tau \nu]}{\mathrm{Br}[B \to D^{(*)} \ell \nu]} \ ,
 \end{equation}
-where $\ell \in \{e,\mu\}$, reported by the BaBar~\cite{Lees:2012xj,
-  Lees:2013uzd}, Belle~\cite{Huschle:2015rga, Sato:2016svk, Hirose:2016wfn} and
-LHC\textit{b}~\cite{Aaij:2015yra} collaborations. These measurements show a
-remarkable degree of self-consistency and together amount to a deviation larger
-than $4 \sigma$ from the SM expectation~\cite{Sakaki:2013bfa, Bardhan:2016uhr,
-  Freytsis:2015qca, Choudhury:2016ulr, Bhattacharya:2016zcw,
-  Bhattacharya:2015ida}. Measurements of the dilepton invariant mass
-distribution disfavor many popular new physics scenarios (e.g. type-II two Higgs
-doublet models~\cite{Lees:2012xj}) as candidate explanations. We present a
-summary of the recent experimental results and SM predictions associated with $b
-\to c \tau \nu$ in Table~\ref{tbl:rdrdstartable}.
+where $\ell$ denotes one of the light leptons: $\ell \in \{e, \mu\}$. The ratio
+has been measured by BaBar~\cite{Lees:2012xj, Lees:2013uzd},
+Belle~\cite{Huschle:2015rga, Hirose:2016wfn, Hirose:2017dxl, Abdesselam:2019dgh}
+and LHC$b$~\cite{Aaij:2015yra, Aaij:2017uff, Aaij:2017deq}, with combined values
+from HFLAV given by~\cite{Amhis:2019ckw}
+\begin{equation}
+  R_{D} = 0.340 \pm 0.027 \pm 0.013\quad \text{ and }\quad R_{D^{*}} = 0.295 \pm 0.011 \pm 0.008 \ .
+\end{equation}
+These combinations are in tension with the SM predictions~\cite{Bigi:2016mdz,
+  Bernlochner:2017jka, Bigi:2017jbd, Jaiswal:2017rve} as averaged by HFLAV:
+\begin{equation}
+  R^{\text{SM}}_{D} = 0.299 \pm 0.003\quad \text{ and }\quad R^{\text{SM}}_{D^{*}} = 0.258 \pm 0.005
+\end{equation}
+at approximately $3\sigma$. We note that BaBar and Belle use the average of the
+electronic and muonic modes in the denominator, while LHC$b$ uses only the
+muonic mode. The tension was significantly decreased following the most recent
+Belle measurement presented at the Moriond 2019
+conference~\cite{Abdesselam:2019dgh}; this combined measurement is consistent
+with the SM prediction at $1.2\sigma$. A summary of the measurements of
+$R_{D^{(*)}}$ is shown in Fig.~\ref{fig:rd-rdstar-hflav}.
+BaBar~\cite{Lees:2013uzd} and Belle~\cite{Huschle:2015rga} have measured the
+$q^{2}$ distributions of the tau-mode decay rate, which has proved to be a
+powerful model discriminator, \textit{e.g.}~\cite{Freytsis:2015qca}.
 
-\begin{table}[t]
+\begin{figure}[t]
   \centering
-  \begin{tabular}{ccc}
-    \toprule
-    Experiment & $R_D$ & $R_{D^*}$ \\
-    \midrule
-    BaBar~\cite{Lees:2012xj} & $0.440 \pm 0.058 \pm 0.042$ & $0.332 \pm 0.024 \pm 0.018$\\
-    \arrayrulecolor{black!30}\midrule
-    \multirow{3}{*}{Belle~\cite{Huschle:2015rga, Sato:2016svk, Hirose:2016wfn}} & $0.375 \pm 0.064 \pm 0.026$ & $0.293 \pm 0.038 \pm 0.015$\\
-               & --- & $0.302 \pm 0.030 \pm 0.011$\\
-               & --- & $0.270 \pm 0.035^{+0.028}_{-0.025}$\\
-    \midrule
-    LHC\textit{b}~\cite{Aaij:2015yra} & --- & $0.336 \pm 0.027 \pm 0.030$\\
-    \arrayrulecolor{black!100}\midrule
-    HFAG average\tablefootnote{The HFAG average does not include the most recent Belle measurement~\cite{Hirose:2016wfn}.}~\cite{Amhis:2012bh} & $0.397 \pm 0.040 \pm 0.028$ & $0.316 \pm 0.016 \pm 0.010$ \\
-    Our average & --- & $0.311 \pm 0.016$ \\
-    \arrayrulecolor{black!30}\midrule
-    SM prediction & $0.299 \pm 0.011$~\cite{Lattice:2015rga} & $0.252 \pm 0.003$~\cite{Tanaka:2012nw} \\
-    \arrayrulecolor{black!100}\bottomrule
-  \end{tabular}
-  \caption{A summary of results associated with $b \to c \tau \nu$. Our average
-    includes the most recent Belle measurements of $R_{D^*}$, it is calculated
-    by taking an error-weighted mean after summing statistical and systematic
-    uncertainties in quadrature.}
-  \label{tbl:rdrdstartable}
-\end{table}
+  \includegraphics[width=0.9\textwidth]{rdrds_spring2019}
+  \caption{The figure shows the combined fit to the available $R_{D}$ and
+    $R_{D^{*}}$ data from HFLAV~\cite{Amhis:2019ckw}. The combination is shown
+    in red, just over $3\sigma$ away from the SM prediction (black data point).
+    Both ratios are measured to be enhanced compared to the SM value.}
+  \label{fig:rd-rdstar-hflav}
+\end{figure}
 
+Although the ratios $R_{D^{(*)}}$ are our primary concern in this work, we also
+introduce a number of other observables relevant to the charged current process.
+The first of these is the LFU ratio $R_{J/\psi}$:
+\begin{equation}
+  \label{eq:rjpsi}
+  R_{J/\psi} = \frac{\mathrm{Br}(B_{c} \to J/\psi \tau \nu)}{\mathrm{Br}(B_{c} \to J/\psi \mu \nu)} \ ,
+\end{equation}
+has recently been measured by LHC$b$ to be
+$R_{J/\psi} = 0.71 \pm 0.17 \pm 0.18$~\cite{Aaij:2017tyk}. Although the ratio is
+also measured to be enhanced with respect to the SM prediction
+$R_{J/\psi}^{\text{SM}} \approx 0.25$--$0.29$~\cite{Anisimov:1998uk,
+  Kiselev:2002vz, Ivanov:2006ni, Hernandez:2006gt, Huang:2007kb, Wang:2008xt,
+  Issadykov:2018myx, Wen-Fei:2013uea, Alok:2017qsi, Azatov:2018knx, Hu:2019qcn,
+  Leljak:2019eyw, Azizi:2019aaf}, the central value of the measurement shows a
+very large effect that cannot be well-accommodated with BSM
+contributions~\cite{Murgui:2019czp}, although the error bars are very large. The
+observable $f_L^{D^*}$, the longitudinal polarisation of the $D^*$ in
+$B \to D^* \tau \nu$, also differs from the SM expectation by $\sim 1.6 \sigma$:
+\begin{equation}
+    f_L^{D^*} = 0.60 \pm 0.08 \pm 0.04,
+\end{equation}
+as measured by the Belle collaboration~\cite{Abdesselam:2019wbt}, and has been
+shown to have good discriminating power for BSM explanations of $R_{D^{(*)}}$.
+The third class of observables we consider are tau polarisation asymmetries [see
+Ref.~\cite{Asadi:2018sym} for a detailed discussion in the context of explaining
+$R_{D^{(*)}}$]. The polarisation asymmetry in the longitudinal direction of the
+$\tau$ in the $D^*$ mode has also recently been measured by
+Belle~\cite{Hirose:2016wfn}:
+\begin{equation}
+\mathcal{P}_{\tau}^{*} = -0.38 \pm 0.51^{+0.21}_{-0.16} .
+\end{equation}
+Although the errors are large, the projected Belle II sensitivity at
+$50 \text{ ab}^{-1}$ for the same observable in the $D$ mode is estimated at
+about $3\%$~\cite{Alonso:2017ktd}, and we expect the $\mathcal{P}_\tau^{*}$ to
+be measured even more precisely at Belle II.
+
+\subsubsection{Fits}
+
+The charged-current $b \to c$ anomalies can be interpreted in terms of
+deviations from dimension-six operator coefficients in the WET. The pertinent
+Hamiltonian for $b \to c \ell_{r} \nu_{s}$ is
+\begin{equation}
+  \label{eq:bctaunu-ham}
+  H^{b\to c}_{\text{eff}} = \frac{4 G_{F}}{\sqrt{2}} V_{cb} \sum_{rs} [(\delta^{rs} + C^{rs}_{V_{L}}) \mathcal{O}^{rs}_{V_{L}} + C_{V_{R}}^{rs} \mathcal{O}^{rs}_{V_{R}} + C^{rs}_{S_{L}}\mathcal{O}^{rs}_{S_{L}} + C^{rs}_{S_{R}}\mathcal{O}^{rs}_{S_{R}} + C^{rs}_{T}\mathcal{O}^{rs}_{T}] + \text{h.c.}
+\end{equation}
+where
+\begin{equation}
+    \mathcal{O}^{rs}_{V_{X}} = (\bar{c} \gamma^{\mu} P_{X} b) (\bar{e}_{r} \gamma_{\mu} P_{L} \nu_{s}) \ , \, \mathcal{O}^{rs}_{S_{X}} = (\bar{c} P_{X} b) (\bar{e}_{r} P_{L} \nu_{s}) \ , \, \mathcal{O}^{rs}_{T} = (\bar{c} \sigma^{\mu\nu} P_{X} b) (\bar{e}_{r} \sigma_{\mu\nu} P_{L} \nu_{s}) \ ,
+\end{equation}
+with $X \in \{L, R\}$. The left-handed vector operator is the same one generated
+in the SM, while the scalar and tensor operators can provide large enhancements
+to the decay rate, since they lift the helicity-suppression of the decay.
 
 
 \subsection{Anomalous magnetic moment of the muon}
-\lipsum[2]
+
+Precise measurements of the deviation in the semi-classical value of the muon
+gyromagnetic ratio, $(g-2)_{\mu}$, have demonstrated an inconsistency. This is
+parameterised by the quantity
+\begin{equation}
+  a_{\mu} \equiv \frac{(g-2)_{\mu}}{2} \ .
+\end{equation}
+There is a persistent deviation between the SM prediction and the experimentally
+measured value~\cite{Chapelain:2017syu, Blum:2013xva},
+\begin{equation}
+\Delta a_\mu= a_\mu^{\text{exp}} - a_\mu^{\text{SM}}= (286\pm63\pm 43) \times 10^{-11},
+\end{equation}
+corresponding to a $3.6\sigma$ anomaly. The error values refer to the
+experimental and theoretical prediction errors, respectively. Similarly, recent
+experimental results have indicated a deviation from the SM for the electron
+anomalous magnetic moment, of $2.5\sigma$ significance~\cite{articleParker}. The
+leading candidates to explain these anomalies involve flavour-dependent,
+loop-level, BSM effects~\cite{Blum:2013xva}.
 
 \subsection{Scalar and Vector leptoquarks}
+\lipsum[3]
 
 \myglossaryentry{lipsum}{lipsum}{Lorem Ipsum, a special type of fudge}{}
 \myglossaryentry{dolor}{dolor}{No idea why}{parent={lipsum}}
