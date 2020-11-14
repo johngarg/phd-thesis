@@ -6,6 +6,7 @@
 - [ ] Fix comments about solar-neutrino oscillations
 - [ ] Check normalisation of $T^A$ and $\lambda^A$ in table 1.2
 - [ ] Add "Correspondence to four-component notation" in mathematical notation appendix
+- [ ] Fix Neutrino 1998 comment (thought I did this?)
 - [X] Effective operators and the SMEFT
 - [ ] Define $\bar{D}$ in SMEFT tables
 - [ ] Make sure that conventions in table actually comply with WCxF
@@ -14,17 +15,19 @@
 - [X] Redundancies, bases, integration
 - [X] Write Hilbert series section
 - [X] (Not including) Operator mixing and running of couplings?
-- [ ] Hints of LFU violation, description, theory, experimental situation
-- [ ] Flavour anomalies
-  + [ ] Neutral current anomalies
-    - [ ] Table of most discrepant measurements
-    - [ ] Discussion of uncertainties
-    - [ ] Discuss $R_K$ and $R_K^*$ in more detail
-    - [ ] Fits
+- [X] Hints of LFU violation, description, theory, experimental situation
+- [-] Flavour anomalies
+  + [X] Neutral current anomalies
+    - [X] Table of most discrepant measurements
+    - [X] Discussion of uncertainties
+    - [X] Discuss $R_K$ and $R_K^*$ in more detail
+    - [X] Fits
   + [ ] Charged current anomalies
-  + [ ] g-2
+    - [ ] Add discussion of LFU respected in light-lepton modes
+    - [ ] Discuss lack of form factors for $D^*$
+  + [X] g-2
+- [ ] Math notation appendix
 - [ ] Leptoquarks, quantum numbers, properties?
-- [ ] Mathematical notation? Should this be appendix?
 
 * Chapter 2: Model building from effective operators
 - [ ] Sort out introduction and appendices

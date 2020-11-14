@@ -956,7 +956,7 @@ The operators in the Warsaw basis are listed in Tables~\ref{tab:smeft-d6-psi4}
 and \ref{tab:smeft-d6-other}. This is the form in which we use the operators
 throughout the rest of this work. Each operator is given in four-component
 spinor notation, as is usual in the literature. We refer the reader to
-Appendix~\ref{chapter:math-notation} for the correspondence to the two-component
+Appendix~\ref{chapter:notation} for the correspondence to the two-component
 notation we use elsewhere, along with other relevant mathematical notation used
 in the tables. Our conventions are chosen to comply with those of
 Ref.~\cite{Aebischer:2017ugx}.
@@ -1113,7 +1113,7 @@ Ref.~\cite{Aebischer:2017ugx}.
       SMEFT in the Warsaw basis~\cite{Buchmuller:1985jz, Grzadkowski:2010es}.
       The operators are listed in four-component spinor notation, and a full
       correspondence to the two-component notation we use elsewhere can be found
-      in Appendix~\ref{chapter:math-notation}. We remind the reader that
+      in Appendix~\ref{chapter:notation}. We remind the reader that
       combinations like $(Q Q)$ stand for $(\bar{Q}^{C} Q)$, where $Q^{C}$ is
       the charge-conjugated spinor. Flavor indices are omitted, and should be
       understood to label the fermions in the order $\{r, s, t, u\}$ as they
@@ -1282,7 +1282,7 @@ Ref.~\cite{Aebischer:2017ugx}.
     \caption{The table shows the operators featuring in the Warsaw
       basis~\cite{Buchmuller:1985jz, Grzadkowski:2010es} of the dimension-six
       SMEFT that are not four-fermion operators. We point the reader to
-      Appendix~\ref{chapter:math-notation} for the correspondence between the
+      Appendix~\ref{chapter:notation} for the correspondence between the
       four-component notation used here and the two-component notation used
       elsewhere in this work for spinors, along with the definition of
       $\bar{D}^{\mu}$. Flavor indices are omitted and should be understood to
@@ -1939,6 +1939,25 @@ $50 \text{ ab}^{-1}$ for the same observable in the $D$ mode is estimated at
 about $3\%$~\cite{Alonso:2017ktd}, and we expect the $\mathcal{P}_\tau^{*}$ to
 be measured even more precisely at Belle II.
 
+The leptonic decays of the charmed $B$ meson have not been measured yet,
+although measurements of its lifetime may imply serious constraints on models
+attempting to explain the discrepancies in $R_{D}$ and $R_{D^{*}}$ with new
+physics. A number of groups have inferred a wide variety of limits
+\begin{equation}
+  \label{eq:bctaunu-limits}
+ \mathrm{Br}(B_{c} \to \tau \nu) < [0.1, 0.6]
+\end{equation}
+using differing theoretical arguments~\cite{Li:2016vvp, Akeroyd:2017mhr,
+  Alonso:2016oyd, Blanke:2018yud, Bardhan:2019ljo}. The range of limits is so
+wide because it is sensitive to the ratio of hadronisation probabilities of the
+charm and up quarks: $f_{c}/f_{u}$. The range of values given for the limit in
+Eq.~\eqref{eq:bctaunu-limits} corresponds only to a change in $f_{c}/f_{u}$ of a
+factor of five~\cite{Bardhan:2019ljo}.
+
+{\color{red} John, When you put in chapter 3, move discussion of agreement in
+  LFU between light-lepton modes and absence of lattice results for
+  $B \to D^{*}$ form factors here.}
+
 \subsubsection{Fits}
 
 The charged-current $b \to c$ anomalies can be interpreted in terms of
@@ -1952,33 +1971,58 @@ where
 \begin{equation}
     \mathcal{O}^{rs}_{V_{X}} = (\bar{c} \gamma^{\mu} P_{X} b) (\bar{e}_{r} \gamma_{\mu} P_{L} \nu_{s}) \ , \, \mathcal{O}^{rs}_{S_{X}} = (\bar{c} P_{X} b) (\bar{e}_{r} P_{L} \nu_{s}) \ , \, \mathcal{O}^{rs}_{T} = (\bar{c} \sigma^{\mu\nu} P_{X} b) (\bar{e}_{r} \sigma_{\mu\nu} P_{L} \nu_{s}) \ ,
 \end{equation}
-with $X \in \{L, R\}$. The left-handed vector operator is the same one generated
+and $X \in \{L, R\}$. The left-handed vector operator is the same one generated
 in the SM, while the scalar and tensor operators can provide large enhancements
-to the decay rate, since they lift the helicity-suppression of the decay.
+to the decay rate, since they lift the helicity-suppression.
 
+A number of analyses have considered interpreting the measurements of $R_{D}$
+and $R_{D^{*}}$ in the context of these operators, usually restricting to
+single-operator fits, \textit{e.g.}~\cite{Sakaki:2013bfa, Freytsis:2015qca,
+  Jung:2018lfu, Azatov:2018knx, Angelescu:2018tyl, Huang:2018nnq,
+  Murgui:2019czp}. In Fig.~\ref{fig:rd-rdstar-fit} we present a plot taken from
+Ref.~\cite{Murgui:2019czp} in which the effects of each of the operators on the
+observables of interest are explored. The plot indicates that a number of
+single-operator solutions exist that reconcile the predicted and measured values
+for both $R_{D}$ and $R_{D^{*}}$, although single-operator resolutions of the
+mild tension in $f_{L}^{D^{*}}$ are disfavoured by the limits on the $B_{c}$
+lifetime, discussed above.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{RDvsRDstar_vN.pdf}
+\includegraphics[scale=0.5]{RDstarvsCi.pdf}
+\includegraphics[scale=0.9]{LegendCi.pdf}
+\includegraphics[scale=0.5]{PDstarvsCi_vN.pdf}
+\includegraphics[scale=0.5]{FLDstarvsCi_vN.pdf}
+\phantom{\includegraphics[width=0.09\linewidth]{LegendCi.pdf}}
+\caption{Individual contributions of the Wilson coefficients of the WET
+  Hamiltonian in different observables ($\Delta X \equiv X-X_{\text{SM}}$):
+  correlation between $\Delta {\cal R}_D$ and $\Delta {\cal R}_{D^*}$, and
+  $\Delta \mathcal{R}_{D^*}$, $\Delta \mathcal{P}_\tau^{D^{*}}$ and
+  $\Delta {\cal F}_L^{D^{*}}$ as a function of the Wilson coefficients. Left-top
+  panel: the experimental central value is denoted by a black cross and the
+  $1\sigma, 2\sigma$ and $3\sigma$ uncertainties by yellow rings. Right-top and
+  bottom panels: experimental central values are displayed by a solid yellow
+  line and their $1\sigma$ uncertainty by a yellow band. Dashed lines indicate
+  regions excluded by the constraint $\mathrm{Br}(B_c \to \tau \nu) < 0.1$.}
+\label{fig:rd-rdstar-fit}
+\end{figure}
 
 \subsection{Anomalous magnetic moment of the muon}
 
-Precise measurements of the deviation in the semi-classical value of the muon
-gyromagnetic ratio, $(g-2)_{\mu}$, have demonstrated an inconsistency. This is
-parameterised by the quantity
+The most precise measurement of the anomalous magnetic moment of the muon
 \begin{equation}
-  a_{\mu} \equiv \frac{(g-2)_{\mu}}{2} \ .
+  a_{\mu} \equiv \frac{(g-2)_{\mu}}{2}
 \end{equation}
-There is a persistent deviation between the SM prediction and the experimentally
-measured value~\cite{Chapelain:2017syu, Blum:2013xva},
+shows a sizeable tension with the SM prediction. The difference between the
+measured value~\cite{Chapelain:2017syu, Blum:2013xva} and the SM prediction~\cite{} is
 \begin{equation}
-\Delta a_\mu= a_\mu^{\text{exp}} - a_\mu^{\text{SM}}= (286\pm63\pm 43) \times 10^{-11},
+\Delta a_\mu= a_\mu^{\text{exp}} - a_\mu^{\text{SM}}= (286 \pm 63 \pm 43) \cdot 10^{-11} \ ,
 \end{equation}
-corresponding to a $3.6\sigma$ anomaly. The error values refer to the
-experimental and theoretical prediction errors, respectively. Similarly, recent
-experimental results have indicated a deviation from the SM for the electron
-anomalous magnetic moment, of $2.5\sigma$ significance~\cite{articleParker}. The
-leading candidates to explain these anomalies involve flavour-dependent,
-loop-level, BSM effects~\cite{Blum:2013xva}.
+corresponding to a $3.6\sigma$ discrepancy. More recently, the measured value
+$a_{e}$, the anomalous magnetic moment of the electron, has also been found to
+disagree with the SM value at $2.5\sigma$~\cite{articleParker}.
 
-\subsection{Scalar and Vector leptoquarks}
-\lipsum[3]
 
 \myglossaryentry{lipsum}{lipsum}{Lorem Ipsum, a special type of fudge}{}
 \myglossaryentry{dolor}{dolor}{No idea why}{parent={lipsum}}

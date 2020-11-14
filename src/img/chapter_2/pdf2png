@@ -1,0 +1,13 @@
+#!/bin/sh
+
+convert -density 300 typeI_seesaw.pdf typeI_seesaw.png
+convert -density 300 typeII_seesaw.pdf typeII_seesaw.png
+convert -density 300 typeIII_seesaw.pdf typeIII_seesaw.png
+convert -density 300 scalar_dimension5.pdf scalar_dimension5.png
+convert -density 300 fermion_dimension5.pdf fermion_dimension5.png
+convert -density 300 example_completion_graph.pdf example_completion_graph.png 
+convert -density 300 example_deriv.pdf example_deriv.png
+convert -density 300 example_deriv_2.pdf example_deriv_2.png
+convert -density 300 od1_completion.pdf od1_completion.png
+convert -density 300 od1_completion_2.pdf od1_completion_2.png
+convert -density 300 od1_completions_3.pdf od1_completions_3.png

@@ -1,0 +1,43 @@
+#!/bin/sh
+
+mkdir cya
+
+# remove pngs where pdfs are sufficient
+mv typeI_seesaw.png cya/
+mv typeI_seesaw.png cya/
+mv typeII_seesaw.png cya/
+mv typeIII_seesaw.png cya/
+mv scalar_dimension5.png cya/
+mv fermion_dimension5.png cya/
+mv example_completion_graph.png cya/
+mv example_deriv.png cya/
+mv example_deriv_2.png cya/
+mv od1_completion.png cya/
+mv od1_completion_2.png cya/
+mv od1_completions_3.png cya/
+
+# move everything else that's unused
+mv closure.pdf cya/
+mv connectionGraph.pdf cya/
+mv d1_closure.pdf cya/
+mv d7_closure.pdf cya/
+mv d7_w_closure.pdf cya/
+mv d9_13.pdf cya/
+mv d9_23.pdf cya/
+mv d9_33.pdf cya/
+mv example_opening_*.pdf cya/
+mv fermion_piechart.png cya/
+mv scalar_piechart.png cya/
+mv filter_barchart_dimension.png cya/
+mv filter_barchart_operators* cya/
+mv heatmap_operators* cya/
+mv heatmap_scalars_fermions.png cya/
+mv lambda_fields.png cya/
+mv leptonic_example_divergent* cya/
+mv o1p_closure.pdf cya/
+mv scalar_plus_fermion_dimension7.pdf cya/
+mv violinplot_closures_scaled* cya/
+mv violinplot_closures.png cya/
+mv example_completion_graph_twitter.png cya/
+mv lowscale_example_neutrinomass.png cya/
+mv lowscale_example_neutrinomass_twitter.png cya/
