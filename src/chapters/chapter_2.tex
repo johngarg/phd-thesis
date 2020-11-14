@@ -25,7 +25,7 @@
 
 \section{Introduction}
 
-We saw in Sec.~\ref{sec:models-of-mv} that the space of neutrino-mass models can
+We saw in Sec.~\ref{sec:ch1-models-of-mv} that the space of neutrino-mass models can
 be organised in various ways. One way we call the loop-level-matching paradigm,
 in which graphs of various loop orders are matched onto the Weinberg operator.
 Thorough analyses have been conducted in this framework, studying the Weinberg
@@ -35,7 +35,7 @@ loop, respectively. An alternative approach to neutrino-mass model taxonomy is
 to start with the $\Delta L = 2$ operators in the SMEFT and consider what field
 content generates these operators at tree-level in the UV~\cite{Babu:2001ex,
   deGouvea:2007qla, PhysRevD.87.073007, Cai:2014kra}. As discussed briefly in
-Sec.~\ref{sec:models-of-mv}, this approach has been applied up to
+Sec.~\ref{sec:ch1-models-of-mv}, this approach has been applied up to
 dimension-seven~\cite{Cai:2014kra} to systematically write down a large class of
 simple models of neutrino mass.
 
@@ -123,7 +123,9 @@ three\footnote{These correspond to \textit{operators}, \textit{terms} and
 \begin{enumerate}
   \item A gauge- and Lorentz-invariant product of fields of specified flavour
   and their derivatives. Understood in this sense, the Weinberg `operator'
-  $\mathcal{O}_{1}^{\{rs\}} = (L_{r}^{i}L_{s}^{j})H^{k}H^{l}\epsilon_{ik}\epsilon_{jl}$
+  \begin{equation}
+    \mathcal{O}_{1}^{\{rs\}} = (L_{r}^{i}L_{s}^{j})H^{k}H^{l}\epsilon_{ik}\epsilon_{jl}
+  \end{equation}
   is really $n_{f}(n_{f}+1)/2$ complex operators for $n_{f}$ SM-fermion
   generations.
   \item A gauge- and Lorentz-invariant product of fields of unspecified flavour
@@ -355,11 +357,11 @@ $\mathrm{SU}(2)_L$-structures of the new numbered operator $\mathcal{O}_{80}$.
 This means that the 75 numbered type-3 operator classes presented by dGJ now
 correspond to 82 classes and additional $\mathrm{SU}(2)_{L}$-structures
 $\{a, b, c, \ldots\}$. We present our list of $\Delta L = 2$ operators
-containing SM fermion and Higgs fields in Table~\ref{tab:long}. Product
-operators as presented in our tables must be read with care. This is just a
-convenient shorthand to represent the field-content of an operator and
-illustrate that isospin indices are internally contracted. For example, by
-writing
+containing SM fermion and Higgs fields in Table~\ref{tab:long}, located in
+Appendix~\ref{chapter:operator-table}. Product operators as presented in our
+tables must be read with care. This is just a convenient shorthand to represent
+the field-content of an operator and illustrate that isospin indices are
+internally contracted. For example, by writing
 $\mathcal{O}_{5b} = \mathcal{O}_{1} Q^{i} \bar{d} \tilde{H}^{j} \epsilon_{ij}$,
 we do not mean to suggest that Lorentz indices must be contracted internally to
 $\mathcal{O}_{1}$ and the down-type Yukawa. We discuss the additional
@@ -405,13 +407,14 @@ Higgs fields.
 In this section we outline the procedure we use for opening up operators of the
 sort introduced in Sec.~\ref{sec:operatorsandcompletions} and
 Sec.~\ref{sec:operatortaxonomy} for the purpose of exploratory model building.
-We refer back to the prefatory comments made in Sec.~\cite{} on tree-level
-matching for scalars and fermions, and include a discussion of the tree-level
-completions of operators containing derivatives and field-strength tensors. We
-highlight that the results of this section are not specific to $\Delta L = 2$
-physics, and the model-building prescription can be applied (high-dimensional)
-operators in other EFTs. To illustrate the point, we apply the methods to an EFT
-unrelated to neutrino masses: the SMEFT at dimension-six.
+We refer back to the prefatory comments made in
+Sec.~\ref{sec:ch1-tree-level-matching} on tree-level matching for scalars and
+fermions, and include a discussion of the tree-level completions of operators
+containing derivatives and field-strength tensors. We highlight that the results
+of this section are not specific to $\Delta L = 2$ physics, and the
+model-building prescription can be applied (high-dimensional) operators in other
+EFTs. To illustrate the point, we apply the methods to an EFT unrelated to
+neutrino masses: the SMEFT at dimension-six.
 
 The model-building framework introduced and used in Ref.~\cite{Angel:2012ug}
 assumes that the new heavy fields introduced in the UV completions are only
@@ -427,19 +430,19 @@ extended gauge group), and so these are not introduced in our approach. Thus for
 the remainder of the paper we limit the discussion of building UV-complete
 models to those containing only scalars and non-chiral fermions.
 
-In Sec.~\ref{} we introduced the process of of matching a UV Lagrangian onto an
-effective theory. In this case, we are interested in the case where the UV
-theory is unknown. Here, the EFT is a useful way to encapsulate the effects of
-the entire class of possible UV theories in a model-agnostic way. We advocate
-that it is also a practical model-building tool, since the operators provide
-information about the types of UV models from which the EFT may arise. Subject
-to a number of assumptions, the possible UV models implied by an effective
-operator can be enumerated by building all possible tree graphs with an
-external-leg structure reflecting that of the operator. The quantum numbers of
-the heavy propagators can then be read off by imposing Lorentz- and
-gauge-invariance at every vertex, starting with vertices with two or three (for
-scalars) external edges. This is equivalent to exploring all of the possible
-ways the light fields may have been grouped into terms in
+In Sec.~\ref{sec:ch1-tree-level-matching} we introduced the process of of
+matching a UV Lagrangian onto an effective theory. In this case, we are
+interested in the case where the UV theory is unknown. Here, the EFT is a useful
+way to encapsulate the effects of the entire class of possible UV theories in a
+model-agnostic way. We advocate that it is also a practical model-building tool,
+since the operators provide information about the types of UV models from which
+the EFT may arise. Subject to a number of assumptions, the possible UV models
+implied by an effective operator can be enumerated by building all possible tree
+graphs with an external-leg structure reflecting that of the operator. The
+quantum numbers of the heavy propagators can then be read off by imposing
+Lorentz- and gauge-invariance at every vertex, starting with vertices with two
+or three (for scalars) external edges. This is equivalent to exploring all of
+the possible ways the light fields may have been grouped into terms in
 $\mathscr{L}[\pi, \Pi]$ and distributed in the products of
 Eqs.~\eqref{eq:classical-efflag-scalar} and \eqref{eq:classical-efflag-fermion}.
 In the following we develop this picture into a precise algorithm.
@@ -2073,7 +2076,7 @@ specific questions they may have of the data.
     fields appearing in the completions. Primed fields represent leptoquarks
     whose baryon-number assignment allows only the diquark couplings. (b) The
     pie chart of fermion fields appearing in the completions. See
-    Table~\ref{tab:field-labels} or Ref.~\cite{deBlas:2017xtg} for the
+    Table~\ref{tab:appA-field-labels} or Ref.~\cite{deBlas:2017xtg} for the
     convention used for the field names.}
   \label{fig:field-piecharts}
 \end{figure}
@@ -2102,6 +2105,8 @@ $(\mathbf{\bar{3}}, \mathbf{2}, \tfrac{5}{6})_{F} \otimes \bar{d} \sim (\mathbf{
 
 \begin{table}[t]
   \centering
+  \bgroup
+  \def\arraystretch{1.3}
   \begin{tabular}[t]{lc}
     \toprule
     Rank & Edge \\
@@ -2118,6 +2123,7 @@ $(\mathbf{\bar{3}}, \mathbf{2}, \tfrac{5}{6})_{F} \otimes \bar{d} \sim (\mathbf{
     10 & $(\mathbf{3}, \mathbf{2}, \tfrac{7}{6})_{S}$, $(\mathbf{\bar{3}}, \mathbf{2}, \tfrac{5}{6})_{F}$ \\
     \bottomrule
   \end{tabular}
+  \egroup
   \caption{The table shows the pairs of fields that most often appear together
     in the filtered completions of the $\Delta L = 2$ operators we consider. In
     the context of the graph of field connections introduced in the main text,
@@ -2199,9 +2205,11 @@ the table:
     by the model given in the last row.
 \end{enumerate}
 
-\begin{table}[t]
+\begin{table}
   \centering
-  \begin{tabular}[t]{cclc}
+  \bgroup
+  \def\arraystretch{1.3}
+  \begin{tabular}{cclc}
     \toprule
     Field content & Operators & $\Lambda~[\TeV]$ & Dominant? \\
     \midrule
@@ -2219,6 +2227,7 @@ the table:
     $(\mathbf{\bar{6}}, \mathbf{2}, \tfrac{1}{6})_{S}$, $(\mathbf{\bar{3}}, \mathbf{2}, \tfrac{5}{6})_{F}$, $(\mathbf{3}, \mathbf{2}, \tfrac{1}{6})_{S}$ & $50a,b$ & 10 & Y \\
     \bottomrule
   \end{tabular}
+  \egroup
   \caption{The table shows the models in our filtered list that contain fewer
     than four fields with the estimate of the upper-bound on the new-physics
     scale $\Lambda$ in the range $\SI{700}{\GeV} < \Lambda < \SI{100}{\TeV}$.
@@ -2446,33 +2455,9 @@ from the six parameters $x_{r}$ and $y_{r}$.
 
 Here we present a model designed specifically to generate a particular set of
 dimension-six operators. The example is motivated by the recent flavour
-anomalies: deviations from the SM seen in charged- and neutral-current $B$-meson
-decays. Key examples are the lepton-flavour-universality (LFU)
-ratios~\cite{Lees:2012xj, Lees:2013uzd, Huschle:2015rga, Hirose:2016wfn,
-  Abdesselam:2016cgx, Aaij:2017tyk, Aaij:2017uff}
-\begin{equation}
-  \label{eq:rd}
-  R_{D^{(*)}} = \frac{\Gamma(B \to D^{(*)} \tau \nu)}{\Gamma(B \to D^{(*)} \ell \nu)}\quad \text{ with } \ell \in \{e, \mu\}  \ ,
-\end{equation}
-for which the combined significance of the deviation from the SM is
-$3.1\sigma$~\cite{Amhis:2019ckw}, and
-\begin{equation}
-  \label{eq:rk}
-  R_{K^{(*)}} = \frac{\Gamma(B \to K^{(*)} \mu \mu)}{\Gamma(B \to K^{(*)} e e)} \ ,
-\end{equation}
-both measured to be about $2.5\sigma$ away from
-$R_{K^{(*)}} \approx 1$~\cite{Aaij:2019wad, Aaij:2017vbb}. Along with the ratios
-$R_{K^{(*)}}$ sit a large class of discrepant measurements in
-$b \to s \ell \ell$ processes. These include differences from the SM expectation
-of angular observables in $B \to K^{*} \mu \mu$~\cite{Aaij:2015oid,
-  ATLAS-CONF-2017-023, CMS-PAS-BPH-15-008, Khachatryan:2015isa} and suppressed
-branching ratios measured for $B \to K^{(*)} \mu\mu$~\cite{Aaij:2014pli} and
-$B_{s} \to \phi\mu \mu$~\cite{Aaij:2015esa}. The LFU ratios given in
-Eqs.~\eqref{eq:rd} and \eqref{eq:rk} are theoretically very clean, since a large
-part of the theory uncertainty cancels in the ratio.
-
-In the following we adhere to the conventions\footnote{These can be accessed
-  easily at \url{https://flav-io.github.io/docs/operators.html}.} of
+anomalies, discussed in detail in Sec.~\ref{sec:ch1-flavour-anomalies}. In the
+following we adhere to the conventions\footnote{These can be accessed easily at
+  \url{https://flav-io.github.io/docs/operators.html}.} of
 Ref.~\cite{Aebischer:2017ugx} relevant to the Warsaw basis for the SMEFT and the
 \textsf{flavio} basis~\cite{Straub:2018kue} for the Weak Effective Theory (WET).
 The leptoquarks
@@ -2516,8 +2501,10 @@ relevant for the neutral-current anomalies. Fits are usually performed to
 four-fermion operators in the WET, defined below the electroweak scale. For the
 $b \to s \ell \ell$ data, a good fit is given for~\cite{Aebischer:2019mlg}
 \begin{equation}
-  C_{9}^{bs\mu\mu} = - C_{10}^{bs\mu\mu} = \frac{1}{2} \left(  V_{tb} V_{ts}^{*} \frac{e^{2}}{16\pi^{2}} \frac{4 G_{F}}{\sqrt{2}} \right)^{-1} \left[ C_{lq}^{(1)} + C_{lq}^{(3)} \right]_{2232} \approx -0.5 \ .
+  C_{9}^{bs\mu\mu} = - C_{10}^{bs\mu\mu} = \frac{1}{2} \left(  V_{tb} V_{ts}^{*} \frac{e^{2}}{16\pi^{2}} \frac{4 G_{F}}{\sqrt{2}} \right)^{-1} \left[ C_{lq}^{(1)} + C_{lq}^{(3)} \right]_{2232} \approx -0.5 \ ,
 \end{equation}
+where $C_{9,10}^{bs\mu\mu}$ are referred to simply as $C_{9,10}$ in
+Sec.~\ref{sec:ch1-flavour-anomalies}.
 
 It was pointed out in Ref.~\cite{Aebischer:2019mlg} that there exists a mild
 tension between the fit to $R_{K^{(*)}}$ and the other anomalous $b \to s$ data,

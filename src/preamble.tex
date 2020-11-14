@@ -123,3 +123,13 @@
     contents={\LARGE\ttfamily\DraftText}
   }
 }
+
+% numbers in LNV table
+\newcommand{\mynum}[1]{
+  \num[
+  scientific-notation = true,
+  round-mode = figures,
+  round-precision = 1,
+  exponent-product = \cdot
+  ]{#1}
+}

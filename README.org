@@ -26,19 +26,19 @@
     - [ ] Add discussion of LFU respected in light-lepton modes
     - [ ] Discuss lack of form factors for $D^*$
   + [X] g-2
-- [ ] Math notation appendix
-- [ ] Leptoquarks, quantum numbers, properties?
+- [X] Math notation appendix
+- [ ] Leptoquarks, quantum numbers, properties? Maybe move table from math appendix here?
 
 * Chapter 2: Model building from effective operators
-- [ ] Sort out introduction and appendices
-- [ ] Sort out references
-- [ ] Paste in
+- [X] Sort out introduction and appendices
+- [X] Sort out references
+- [X] Paste in
+- [ ] Double check that discussion reads okay in the context of the thesis
 
-* Chapter 3: Radiative neutrino mass
-- [ ] Paste paper in
-
-* Chapter 4: Reconsidering the BN scenario
+* Chapter 3: Reconsidering the BN scenario
 - [ ] Sort out introduction
+- [ ] Fix references
+- [ ] Add in new references
 - [ ] Replace fit with recent one from paper with Innes
 - [ ] Make new plots with updated measurements
   - RKStar_nunu < 2.7 (!) (1702.03224)
@@ -46,12 +46,12 @@
   - D_s to mu nu: 5.49 pm 0.16 (new measurement in 2019, take from PDG)
   - Measurement of B to tau nu: 1712.04123
 
-* Chapter 5: Models of neutrino mass and the flavour anomalies
+* Chapter 4: Models of neutrino mass and the flavour anomalies
 - [ ] General introduction
 - [ ] Tail end of BN work
 - [ ] Paper with Innes, rewrite introduction and motivation to model
 
-* Chapter 6: Quirk project
+* Chapter 5: Quirk project
 - [X] Get paper in
 - [X] Fix all cases of Ref, =\textsc= and italic Latin phrases
 - [ ] Move out of appendix
