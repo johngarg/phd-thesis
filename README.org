@@ -34,11 +34,14 @@
 - [X] Sort out references
 - [X] Paste in
 - [ ] Double check that discussion reads okay in the context of the thesis
+- [ ] Move mathematical conventions section back into chapter 2 and deal with
+  consequences of that
 
 * Chapter 3: Reconsidering the BN scenario
-- [ ] Sort out introduction
-- [ ] Fix references
+- [X] Sort out introduction
+- [X] Fix references
 - [ ] Add in new references
+- [ ] Update experimental constraints under eq. 3.5 with newer results
 - [ ] Replace fit with recent one from paper with Innes
 - [ ] Make new plots with updated measurements
   - RKStar_nunu < 2.7 (!) (1702.03224)

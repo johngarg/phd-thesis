@@ -39,6 +39,7 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{longtable}
+\usepackage[version=3]{mhchem}
 
 \usepackage{array}
 \usepackage{makecell}
@@ -81,16 +82,23 @@
 %   these margins are set by the A4 paper ratios, 1:sqrt(2)
 %   paperheight/paperwidth = paperwidth/textwidth = paperheight/textheight = sqrt(2)
 %   outer/inner = bottom/top = sqrt(2)
+
+%   Original version (top and bottom values for \symmetricmargin and \bookmargin
+%   all the same)
+%   \usepackage[outer=36.02988mm,inner=25.47697mm,top=36.0317mm,bottom=50.9565mm]{geometry}
 \usepackage[outer=36.02988mm,inner=25.47697mm,top=36.0317mm,bottom=50.9565mm]{geometry}
 \newcommand*\symmetricmargin{
     \newgeometry{outer=30.7534mm,inner=30.7534mm,top=36.0317mm,bottom=50.9565mm}
 }
 \newcommand*\bookmargin{
-    \newgeometry{outer=36.02988mm,inner=25.47697mm,top=36.0317mm,bottom=50.9565mm}
+  \newgeometry{outer=36.02988mm,inner=25.47697mm,top=36.0317mm,bottom=50.9565mm}
 }
 
 % For testing the formatting
 \usepackage{lipsum}
+
+\usepackage{tikz}
+\usepackage{tikz-feynman}
 
 % ---------
 % Eye candy

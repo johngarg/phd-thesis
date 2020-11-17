@@ -86,15 +86,15 @@ recent results of work listing completions of SMEFT
 operators~\cite{deBlas:2017xtg}.
 
 The remainder of the paper is structured as follows.
-Section~\ref{sec:conventions} sets out some conventions.
-Section~\ref{sec:treelevelmatching} contains a review of tree-level matching and
+Section~\ref{sec:ch2-conventions} sets out some conventions.
+Section~\ref{sec:ch2-treelevelmatching} contains a review of tree-level matching and
 a description of the methods we use to find the tree-level completions of the
 operators. Neutrino mass model building is described in
-section~\ref{sec:modelbuilding}, while section~\ref{sec:models} presents a
+section~\ref{sec:ch2-modelbuilding}, while section~\ref{sec:ch2-models} presents a
 preliminary analysis of the models along with some examples.
 
 \section{Conventions}
-\label{sec:conventions}
+\label{sec:ch2-conventions}
 
 In this section we establish the conventions we employ throughout the rest of
 the paper: our operational semantics and the classification of the
@@ -103,13 +103,13 @@ that this classification differs mildly from that found in earlier work, since
 our list includes additional structures as well as operators containing
 derivatives. We find the operators containing field-strength tensors to be
 uninteresting from the perspective of model building --- a point justified in
-detail in Sec.~\ref{sec:exploding-derivative-operators} --- and choose not to
+detail in Sec.~\ref{sec:ch2-exploding-derivative-operators} --- and choose not to
 include them in our classification in this section. We remind the reader that
 our mathematical and notational conventions can be found in
 Appendix~\ref{chapter:notation}, and these are drawn on heavily in this chapter.
 
 \subsection{On operators and tree-level completions}
-\label{sec:operatorsandcompletions}
+\label{sec:ch2-operatorsandcompletions}
 
 Below we discuss our use of the terms operator and completion. We establish
 naming conventions of types of operators that we use throughout the paper, and
@@ -162,7 +162,7 @@ Ref.~\cite{Henning:2015alf}. These can be arranged into two terms with the
 Lorentz structure of the operators chosen such that the flavour indices don't
 have any permutation symmetries~\cite{Lehman:2014jma}:
 \begin{subequations}
-  \label{eq:o3a3b-complete}
+  \label{eq:ch2-o3a3b-complete}
   \begin{align}
     \underset{rstu}{\mathcal{O}_{3a}^{(LQ)(Ld)}} &= (L^{i}_{r}Q^{k}_{t})(L^{j}_{s}\bar{d}_{u})H^{l} \epsilon_{ij} \epsilon_{kl},\\
     \underset{rstu}{\mathcal{O}_{3b}^{(LQ)(Ld)}} &= (L^{i}_{r}Q^{k}_{t})(L^{j}_{s}\bar{d}_{u})H^{l} \epsilon_{ik} \epsilon_{jl}.
@@ -192,7 +192,7 @@ or equivalently, by the implied scale of the new physics. In this sense,
 exploding the operator $\mathcal{O}_{3a}$, for instance, means finding the
 combinations of heavy field content that generate an operator of type 2 with
 $\mathrm{SU}(2)_{L}$ structure $3a$. This generated operator will not in general
-be $\mathcal{O}_{3a}^{(LQ)(Ld)}$ of Eq.~\eqref{eq:o3a3b-complete}, but will be
+be $\mathcal{O}_{3a}^{(LQ)(Ld)}$ of Eq.~\eqref{eq:ch2-o3a3b-complete}, but will be
 expressible as a linear combination of $\mathcal{O}_{3a}^{(LQ)(Ld)}$ and
 $\mathcal{O}_{3b}^{(LQ)(Ld)}$, or any other chosen spanning set of operators.
 
@@ -245,16 +245,16 @@ these out from an interaction Lagrangian like
 with couplings $x, y, z \in \mathbb{C}$. They will generate organic operators
 that can be written as linear combinations of the operators listed above
 \begin{subequations}
-  \label{eq:organic-ops}
+  \label{eq:ch2-organic-ops}
   \begin{align}
     \mathcal{S}: &\quad \frac{x^{2}}{M_{\mathcal{S}}^{2}} \mathcal{O}_{H^{2}D^{2}}^{(2)}, \\
-    \Xi: &\quad \frac{y^{2}}{M_{\Xi}^{2}} \left[ \mathcal{O}_{H^{2}D^{2}}^{(3)} + \mathcal{O}_{H^{2}D^{2}}^{(4)} \right], \label{eq:organic-ops-2} \\
+    \Xi: &\quad \frac{y^{2}}{M_{\Xi}^{2}} \left[ \mathcal{O}_{H^{2}D^{2}}^{(3)} + \mathcal{O}_{H^{2}D^{2}}^{(4)} \right], \label{eq:ch2-organic-ops-2} \\
     \Xi_{1}: &\quad \frac{|z|^{2}}{M_{\Xi_{1}}^{2}} \mathcal{O}_{H^{2}D^{2}}^{(1)},
   \end{align}
 \end{subequations}
 up to $\mathcal{O}(1)$ factors. Of course, these can then be matched onto a
 genuine basis of operators like
-\begin{subequations}\label{eq:2h2d-basis}
+\begin{subequations}\label{eq:ch2-2h2d-basis}
   \begin{align}
     \mathcal{O}_{\phi \Box} = \mathcal{O}_{H^{2}D^{2}}^{(2)} &= \tilde{H}^{i}H^{j} \Box \tilde{H}^{k}H^{l} \epsilon_{ij} \epsilon_{kl}, \\
     \mathcal{O}_{\phi D} \overset{\text{IBP}}{\sim} \mathcal{O}_{H^{2}D^{2}}^{(3)} &= \tilde{H}^{i}H^{j} \Box \tilde{H}^{k}H^{l} \epsilon_{ik} \epsilon_{jl},
@@ -268,7 +268,7 @@ $\mathcal{O}_{H^{2}D^{2}}^{(3)} + \mathcal{O}_{H^{2}D^{2}}^{(4)} = 2\mathcal{O}_
 indicating clearly the redundancy of one of the operators. The convention that
 non-trivial representations never give rise to fields contracted with an
 $\epsilon$ symbol implies $\mathcal{O}^{(2)}_{H^{2}D^{2}}$ should not be chosen
-to feature in Eq.~\eqref{eq:organic-ops-2}. Thus, we call $\Xi$ a completion of
+to feature in Eq.~\eqref{eq:ch2-organic-ops-2}. Thus, we call $\Xi$ a completion of
 operators $\mathcal{O}_{H^{2}D^{2}}^{(3)}$ and $\mathcal{O}_{H^{2}D^{2}}^{(4)}$,
 even though the operator it generates can also be expressed as a linear
 combination of $\mathcal{O}^{(2)}_{H^{2}D^{2}}$ and
@@ -290,12 +290,12 @@ $[\lambda^{A}]_{c}^{a} [\lambda^{A}]_{d}^{b} = \tfrac{4}{3}\delta^{a}_{d}\delta^
 over
 $[\lambda^{A}]_{c}^{a} [\lambda^{A}]_{d}^{b} = 2\delta^{a}_{d}\delta^{b}_{c} - \tfrac{2}{3}\delta^{a}_{c}\delta^{b}_{d}$.
 Explicit examples involving non-trivial colour contractions are presented in
-Sec.~\ref{sec:exploding-operators} and in the publicly available notebook we
-introduce in Sec.~\ref{sec:algorithm}, which contains complete matching
+Sec.~\ref{sec:ch2-exploding-operators} and in the publicly available notebook we
+introduce in Sec.~\ref{sec:ch2-algorithm}, which contains complete matching
 calculations for some of the dimension-six operators in the SMEFT.
 
 \subsection{Operator taxonomy}
-\label{sec:operatortaxonomy}
+\label{sec:ch2-operatortaxonomy}
 
 The list of gauge-invariant, $\Delta L = 2$ operators first provided by BL runs
 from $\mathcal{O}_1$ to $\mathcal{O}_{60}$~\cite{Babu:2001ex}. Each numbered
@@ -311,7 +311,7 @@ eleven, since it was thought that higher dimensional operators generally imply
 neutrinos insufficiently heavy to meet the atmospheric lower bound. (It seems
 that a truly exhaustive treatment requires operators of higher
 mass-dimension~\cite{Gargalionis:2019drk}, and this is discussed in detail in
-Sec.~\ref{sec:operator-closures}.) An additional 15 operators (acknowledged by
+Sec.~\ref{sec:ch2-operator-closures}.) An additional 15 operators (acknowledged by
 BL, but left implicit) of mass dimension nine and eleven were added to the list
 by dGJ, increasing the total number to 75. These are constructed as products of
 lower-dimensional operators with the dimension-four Yukawa operators of the SM.
@@ -402,11 +402,11 @@ they can all be labelled. Often this means that derivatives will be carried by
 Higgs fields.
 
 \section{Tree-level matching forwards and backwards}
-\label{sec:treelevelmatching}
+\label{sec:ch2-treelevelmatching}
 
 In this section we outline the procedure we use for opening up operators of the
-sort introduced in Sec.~\ref{sec:operatorsandcompletions} and
-Sec.~\ref{sec:operatortaxonomy} for the purpose of exploratory model building.
+sort introduced in Sec.~\ref{sec:ch2-operatorsandcompletions} and
+Sec.~\ref{sec:ch2-operatortaxonomy} for the purpose of exploratory model building.
 We refer back to the prefatory comments made in
 Sec.~\ref{sec:ch1-tree-level-matching} on tree-level matching for scalars and
 fermions, and include a discussion of the tree-level completions of operators
@@ -444,11 +444,12 @@ Lorentz- and gauge-invariance at every vertex, starting with vertices with two
 or three (for scalars) external edges. This is equivalent to exploring all of
 the possible ways the light fields may have been grouped into terms in
 $\mathscr{L}[\pi, \Pi]$ and distributed in the products of
-Eqs.~\eqref{eq:classical-efflag-scalar} and \eqref{eq:classical-efflag-fermion}.
-In the following we develop this picture into a precise algorithm.
+Eqs.~\eqref{eq:ch1-classical-efflag-scalar} and
+\eqref{eq:ch1-classical-efflag-fermion}. In the following we develop this
+picture into a precise algorithm.
 
 \subsubsection{Exploding operators}
-\label{sec:exploding-operators}
+\label{sec:ch2-exploding-operators}
 
 As an introductory example we use the Weinberg operator
 $\mathcal{O}_{1} = (L^{i}L^{j})H^{k}H^{l} \epsilon_{ik} \epsilon_{jl}$, whose
@@ -458,19 +459,19 @@ $\Xi_{1} \sim (\mathbf{1}, \mathbf{3}, 1)_{S}$ and
 $\Sigma \sim (\mathbf{1}, \mathbf{3}, 0)_{(\mathbf{2}, \mathbf{1})}$. These can
 be derived by considering the allowed ways of decorating the two tree-level
 two-scalar--two-fermion topologies with the field content of the operator. These
-topologies are shown in Fig.~\ref{fig:seesaw-figs} along with the possible ways
+topologies are shown in Fig.~\ref{fig:ch2-seesaw-figs} along with the possible ways
 of furnishing the topologies into Feynman diagrams, each corresponding to a
 seesaw model. As discussed above, this is equivalent to grouping fields together
 as they may have arisen in the partial derivatives of
-Eqs.~\eqref{eq:classical-efflag-scalar} and \eqref{eq:classical-efflag-fermion}.
+Eqs.~\eqref{eq:ch1-classical-efflag-scalar} and \eqref{eq:ch1-classical-efflag-fermion}.
 For the Weinberg operator, these groupings are:
 \begin{subequations}
-  \label{eq:seesaw-contractions}
+  \label{eq:ch2-seesaw-contractions}
   \begin{align}
     &\wick{\c L^{i} L^{j} \c H^{k} H^{l}} \epsilon_{ik} \epsilon_{jl} \quad \Rightarrow \quad \frac{\partial \mathscr{L}^{lh}}{\partial N_{\alpha}} \supseteq x_{r} L_{r}^{\alpha i} H^{k} \epsilon_{ik} \sim N, \\
-    \label{eq:typeii}
+    \label{eq:ch2-typeii}
     &\wick{\c L^{i} \c L^{j} H^{k} H^{l}} \epsilon_{ik} \epsilon_{jl} \quad \Rightarrow \quad \frac{\partial \mathscr{L}^{lh}}{\partial \Xi_{1 \alpha}^{kl}} \supseteq [y_{rs} (L_{r}^{\{i}L_{s}^{j\}}) + \kappa \tilde{H}^{i} \tilde{H}^{j}] \epsilon_{ik} \epsilon_{jl} \sim \Xi_{1}^{\dagger},\\
-    \label{eq:typeiii}
+    \label{eq:ch2-typeiii}
     &\wick{\c L^{i} L^{j} H^{k} \c H^{l}} \epsilon_{ik} \epsilon_{jl} \quad \Rightarrow \quad \frac{\partial \mathscr{L}^{lh}}{\partial \Sigma_{\alpha}^{kj}} \supseteq z_{r} L_{r}^{\alpha \{i} H^{l\}} \epsilon_{ik} \epsilon_{jl} \sim \Sigma,
   \end{align}
 \end{subequations}
@@ -480,16 +481,16 @@ pattern of contractions corresponds to a topology, with each individual grouping
 of the fields corresponding to a vertex, or equivalently, a term in the
 $\Delta L = 2$ UV Lagrangian. The explicit form of these terms can be written
 down by keeping track of the isospin indices as in
-Eq.~\eqref{eq:seesaw-contractions}, and expanding implicit index structures in
+Eq.~\eqref{eq:ch2-seesaw-contractions}, and expanding implicit index structures in
 all possible ways (\textit{i.e.} decomposing products of fields into irreducible
 representations), consistent with our model building assumptions. (In our case
 this means keeping only scalar and fermion Lorentz irreps.) In
-Eq.~\eqref{eq:typeiii}, the indices $i,l$ are symmetrised since this is the only
+Eq.~\eqref{eq:ch2-typeiii}, the indices $i,l$ are symmetrised since this is the only
 way the component $L^{i}H^{l}$ (with $i,l$ not antisymmetric under exchange) can
 appear in the Yukawa interaction $L \Sigma H$. Note that we adopt the convention
 that the conjugate exotic field couples to the contracted fields in the
 operator. This means that $\Xi_{1}^{\dagger}$ transforms like $L^{\{i} L^{j\}}$,
-as implied in Eq.~\eqref{eq:typeii}, but the renormalisable term in the UV
+as implied in Eq.~\eqref{eq:ch2-typeii}, but the renormalisable term in the UV
 theory which corresponds to the vertex is $L\Xi_{1}L$. For Majorana fermions
 there is only one state which can couple in both cases, while for a Dirac
 fermion $\psi + \bar{\psi}^{\dagger}$ we arbitrarily choose $\bar{\psi}$ to
@@ -515,15 +516,15 @@ couple to the contracted fields.
     traditionally called (read from left to right) the type-I, type-II and
     type-III seesaw models. The $\mathrm{SU}(2)_{L}$ indices are included
     explicitly to distinguish type-I and type-III, while making a more clear
-    connection to Eq.~\eqref{eq:seesaw-contractions}. The exotic propagators are
+    connection to Eq.~\eqref{eq:ch2-seesaw-contractions}. The exotic propagators are
     shown in bold.}
-  \label{fig:seesaw-figs}
+  \label{fig:ch2-seesaw-figs}
 \end{figure}
 
 This process of grouping fields into renormalisable interaction terms can be
 conveniently expressed with the following replacement rules:
 \begin{equation}
-  \label{eq:non-deriv-rules}
+  \label{eq:ch2-non-deriv-rules}
   \wick{\c \psi^{\alpha}_{1} \c \psi_{2 \alpha}} \to \Phi^{\dagger}, \quad \wick{\c \phi_{1} \c \phi_{2}} \to \Phi^{\dagger}, \quad
   %
   \contraction[1ex]{}{\phi}{{}_{1}}{\phi}
@@ -548,15 +549,15 @@ According to Table~\ref{tab:long} there are two $\mathrm{SU}(2)$
 structures. Both of these structures need to be opened up to enumerate all of
 the completions, and models will in general generate sums of these with a
 specific Lorentz structure, as per the discussion in
-Sec.~\ref{sec:operatorsandcompletions}. We choose to look at
+Sec.~\ref{sec:ch2-operatorsandcompletions}. We choose to look at
 \begin{equation}
   \underset{rstuvw}{\mathcal{O}_{12a}} = \underset{r}{L}^{i} \underset{s}{L}^{j} \underset{t}{\tilde{Q}}^{k} \underset{u}{\tilde{Q}}^{l} \underset{v}{\bar{u}}^{\dagger} \underset{w}{\bar{u}}^{\dagger} \epsilon_{ik}\epsilon_{jl}
 \end{equation}
 and begin with some preliminary comments. There are only two topologies that
 accommodate tree-level completions for six-fermion operators. A scalar-only
-topology (shown in Fig.~\ref{fig:6f-scalar-only}), where pairs of fermions are
+topology (shown in Fig.~\ref{fig:ch2-6f-scalar-only}), where pairs of fermions are
 contracted into scalars which meet at a trilinear vertex, and a
-scalar-plus-fermion topology (shown in Fig.~\ref{fig:6f-scalar-plus-fermion}) in
+scalar-plus-fermion topology (shown in Fig.~\ref{fig:ch2-6f-scalar-plus-fermion}) in
 which two exotic scalars come about by fermion contractions and each meets
 another SM fermion. Since we are not interested in introducing exotic vector
 fields, contractions between fermions must come about by grouping only fields
@@ -577,7 +578,7 @@ fields: as $(\tilde{Q}\tilde{Q})(\bar{u}^{\dagger} \bar{u}^{\dagger})$ or
 $(\tilde{Q}\bar{u}^{\dagger})^{2}$. The second choice is of the colour
 representations. These can be explored recursively, or all invariants can be
 constructed and each opened up separately, following the conventions of
-Sec.~\ref{sec:operatorsandcompletions}. We opt for the latter case, and
+Sec.~\ref{sec:ch2-operatorsandcompletions}. We opt for the latter case, and
 enumerate the colour contractions
 \begin{subequations}
   \begin{align}
@@ -600,10 +601,10 @@ about from octets.
 
 \begin{figure}[t]
   \centering
-  \subcaptionbox{\label{fig:6f-scalar-only}}{
+  \subcaptionbox{\label{fig:ch2-6f-scalar-only}}{
     \includegraphics[width=0.35\linewidth]{6f_scalar_only}
   }
-  \subcaptionbox{\label{fig:6f-scalar-plus-fermion}}{
+  \subcaptionbox{\label{fig:ch2-6f-scalar-plus-fermion}}{
     \includegraphics[width=0.4\linewidth]{6f_scalar_plus_fermion}
   }
   \caption[The two tree-level topologies relevant to six-fermion operators.]{The
@@ -611,16 +612,16 @@ about from octets.
     operators, some fermion arrows may be reversed. The exotic propagators are
     shown in bold. (a) The scalar-only topology. (b) The scalar-plus-fermion or
     central-fermion topology.}
-  \label{fig:6f-topologies}
+  \label{fig:ch2-6f-topologies}
 \end{figure}
 
 Finding all of the completions of $\mathcal{O}_{12a}$ involves contracting all
 fields in all possible ways for each colour contraction. We work through the
 example of a particular scalar-only completion of $\mathcal{O}_{12a\delta}$ in
-Fig.~\ref{fig:example-completion-graph}. Each step follows the grouping of
+Fig.~\ref{fig:ch2-example-completion-graph}. Each step follows the grouping of
 fields into a vertex, the Lagrangian term this grouping corresponds to, and the
 evolving topology of the completion under the replacement rules of
-Eq.~\eqref{eq:non-deriv-rules}. At intermediate stages in the explosion of the
+Eq.~\eqref{eq:ch2-non-deriv-rules}. At intermediate stages in the explosion of the
 operator, the theory described is still effective because some vertices still
 correspond to irrelevant operators\footnote{We note that one can make a
   connection here to the framework of Ref.~\cite{Herrero-Garcia:2019czj}, where
@@ -631,13 +632,13 @@ correspond to irrelevant operators\footnote{We note that one can make a
   \textit{e.g.}~\cite{Banerjee:2020jun}.}. The procedure stops once all vertices
 have mass-dimension $d \leq 4$. We replace the contracted fields in the operator
 with the irreducible representation that, following the restrictions described
-in Sec.~\ref{sec:operatorsandcompletions}, could give rise to the contraction.
+in Sec.~\ref{sec:ch2-operatorsandcompletions}, could give rise to the contraction.
 This will in general require the addition of other structures\footnote{The
   organic operator of the model can be written as a linear combination of these
   other operators and the operator being opened up, and all of these share the
   model as a completion in our sense.}, although this is not the case here. The
 operator generated by the model highlighted in
-Fig.~\ref{fig:example-completion-graph} is
+Fig.~\ref{fig:ch2-example-completion-graph} is
 \begin{equation}
   (\underset{r}{L}^{\{i}\underset{s}{L}^{j\}})(\underset{t}{Q^{\dagger}_{i a}} \underset{u}{Q^{\dagger}_{j b}})(\underset{v}{\bar{u}}^{\dagger \{a} \underset{w}{\bar{u}}^{\dagger b\}}) = \underset{rstuvw}{\mathcal{O}_{12a\delta}} + \underset{srtuvw}{\mathcal{O}_{12a\delta}} + \underset{rsutvw}{\mathcal{O}_{12a\delta}} + \underset{srutvw}{\mathcal{O}_{12a\delta}},
 \end{equation}
@@ -651,7 +652,7 @@ relevant part of the $\Delta L = 2$ Lagrangian of the model can be read directly
 \end{equation}
 although the generation of the entire Lagrangian implied by the field content
 requires a program implementing group-theory methods, spin-statistics and tensor
-algebra (see Sec.~\ref{sec:algorithm}). This particular model inherits the high
+algebra (see Sec.~\ref{sec:ch2-algorithm}). This particular model inherits the high
 level of symmetry in the effective operator. This introduces symmetries in the
 Yukawa couplings of the model, reducing the total number of free parameters.
 
@@ -676,7 +677,7 @@ Yukawa couplings of the model, reducing the total number of free parameters.
     our approach in red, like the vector contraction giving rise to the vector
     leptoquark $\mathcal{U}_{2}$ in the figure. Flavour indices have been
     suppressed.}
-  \label{fig:example-completion-graph}
+  \label{fig:ch2-example-completion-graph}
 \end{figure}
 
 Given an effective operator, we have established a simple rule for reducing it
@@ -690,7 +691,7 @@ in the Lagrangian. In the next section, we discuss how to expand this rule to
 reducing operators containing derivatives.
 
 \subsection{Tree-level completions of derivative operators}
-\label{sec:derivatives}
+\label{sec:ch2-derivatives}
 
 In the following we broaden the discussion to exploratory model building through
 effective operators containing (covariant) derivatives and field-strength
@@ -707,11 +708,11 @@ physics~\cite{delAguila:2011gr, delAguila:2012nu, Herrero-Garcia:2016uab}, and
 our work expands on this.
 
 \subsubsection{Exploding derivative operators}
-\label{sec:exploding-derivative-operators}
+\label{sec:ch2-exploding-derivative-operators}
 
 In our setup, derivatives in effective operators arise at tree-level by the
-expansions given in Eqs.~\eqref{eq:classical-efflag-fermion} and
-\eqref{eq:classical-efflag-scalar}. It is clear that derivatives occur in one of
+expansions given in Eqs.~\eqref{eq:ch1-classical-efflag-fermion} and
+\eqref{eq:ch1-classical-efflag-scalar}. It is clear that derivatives occur in one of
 two ways: (1) in pairs as $D^{2}$ or $X$ from next-to-leading order terms in the
 EFT expansion, or (2) as single derivatives contracted with fermions
 ($\slashed{D}$ in traditional notation) coming about from arrow-preserving
@@ -741,17 +742,17 @@ operators~\cite{Craig:2019wmo}.
 
 The derivatives originating from arrow-preserving fermion propagators in the UV
 theory enter the effective Lagrangian through the first term in
-Eq.~\eqref{eq:classical-efflag-fermion}. Here, the derivative acts on an object
+Eq.~\eqref{eq:ch1-classical-efflag-fermion}. Here, the derivative acts on an object
 with which it shares a contracted index, \textit{i.e.} it is contracted as
 $(\mathbf{2}, \mathbf{2}) \otimes (\mathbf{1}, \mathbf{2}) = (\mathbf{2}, \mathbf{1})$
 with the object carrying the index $\dot{\beta}$. This object must be a
 $(\mathbf{1}, \mathbf{2})$-fermion if it comes from a renormalisable
 interaction, which in our case is uniquely a Yukawa interaction. Thus,
 \begin{equation}
-  \label{eq:deriv-indices}
+  \label{eq:ch2-deriv-indices}
   \frac{\partial \mathscr{L}^{lh}}{\partial \Pi_{\dot{\beta}}^{\dagger}} = \sum_{i} \psi^{\dagger \dot{\beta}}_{i} \phi_{i} ,
 \end{equation}
-with $\psi_{i}$ and $\phi_{i}$ defined as in Eq.~\eqref{eq:non-deriv-rules}. For
+with $\psi_{i}$ and $\phi_{i}$ defined as in Eq.~\eqref{eq:ch2-non-deriv-rules}. For
 example, a structure like
 $D^{\alpha \dot{\alpha}} \psi_{1}^{\dagger \dot{\beta}} \phi_{1} \epsilon_{\dot{\alpha} \dot{\beta}}$
 could enter an effective operator by integrating out a heavy fermion $\Pi$ that
@@ -759,23 +760,23 @@ couples through $\mathscr{L} \supset \Pi^{\dagger} \psi^{\dagger}_{1} \phi_{1}$.
 For clarity, the effective Lagrangian looks like
 \begin{align}
   \mathscr{L}_{\text{eff}}[\pi] &\supset \frac{\partial \mathscr{L}^{lh}}{\partial \Pi_{\beta}} \frac{1}{m_{\Pi}^{2}} D^{\alpha \dot{\alpha}} \frac{\partial \mathscr{L}^{lh}}{\partial \Pi^{\dagger}_{\dot{\beta}}}   \epsilon_{\alpha \beta} \epsilon_{\dot{\alpha} \dot{\beta}} + \cdots \\
-  &= \frac{\partial \mathscr{L}^{lh}}{\partial \Pi_{\beta}} \frac{1}{m_{\Pi}^{2}} D^{\alpha \dot{\alpha}} \left( \psi_{1}^{\dagger \dot{\beta}} \phi_{1} + \cdots \right) \epsilon_{\alpha \beta} \epsilon_{\dot{\alpha} \dot{\beta}} \label{eq:deriv-efflag-2}
+  &= \frac{\partial \mathscr{L}^{lh}}{\partial \Pi_{\beta}} \frac{1}{m_{\Pi}^{2}} D^{\alpha \dot{\alpha}} \left( \psi_{1}^{\dagger \dot{\beta}} \phi_{1} + \cdots \right) \epsilon_{\alpha \beta} \epsilon_{\dot{\alpha} \dot{\beta}} \label{eq:ch2-deriv-efflag-2}
 \end{align}
 in this case. The fields $\phi_{i}$ and $\psi_{i}$ need not be light, and could
 have arisen from the contraction of fields in a complicated way. For example,
 $\phi_{1}$ may have come from the contraction of two light fermions
 $\phi_{1} \sim \xi_{1} \xi_{2}$. This situation is visualised diagrammatically
-in Fig.~\ref{fig:example-deriv-1}. The figure shows the $\xi_{i}$ fermions
+in Fig.~\ref{fig:ch2-example-deriv-1}. The figure shows the $\xi_{i}$ fermions
 coupling to the heavy $\phi$ propagator, which in turn couples to
 $\psi_{1}^{\dagger}$ leading to the arrow-preserving fermion propagator for the
 heavy $\Pi$ carrying momentum $k^{\alpha \dot{\alpha}}$. It is clear from
-Eq.~\eqref{eq:deriv-efflag-2} that the derivative acts on both the fermion and
+Eq.~\eqref{eq:ch2-deriv-efflag-2} that the derivative acts on both the fermion and
 the scalar, reflecting the fact that in the diagram $k$ is the sum of the $\psi$
 and $\phi$ momenta. So, derivatives acting on fermions or scalars can be grouped
 off into a Yukawa interaction in this way, leaving a arrow-preserving fermion
 propagator in their wake. This corresponds to the replacement rules
 \begin{equation}
-  \label{eq:deriv-rules}
+  \label{eq:ch2-deriv-rules}
   \wick{D^{\alpha \dot{\alpha}} (\c \psi^{\dagger}_{\dot{\alpha}}) \c \phi} \to \Pi^{\alpha}, \qquad \wick{D^{\alpha \dot{\alpha}} (\c \psi^{\dagger}_{\dot{\alpha}} \c \phi)} \to \Pi^{\alpha}, \qquad \wick{D^{\alpha \dot{\alpha}} (\c \phi) \c \psi^{\dagger}_{\dot{\alpha}}} \to \Pi^{\alpha} .
 \end{equation}
 We highlight that the arrow-preserving propagator implies that only one
@@ -785,10 +786,10 @@ guarantee anomaly cancellation and straightforwardly give them large masses.
 
 \begin{figure}[t]
   \centering
-  \subcaptionbox{\label{fig:example-deriv-1}}{
+  \subcaptionbox{\label{fig:ch2-example-deriv-1}}{
     \includegraphics[width=0.4\linewidth]{example_deriv.pdf}
   }
-  \subcaptionbox{\label{fig:example-deriv-2}}{
+  \subcaptionbox{\label{fig:ch2-example-deriv-2}}{
     \includegraphics[width=0.4\linewidth]{example_deriv_2.pdf}
   }
   \caption[(a) The diagram shows an example opening of an operator containing at
@@ -805,15 +806,15 @@ guarantee anomaly cancellation and straightforwardly give them large masses.
     Ref.~\cite{Dreiner:2008tw}. Here, the Lorentz structure is such that the
     momenta are contracted, which arises from contractions of derivatives which
     share one contracted index.}
-  \label{fig:example-deriv}
+  \label{fig:ch2-example-deriv}
 \end{figure}
 
 In an effective operator the derivative may act on a fermion with which it does
 not share a contracted index. For example, in the model shown in
-Fig.~\ref{fig:example-deriv-1}, the effective operator at the low scale looks
+Fig.~\ref{fig:ch2-example-deriv-1}, the effective operator at the low scale looks
 something like
 \begin{equation}
-  \label{eq:distribute-deriv}
+  \label{eq:ch2-distribute-deriv}
 D^{\beta \dot{\beta}}(\xi^{\alpha}_{1} \xi_{2 \alpha} \psi^{\dagger}_{1 \dot{\beta}}) \frac{\partial \mathscr{L}^{lh}}{\partial \Pi^{\beta}} = D^{\beta \dot{\beta}}(\xi^{\alpha}_{1}) \xi_{2 \alpha} \psi^{\dagger}_{1 \dot{\beta}} \frac{\partial \mathscr{L}^{lh}}{\partial \Pi^{\beta}} + \cdots
 \end{equation}
 although as long as the operator is generated at tree-level, the term with the
@@ -824,19 +825,19 @@ constituting the effective operator and discard the topologies in which a
 contraction like $\wick{(D^{\alpha \dot{\alpha}} \c \psi_{1}^{\beta}) \c \phi}$
 is made. After a UV-complete model is derived, the operator it implies will
 still have the form of the one on the left-hand side of
-Eq.~\eqref{eq:distribute-deriv}, so no information is lost. This implies the
+Eq.~\eqref{eq:ch2-distribute-deriv}, so no information is lost. This implies the
 rules
 \begin{equation}
-  \label{eq:bad-deriv-repl-rules}
+  \label{eq:ch2-bad-deriv-repl-rules}
   \wick{(D^{\alpha \dot{\alpha}} \c \psi^{\beta}) \c \phi} \to \xmark, \qquad \wick{(D^{\alpha \dot{\alpha}} \c \psi^{\beta} \c \phi)} \to \xmark, \qquad \wick{(D^{\alpha \dot{\alpha}} \c \phi) \c \psi^{\beta}} \to \xmark, \qquad \wick{(D^{\alpha \dot{\alpha}} \c \phi_{1}) \c \phi_{2}} \to \xmark \ .
 \end{equation}
 
-The first parentheses of Eqs.~\eqref{eq:classical-efflag-fermion} and
-\eqref{eq:classical-efflag-scalar} contribute powers of $D^{2}$ or $X$ to
+The first parentheses of Eqs.~\eqref{eq:ch1-classical-efflag-fermion} and
+\eqref{eq:ch1-classical-efflag-scalar} contribute powers of $D^{2}$ or $X$ to
 operators in the effective Lagrangian. They contribute the rules
 \begin{equation}
   \begin{aligned}
-    \label{eq:box-rules}
+    \label{eq:ch2-box-rules}
     \wick{(D^{\alpha \dot{\alpha}} \c \psi_{1}^{\beta}) (D_{\alpha \dot{\alpha}} \c \psi_{2 \beta})} \to \Phi^{\dagger}, \quad \wick{(D^{\alpha \dot{\alpha}} \c \phi_{1}) (D_{\alpha \dot{\alpha}} \c \phi_{2})} \to \Phi^{\dagger} \\
     \wick{(D^{\alpha \dot{\alpha}} \c \psi^{\beta}) (D_{\alpha \dot{\alpha}} \c \phi)} \to \bar{\Psi}^{\beta},\quad
     %
@@ -846,12 +847,15 @@ operators in the effective Lagrangian. They contribute the rules
   \end{aligned}
 \end{equation}
 to those discussed previously. We intend these to stand in for similar rules
-like \textit{e.g.} $\wick{\c \phi_{1} \Box \c \phi_{2}}$ as well. For the
-field-strength contractions, there is the additional requirement that one or
-both of the fields in the contraction be charged under the corresponding gauge
-interaction, but these cannot be contracted into a gauge singlet, since the
-field-strength tensor comes about from the anticommutator of the covariant
-derivatives acting on the exotic fermion. These rules are
+like \textit{e.g.}
+\begin{equation*}
+  \wick{\c \phi_{1} \Box \c \phi_{2}}
+\end{equation*}
+as well. For the field-strength contractions, there is the additional
+requirement that one or both of the fields in the contraction be charged under
+the corresponding gauge interaction, but these cannot be contracted into a gauge
+singlet, since the field-strength tensor comes about from the anticommutator of
+the covariant derivatives acting on the exotic fermion. These rules are
 \begin{equation}
   \contraction[1ex]{}{\psi}{{}^{\beta}}{X}
   \bcontraction[1.3ex]{\psi^{\beta}}{X}{{}_{\alpha \mathsf{j}}^{\mathsf{i} \beta}}{\phi}
@@ -879,7 +883,7 @@ operator is absent, in which case these operators may be important. For the
 $n_{f} = 3$ SMEFT with one Higgs doublet, we conjecture this can only come about
 from operators with a structure like
 \begin{equation}
-  \label{eq:hdh}
+  \label{eq:ch2-hdh}
   \mathcal{O}^{\mu} H^{i} \partial_{\mu} H^{j} \epsilon_{ij},
 \end{equation}
 which vanishes when the derivative is removed. (Similar structures like
@@ -890,36 +894,36 @@ $[X^{\mu\nu}, H] = 0$ for all field strengths $X$. This is the justification for
 our earlier comments that operators containing field-strength tensors are not
 interesting from the perspective of model discovery.
 
-The replacement rules given in Eq.~\eqref{eq:box-rules} do not exhaust the
-possible Lorentz-structures for two derivatives, scalars and fermions. The
+The replacement rules given in Eq.~\eqref{eq:ch2-box-rules} do not exhaust the
+possible Lorentz structures for two derivatives, scalars and fermions. The
 additional structures involve single indices contracted between the derivatives,
 and others contracted into fermions. Diagrammatically, we find that these
 combinations come about from fermion lines containing two arrow-preserving
 propagators, each contributing a factor of momentum. This would be the case, for
-example, if $\psi$ in Fig.~\ref{fig:example-deriv} were a heavy arrow-preserving
-propagator, as shown in Fig.~\ref{fig:example-deriv-2}. Here the rules are
+example, if $\psi$ in Fig.~\ref{fig:ch2-example-deriv} were a heavy arrow-preserving
+propagator, as shown in Fig.~\ref{fig:ch2-example-deriv-2}. Here the rules are
 \begin{equation}
-  \label{eq:two-deriv-other-contractions}
+  \label{eq:ch2-two-deriv-other-contractions}
   \wick{(D^{\alpha \dot{\alpha}} \c \psi_{1 \alpha}) (D^{\beta \dot{\beta}} \c \psi_{2 \beta}) \epsilon_{\dot{\alpha} \dot{\beta}}} \to \Phi^{\dagger}, \quad  \wick{(D^{\alpha \dot{\alpha}} \c \psi) (D^{\beta \dot{\beta}} \c \phi) \epsilon_{\dot{\alpha} \dot{\beta}}} \to \bar{\Psi}^{\beta},\quad \text{other combinations} \to \xmark .
 \end{equation}
 
 In summary, exploding derivative operators can lead to novel models that would
 not be found by exploding non-derivative operators. We have already seen that
-this happens when a structure such as Eq.~\eqref{eq:hdh} is present in the
+this happens when a structure such as Eq.~\eqref{eq:ch2-hdh} is present in the
 operator. It can also happen when the presence of an odd number of derivatives
 allows new topologies with novel chirality structures. The presence of an even
 number of derivatives implies either that the derivatives arose as $D^{2}$ or
 $X$, which usually do not contribute new models, or else from the contractions
-of structures like those in Eq.~\eqref{eq:two-deriv-other-contractions}. It is
-clear from Fig.~\ref{fig:example-deriv-2} that in such cases, the two
+of structures like those in Eq.~\eqref{eq:ch2-two-deriv-other-contractions}. It is
+clear from Fig.~\ref{fig:ch2-example-deriv-2} that in such cases, the two
 arrow-preserving fermion propagators can be replaced with arrow-violating
 propagators, and indeed these will generically be present since we work with
 vector-like fermions. So, with the exception of operators with structures like
-Eq.~\eqref{eq:hdh}, studying single derivative operators is sufficient for model
+Eq.~\eqref{eq:ch2-hdh}, studying single derivative operators is sufficient for model
 discovery.
 
 \subsubsection{Derivative operator examples}
-\label{sec:deriv-op-examples}
+\label{sec:ch2-deriv-op-examples}
 
 Among the simplest derivative operators in the $\Delta L = 2$ SMEFT is the
 dimension seven operator
@@ -932,10 +936,10 @@ discussed in Ref.~\cite{delAguila:2012nu}. The placement of the derivative on
 the Higgs field is enforced by the unique $\mathrm{SU}(2)_{L}$ contraction. This
 is not generally true, and the derivative should be acted in all possible ways
 if it can be. The contraction of $(DH)$ into another Higgs is forbidden by
-Eq.~\eqref{eq:bad-deriv-repl-rules}. Thus, the $(DH)$ must be contracted into a
+Eq.~\eqref{eq:ch2-bad-deriv-repl-rules}. Thus, the $(DH)$ must be contracted into a
 fermion. The options are
 \begin{equation}
-  \label{eq:contraction-choices}
+  \label{eq:ch2-contraction-choices}
   \wick{ \c L^{i}_{\alpha} (D {\c H})^{\alpha \dot{\beta} k} } \epsilon_{ij} \epsilon_{kl} \sim \Sigma^{\dagger \dot{\beta}}_{jl} \quad \text{ and } \quad \wick{ \c {\bar{e}}_{\dot{\beta}}^{\dagger} {(D {\c H})^{\alpha \dot{\beta} k}} } \sim \bar{\Delta}_{1}^{\alpha k}
 \end{equation}
 with the Dirac fermion
@@ -946,18 +950,18 @@ resulting operator $\Sigma^{\dagger}_{jl}\bar{e}^{\dagger}H^{j}H^{l}$ lead to
 the models $\{\Sigma, \Delta_{1} + \bar{\Delta}^{\dagger}_{1}\}$ (from
 $\wick{\c {\bar{e}^{\dagger}} \c H}$) and $\{\Sigma, \Xi_{1}\}$ (from
 $\wick{\c H \c H}$) in that case. The second option in
-Eq.~\eqref{eq:contraction-choices} leads to the operator
+Eq.~\eqref{eq:ch2-contraction-choices} leads to the operator
 $L^{i} \Delta_{1}^{k} H^{j} H^{l} \epsilon_{ij} \epsilon_{jl}$, which is the
 Weinberg operator with the second $L$ replaced with the exotic vector-like
 lepton. This contraction is illustrated diagrammatically in
-Fig.~\ref{fig:od1-completion-1}. It thus implies the same
+Fig.~\ref{fig:ch2-od1-completion-1}. It thus implies the same
 completions\footnote{This phenomenon is discussed in more detail in
-  Sec.~\ref{sec:filtering}.} as $\mathcal{O}_{1}$, each along with
+  Sec.~\ref{sec:ch2-filtering}.} as $\mathcal{O}_{1}$, each along with
 $\Delta_{1} + \bar{\Delta}^{\dagger}_{1}$. This is expected since
 $\bar{e}^{\dagger} (D H)$ transforms like $L$. There are then a total of five
 completions, but four models, since two have the same particle content:
 $\{\Sigma, \Delta_{1} + \bar{\Delta}^{\dagger}_{1}\}$. In
-Fig.~\ref{fig:od1-completion-2} we show how this can be seen as coming about
+Fig.~\ref{fig:ch2-od1-completion-2} we show how this can be seen as coming about
 from the fact that the chirality structure of the diagram allows two positions
 for the arrow-preserving fermion propagator. Note that this is not the case for
 the completion with the singlet fermion $N$. Interestingly, there are two
@@ -971,10 +975,10 @@ down the organic operator generated by these models at the low scale.
 
 \begin{figure}[t]
   \centering
-  \subcaptionbox{\label{fig:od1-completion-1}}{
+  \subcaptionbox{\label{fig:ch2-od1-completion-1}}{
     \includegraphics[width=0.4\linewidth]{od1_completion.pdf}
   }
-  \subcaptionbox{\label{fig:od1-completion-2}}{
+  \subcaptionbox{\label{fig:ch2-od1-completion-2}}{
     \includegraphics[width=0.35\linewidth]{od1_completion_2.pdf}
     \qquad
     \includegraphics[width=0.35\linewidth]{od1_completions_3.pdf}
@@ -993,7 +997,7 @@ down the organic operator generated by these models at the low scale.
     from two similar diagrams, shown here. These correspond to the two ways the
     arrow-preserving and arrow-violating fermion propagators can be placed in
     the graphs for this furnishing of the topology.}
-  \label{fig:od1-completion}
+  \label{fig:ch2-od1-completion}
 \end{figure}
 
 We move on to a two-derivative operator example by studying a completion of
@@ -1018,7 +1022,7 @@ in the Zee model $\mathcal{S}_{1} \sim (\mathbf{1}, \mathbf{1}, 1)$:
 \end{equation}
 implying the interaction Lagrangian
 \begin{equation}
-  \label{eq:18d-comp-lag}
+  \label{eq:ch2-18d-comp-lag}
   \mathscr{L}_{\text{int}} \supset x_{[rs]} L_{r} L_{s} \mathcal{S}_{1} + \kappa H^{i} \tilde{H}^{j} \Xi_{\{ij\}} + \lambda \mathcal{S}_{1} \Xi^{ij} H^{\dagger}_{i} H^{\dagger}_{j} + \text{h.c.}
 \end{equation}
 This model was studied in Ref.~\cite{Law:2013dya} and identified as the simplest
@@ -1038,7 +1042,7 @@ Note that the operator is already symmetric under the interchage
 $m \leftrightarrow n$, so another structure need not be added.
 
 \subsection{An algorithm for model building}
-\label{sec:algorithm}
+\label{sec:ch2-algorithm}
 
 With our basic completion recipe established, in the following we outline the
 procedures we use to build the UV models that generate the operators listed in
@@ -1080,10 +1084,10 @@ this level between $(\mathbf{2}, \mathbf{1})$- and
 $(\mathbf{1}, \mathbf{2})$-fermions, for some operators only a subset of these
 templates will be relevant for our purposes, since some contractions may always
 imply Proca fields. These templates are used to open up the operator with the
-assumptions and methods presented in Sec.~\ref{sec:treelevelmatching}. Every
+assumptions and methods presented in Sec.~\ref{sec:ch2-treelevelmatching}. Every
 time a replacement rule is applied, the Feynman graph information is updated and
 a Lagrangian term is generated as described in
-Sec.~\ref{sec:exploding-operators}. After the procedure is finished, the full
+Sec.~\ref{sec:ch2-exploding-operators}. After the procedure is finished, the full
 Lagrangian of the model can be generated in the same way as the input effective
 operators, described above.
 
@@ -1118,7 +1122,7 @@ mentioned, we provide our validation of their results along with our example
 code.
 
 \section{Neutrino mass model building}
-\label{sec:modelbuilding}
+\label{sec:ch2-modelbuilding}
 
 Up until now we have tried to keep the discussion of exploding operators
 general, but in this and following sections we specialise to the case of opening
@@ -1128,7 +1132,7 @@ the tree-level topologies of the operators, and the methods we use to ensure a
 given model's contribution to the neutrino mass is the dominant one.
 
 \subsection{Operator closures and neutrino-mass estimates}
-\label{sec:operator-closures}
+\label{sec:ch2-operator-closures}
 
 For operators other than the Weinberg-like ones, neutrino masses are necessarily
 generated at loop level. The fields of the $\Delta L = 2$ operator need to be
@@ -1136,7 +1140,7 @@ looped off using SM interactions in such a way that a Weinberg-like operator is
 generated after the SM fields are integrated out. We call this the operator
 \textit{closure} and it represents the mixing between the $\Delta L = 2$
 operator and the Weinberg-like ones. Examples of $\Delta L = 2$ operator
-closures are given in Table~\ref{tab:example-closures}, and these are referred
+closures are given in Table~\ref{tab:ch2-example-closures}, and these are referred
 to throughout this section. The closure provides enough information to know the
 number of loops in the neutrino self-energy graph (since the $\Delta L = 2$
 operator is generated at tree level) and to estimate the scale of the new
@@ -1197,28 +1201,8 @@ hierarchical flavour structures in the operator coefficients can also lead to
 additional suppression of the neutrino mass, and in turn of the implied scale of
 the new physics.
 
-In Fig.~\ref{fig:violinplot-closures} we show the new-physics scales $\Lambda$
-associated with neutrino-mass generation from the $\Delta L = 2$ operators in
-the SMEFT up to dimension 13, assuming unit operator coefficients and the
-dominance of third-generation couplings. We separate single-derivative operators
-from those that contain no derivatives, and choose not to include operators
-containing more than one derivative in the figure. This is because these
-operators most often arise at next-to-leading order in the EFT expansion, and
-therefore usually imply a neutrino-mass scale identical to that of
-lower-dimensional operators. The dimension-eleven operators with derivatives as
-well as the dimension-13 operators are constructed only as products of
-lower-dimensional ones, making the set of operators incomplete. We highlight
-that similar kinds of product operators at dimensions eleven and nine do not
-imply special values for the estimated neutrino-mass scale or $\Lambda$, and
-therefore we expect the results to be representative of the situation up to
-dimension 13. From the figure, it is clear that there is a trend towards smaller
-values of $\Lambda$ with increasing mass dimension. By dimension 13, the implied
-new-physics scale is between $1$ and $100~\text{TeV}$ for most operators. It
-seems to be the case that the most constrained closures are generally those of
-non-derivative operators.
-
 \begin{longtable}[t]{ccc}
-  \caption[The table shows an assortment of $\Delta L = 2$ operator closures, displaying a number of paradigmatic motifs.]{The table shows an assortment of $\Delta L = 2$ operator closures, displaying a number of paradigmatic motifs. We represent flavour indices in a sans-serif typeface here to avoid confusion with subscripts labelling the Yukawa couplings. The expressions given for $m_{\nu}^{\textsf{rs}}$ needs to be symmetrised in $\textsf{rs}$, something we do not explicitly indicate in the table. These expressions carry flavour indices in alphabetical order on the fields as they appear in Table~\ref{tab:long}. Here $\kappa$ represents the operator coefficient, $V$ is the CKM matrix and $y^{\textsf{r}}_{e,u,d}$ are the diagonal electron, up-type and down-type Yukawa couplings in the SM. A number of operators require an external electron to be converted into a neutrino. This often necessitates the introduction of a $W$ boson or an unphysical charged Higgs $H^{+}$. Operator $\mathcal{O}_{8}$ generates the dimension-seven analogue of the Weinberg operator with the two-loop diagram shown. (There is a lower order diagram with an $H^{+}$ in place of the $W$ that happens to vanish~\cite{Babu:2010vp}.) A three-loop diagram in which two of the external Higgs lines are looped off leads to mixing with the Weinberg operator. Operator $\mathcal{O}_{76}$ generates the dimension-nine operator $LLHH(H^{\dagger}H)^{2}$, and hence five- and six-loop diagrams are also implied. There is usually more than one choice about where to attach the $W$ boson if one is present in a diagram, and the additional diagrams with the $W$ connecting in other possible ways are left implicit.\label{tab:example-closures}}\\
+  \caption[The table shows an assortment of $\Delta L = 2$ operator closures, displaying a number of paradigmatic motifs.]{The table shows an assortment of $\Delta L = 2$ operator closures, displaying a number of paradigmatic motifs. We represent flavour indices in a sans-serif typeface here to avoid confusion with subscripts labelling the Yukawa couplings. The expressions given for $m_{\nu}^{\textsf{rs}}$ needs to be symmetrised in $\textsf{rs}$, something we do not explicitly indicate in the table. These expressions carry flavour indices in alphabetical order on the fields as they appear in Table~\ref{tab:long}. Here $\kappa$ represents the operator coefficient, $V$ is the CKM matrix and $y^{\textsf{r}}_{e,u,d}$ are the diagonal electron, up-type and down-type Yukawa couplings in the SM. A number of operators require an external electron to be converted into a neutrino. This often necessitates the introduction of a $W$ boson or an unphysical charged Higgs $H^{+}$. Operator $\mathcal{O}_{8}$ generates the dimension-seven analogue of the Weinberg operator with the two-loop diagram shown. (There is a lower order diagram with an $H^{+}$ in place of the $W$ that happens to vanish~\cite{Babu:2010vp}.) A three-loop diagram in which two of the external Higgs lines are looped off leads to mixing with the Weinberg operator. Operator $\mathcal{O}_{76}$ generates the dimension-nine operator $LLHH(H^{\dagger}H)^{2}$, and hence five- and six-loop diagrams are also implied. There is usually more than one choice about where to attach the $W$ boson if one is present in a diagram, and the additional diagrams with the $W$ connecting in other possible ways are left implicit.\label{tab:ch2-example-closures}}\\
   \toprule
   Operator & Diagram & $m_{\nu}^{\textsf{rs}}$ \\
   \midrule \endfirsthead \toprule
@@ -1265,10 +1249,30 @@ non-derivative operators.
   \bottomrule
 \end{longtable}
 
+In Fig.~\ref{fig:ch2-violinplot-closures} we show the new-physics scales $\Lambda$
+associated with neutrino-mass generation from the $\Delta L = 2$ operators in
+the SMEFT up to dimension 13, assuming unit operator coefficients and the
+dominance of third-generation couplings. We separate single-derivative operators
+from those that contain no derivatives, and choose not to include operators
+containing more than one derivative in the figure. This is because these
+operators most often arise at next-to-leading order in the EFT expansion, and
+therefore usually imply a neutrino-mass scale identical to that of
+lower-dimensional operators. The dimension-eleven operators with derivatives as
+well as the dimension-13 operators are constructed only as products of
+lower-dimensional ones, making the set of operators incomplete. We highlight
+that similar kinds of product operators at dimensions eleven and nine do not
+imply special values for the estimated neutrino-mass scale or $\Lambda$, and
+therefore we expect the results to be representative of the situation up to
+dimension 13. From the figure, it is clear that there is a trend towards smaller
+values of $\Lambda$ with increasing mass dimension. By dimension 13, the implied
+new-physics scale is between $1$ and $100~\text{TeV}$ for most operators. It
+seems to be the case that the most constrained closures are generally those of
+non-derivative operators.
+
 We note that at dimension eleven it begins to become clear that the
 neutrino-mass estimates associated with a category of operators remain large.
 These operators include $\mathcal{O}_{47a}$, whose closure is shown in
-Table~\ref{tab:example-closures}, and 44 others like it which have loops that
+Table~\ref{tab:ch2-example-closures}, and 44 others like it which have loops that
 contain no connecting Higgs, and therefore no additional suppression from SM
 Yukawa couplings\footnote{A UV example of such a model was presented and studied
   in Ref.~\cite{Gargalionis:2019drk} for $\mathcal{O}_{47j}$. A number of other
@@ -1276,7 +1280,7 @@ Yukawa couplings\footnote{A UV example of such a model was presented and studied
   model generating a dimension-13 operator at tree level.}. These operators have
 the form
 \begin{equation}
-  \label{eq:unsuppressed-ops}
+  \label{eq:ch2-unsuppressed-ops}
 \mathcal{O}_{1} \cdot \prod_{i=1}^{n} \psi_{i}^{\dagger} \psi_{i},
 \end{equation}
 where $\psi_{i}$ are SM fermion fields, and imply
@@ -1290,14 +1294,14 @@ $\mathcal{O}_{1} \cdot \prod_{i=1}^{5} (\psi_{i}^{\dagger} \psi_{i})$ cannot
 form a Lorentz-singlet without a derivative. This suggests that dimension-21
 operators of the form
 \begin{equation}
-  \label{eq:dim21}
+  \label{eq:ch2-dim21}
   LLH(\partial^{\mu}H) \cdot (\psi_{0} \sigma_{\mu} \psi_{0}^{\dagger}) \prod_{i=1}^{4} \psi_{i}^{\dagger} \psi_{i}
 \end{equation}
 are the highest-dimensional operators leading to phenomenologically viable
 neutrino masses. They require new physics below $\sim 6~\text{TeV}$. All of the
-tree-level topologies associated with the structure in Eq.~\eqref{eq:dim21}
+tree-level topologies associated with the structure in Eq.~\eqref{eq:ch2-dim21}
 imply that the neutrino mass depends on the product of nine or more
-dimensionless couplings. It is clear from Fig.~\ref{fig:violinplot-closures}
+dimensionless couplings. It is clear from Fig.~\ref{fig:ch2-violinplot-closures}
 that these operators are outliers, and the associated new-physics scale is
 already heavily constrained by dimension 13 for most.
 
@@ -1328,8 +1332,8 @@ already heavily constrained by dimension 13 for most.
     evident in the figure. The most suppressed closures tend to be of
     non-derivative operators. By mass-dimension eleven it becomes clear that a
     class of operators, those with the structure shown in
-    Eq.~\eqref{eq:unsuppressed-ops}, are less suppressed than the rest.}
-  \label{fig:violinplot-closures}
+    Eq.~\eqref{eq:ch2-unsuppressed-ops}, are less suppressed than the rest.}
+  \label{fig:ch2-violinplot-closures}
 \end{figure}
 
 Estimates for the neutrino mass for the majority of the $\Delta L = 2$ operators
@@ -1343,7 +1347,7 @@ Those that we present here differ in two ways:
     since it is implicit that the appropriate factors of momentum will arise at
     higher orders in the EFT expansion. Such arrow-preserving loops, as shown in
     the closures of $\mathcal{O}_{47a}$ and $\mathcal{O}_{56}$ in
-    Table~\ref{tab:example-closures}, vanish by even--odd parity arguments
+    Table~\ref{tab:ch2-example-closures}, vanish by even--odd parity arguments
     absent these higher-order contributions~\cite{deGouvea:2007qla}. Indeed, in
     UV models built from these operators the additional gauge-boson loops are
     not necessary~\cite{Angel:2012ug, Gargalionis:2019drk}. This means that for
@@ -1354,14 +1358,14 @@ Those that we present here differ in two ways:
     $\bar{u}^{\dagger} \bar{d}$ require a closure with $W$ bosons rather than
     $H^{+}$, since the sum of the diagrams with the unphysical Higgs fields
     vanishes~\cite{Babu:2010vp}. The situation is shown in
-    Fig.~\ref{fig:vanishing-loop} for a general one-loop case of this
+    Fig.~\ref{fig:ch2-vanishing-loop} for a general one-loop case of this
     phenomenon. Ultimately this comes from the relative negative sign in the
     Lagrangian between the up- and down-type Yukawa interactions:
     \begin{equation}
-      \label{eq:sm-yukawa-negative}
+      \label{eq:ch2-sm-yukawa-negative}
     \mathscr{L}_{\text{Yuk}} \supset y_{u}^{r} V_{rt} d_{t} \bar{u}_{r} H^{+} - y_{d}^{r} V_{tr} \bar{d}^{\dagger}_{r} u^{\dagger}_{t} H^{+} \ .
   \end{equation}
-    As shown in the Fig.~\ref{fig:vanishing-loop}, the fermion loop requires a
+    As shown in the Fig.~\ref{fig:ch2-vanishing-loop}, the fermion loop requires a
     mass insertion on the quark line to which the $H^{+}$ does not connect,
     making both loops proportional to $y_{u} y_{d}$ but with differing signs.
     Care must be taken to ensure that the loop functions are also necessarily
@@ -1384,9 +1388,9 @@ literature~\cite{Gargalionis:2019drk}.
     additional diagram with the roles of the unphysical Higgs and $H^{0}$
     interchanged. Both diagrams are proportional to $y_{u} y_{d}$ but related by
     a negative sign coming from the couplings of $H^{+}$ to up- and down-type
-    quarks as shown in Eq.~\eqref{eq:sm-yukawa-negative}, and therefore their
+    quarks as shown in Eq.~\eqref{eq:ch2-sm-yukawa-negative}, and therefore their
     sum vanishes.}
-  \label{fig:vanishing-loop}
+  \label{fig:ch2-vanishing-loop}
 \end{figure}
 
 Our estimates for the neutrino mass are provided as symbolic mathematical
@@ -1411,7 +1415,7 @@ independent Lorentz-structure associated with $\mathcal{O}_{4b}$:
 $\kappa^{\mathcal{O}_{4b}}_{rstt} (L^{i}_{r} L^{j}_{s} \epsilon_{ij})(Q^{\dagger}_{t k}\bar{u}^{\dagger}_{t})H^{k}$,
 from which it can be seen that the operator coefficient must be antisymmetric in
 $rs$ from Fermi--Dirac statistics. It is clear from the diagram associated with
-the operator in Table~\ref{tab:example-closures} that the loop integral will
+the operator in Table~\ref{tab:ch2-example-closures} that the loop integral will
 depend on an external lepton flavour, and this dependence can only come from
 charged-lepton masses, \textit{i.e.} $I(m_{e}^{r})$. Then the complete
 expression for the estimated neutrino mass will be something like
@@ -1420,7 +1424,7 @@ expression for the estimated neutrino mass will be something like
   &= \sum_{t} \frac{g_{2}^{2} y_{u}^{t}}{(16\pi^{2})^{2}} \frac{v^{2}}{\Lambda} \kappa_{[rs]tt}  [I(m_{e}^{r}) - I(m_{e}^{s})],
 \end{align}
 which implies a neutrino-mass matrix with zeros down the diagonal, similar to
-that following from the Lagrangian in Eq.~\eqref{eq:18d-comp-lag}. Such a
+that following from the Lagrangian in Eq.~\eqref{eq:ch2-18d-comp-lag}. Such a
 texture is disfavoured by neutrino oscillation data. Studying the structure of
 the neutrino-mass matrices implied by a complete basis of $\Delta L = 2$
 operators would allow more, similar conclusions to be drawn in a
@@ -1429,7 +1433,7 @@ dimension nine has been written down~\cite{Li:2020xlh}, and this could
 facilitate such an effort.
 
 \subsection{UV considerations}
-\label{sec:uvconsiderations}
+\label{sec:ch2-uvconsiderations}
 
 We now turn to the UV structure of the operators: their completion topologies,
 the associated neutrino self-energy graphs, and the nature of the exotic fields
@@ -1448,10 +1452,10 @@ $(\mathbf{1}, \mathbf{2})$-fermions in this classification, and some of these
 topologies will therefore always imply the existence of heavy vector particles
 in the completions. In our analysis these models are not considered, but the
 topologies are still presented here in general. Each topology corresponds to a
-pattern of contractions in the language of Sec.~\ref{sec:treelevelmatching}, and
+pattern of contractions in the language of Sec.~\ref{sec:ch2-treelevelmatching}, and
 sometimes we use this perspective.
 
-We present the different topology types in Table~\ref{tab:topology-data} along
+We present the different topology types in Table~\ref{tab:ch2-topology-data} along
 with peripheral information relating to these. The number of propagators in the
 diagrams represents an inclusive upper bound on the number of exotic fields
 allowed in the completions of the associated operators, counting Dirac fermions
@@ -1471,15 +1475,15 @@ topology types by operator mass dimension below.
     Topology type & Operators & Topologies & Propagators & Figure \\
     \midrule
     $0s4f$        & $2$       & 1          & 1           & $\hookrightarrow$         \\
-    $0s6f$        & $16$      & 2          & 3           & \ref{fig:6f-topologies}   \\
-    $1s4f$        & $16$      & 2          & 2           & \ref{fig:1s4f-topologies} \\
-    $2s2f$        & $7$       & 1          & 1           & \ref{fig:seesaw-figs}     \\
-    $2s4f$        & $29$      & 8          & 2,3         & \ref{fig:2s4f-topologies} \\
-    $2s6f$        & $137$     & 35         & 4,5         & \ref{fig:2s6f-topologies} \\
-    $3s2f$        & $3$       & 4          & 1,2         & \ref{fig:3s2f-topologies} \\
-    $3s4f$        & $15$      & 23         & 3,4         & \ref{fig:3s4f-topologies} \\
-    $4s2f$        & $8$       & 10         & 2,3         & \ref{fig:4s2f-topologies} \\
-    $5s2f$        & $1$       & 24         & 2,3,4       & \ref{fig:5s2f-topologies} \\
+    $0s6f$        & $16$      & 2          & 3           & \ref{fig:ch2-6f-topologies}   \\
+    $1s4f$        & $16$      & 2          & 2           & \ref{fig:ch2-1s4f-topologies} \\
+    $2s2f$        & $7$       & 1          & 1           & \ref{fig:ch2-seesaw-figs}     \\
+    $2s4f$        & $29$      & 8          & 2,3         & \ref{fig:ch2-2s4f-topologies} \\
+    $2s6f$        & $137$     & 35         & 4,5         & \ref{fig:ch2-2s6f-topologies} \\
+    $3s2f$        & $3$       & 4          & 1,2         & \ref{fig:ch2-3s2f-topologies} \\
+    $3s4f$        & $15$      & 23         & 3,4         & \ref{fig:ch2-3s4f-topologies} \\
+    $4s2f$        & $8$       & 10         & 2,3         & \ref{fig:ch2-4s2f-topologies} \\
+    $5s2f$        & $1$       & 24         & 2,3,4       & \ref{fig:ch2-5s2f-topologies} \\
     $5s4f$        & $15$      & 264        & 4,5,6       & $\hookrightarrow$         \\
     $6s2f$        & $1$       & 66         & 3,4,5       & $\hookrightarrow$         \\
     \bottomrule
@@ -1501,7 +1505,7 @@ topology types by operator mass dimension below.
     their field content, the pertinent operators may include one or more
     derivatives. We point the reader to the main text for a detailed breakdown
     by mass-dimension of the topologies that are relevant to each operator.}
-  \label{tab:topology-data}
+  \label{tab:ch2-topology-data}
 \end{table}
 
 \paragraph{Dimension seven} At dimension seven there are three broad classes of
@@ -1513,7 +1517,7 @@ operators in the entire listing, both of which are non-explosive\footnote{We
 $\mathcal{O}_{1}^{\prime}$ is the only $4s2f$ operator at dimension seven, while
 there are six $4s2f$ operators: $\mathcal{O}_{2}$, $\mathcal{O}_{3a,b}$,
 $\mathcal{O}_{4a,b}$ and $\mathcal{O}_{8}$. The UV topologies relevant for the
-dimension-seven operators are presented in Fig.~\ref{fig:d7-topologies}. There
+dimension-seven operators are presented in Fig.~\ref{fig:ch2-d7-topologies}. There
 are only two tree-level topologies associated with the $1s4f$ operators. One
 involves two exotic scalars, the other an exotic scalar and a heavy fermion with
 an arrow-violating propagator line. There are ten topologies associated with the
@@ -1529,10 +1533,10 @@ was also studied in Ref.~\cite{Cai:2014kra}.
 
 \begin{figure}[t]
   \centering
-  \subcaptionbox{\label{fig:4s2f-topologies}}{\centering
+  \subcaptionbox{\label{fig:ch2-4s2f-topologies}}{\centering
     \includegraphics[scale=0.13]{4s2f_topologies.png}
   }
-  \subcaptionbox{\label{fig:1s4f-topologies}}{
+  \subcaptionbox{\label{fig:ch2-1s4f-topologies}}{
     \includegraphics[scale=0.13]{1s4f_topologies.png}}
   \caption[(a) The tree-level topologies relevant for the completions of the
   four-scalar--two-fermion operator $\mathcal{O}_{1}^{\prime}$. (b) The two
@@ -1548,35 +1552,35 @@ was also studied in Ref.~\cite{Cai:2014kra}.
     one-scalar--four-fermion dimension-seven operators in Table~\ref{tab:long}.
     The internal fermion line on $1s4f_{2}$ must be arrow-violating for all of
     the operators we consider.}
-  \label{fig:d7-topologies}
+  \label{fig:ch2-d7-topologies}
 \end{figure}
 
 \paragraph{Dimension nine} At dimension nine there are 79 operators in our
 catalogue. There are 16 operators containing six fermions, these are
 $\mathcal{O}_{9}$ through to $\mathcal{O}_{20}$ as well as $\mathcal{O}_{76}$.
 The relevant tree-level topologies are presented in
-Fig.~\ref{fig:6f-topologies}. There are 15 $3s4f$ operators, most of which have
+Fig.~\ref{fig:ch2-6f-topologies}. There are 15 $3s4f$ operators, most of which have
 the form $\mathcal{O}_{1} \cdot \mathcal{O}_{\text{SM Yukawa}}$ or $H^\dagger H$
 times a $1s4f$ dimension-seven operator. These are operators $\mathcal{O}_{5}$
 through to $\mathcal{O}_{7}$ as well as $\mathcal{O}_{61}$, $\mathcal{O}_{71}$,
 $\mathcal{O}_{77}$, $\mathcal{O}_{78}$ and $\mathcal{O}_{8}^{\prime}$. These
-topologies are shown in Fig.~\ref{fig:3s4f-topologies}. There is a single $6s2f$
+topologies are shown in Fig.~\ref{fig:ch2-3s4f-topologies}. There is a single $6s2f$
 operator: the Weinberg-like $\mathcal{O}_{1}^{\prime\prime}$. The remaining 47
 operators contain derivatives. Those that contain an even number share
 topologies with dimension-five or dimension-seven operators. These include
 $\mathcal{O}_{D19}$, a $2s2f$ operator, $\mathcal{O}_{D18}$ and
 $\mathcal{O}_{D22}$ which are $4s2f$ operators with associated topologies shown
-in Fig.~\ref{fig:4s2f-topologies}, as well as $\mathcal{O}_{D4}$,
+in Fig.~\ref{fig:ch2-4s2f-topologies}, as well as $\mathcal{O}_{D4}$,
 $\mathcal{O}_{D7}$, $\mathcal{O}_{D13}$ and $\mathcal{O}_{D15}$ for which the
-$1s4f$ topologies of Fig.~\ref{fig:1s4f-topologies} are relevant. The remaining
+$1s4f$ topologies of Fig.~\ref{fig:ch2-1s4f-topologies} are relevant. The remaining
 operators contain an odd number of derivatives. The operators
 $\mathcal{O}_{D5}$, $\mathcal{O}_{D6}$, $\mathcal{O}_{D8}\text{ --
 }\mathcal{O}_{D10}$, $\mathcal{O}_{D12}$, $\mathcal{O}_{D14}$,
 $\mathcal{O}_{D16}$ and $\mathcal{O}_{D17}$ are of type $2s4f$, implying
-entirely new topologies, shown in Fig.~\ref{fig:2s4f-topologies}. To these we
+entirely new topologies, shown in Fig.~\ref{fig:ch2-2s4f-topologies}. To these we
 add the $5s2f$ operator $\mathcal{O}_{D20}$ and the $3s2f$ operator
 $\mathcal{O}_{D21}$, which also have novel structure.
-Fig.~\ref{fig:5s2f-topologies} and Fig.~\ref{fig:3s2f-topologies} are relevant
+Fig.~\ref{fig:ch2-5s2f-topologies} and Fig.~\ref{fig:ch2-3s2f-topologies} are relevant
 in this case. For the operators that contain an odd number of derivatives, only
 the topologies allowing at least one arrow-preserving fermion propagator do not
 contain exotic Proca fields. Some $3s4f$ and $5s2f$ topologies have the
@@ -1587,7 +1591,7 @@ eleven.
 
 We note that the tree-level topologies can also be important in telling which
 derivative operators might provide novel completions. As discussed in
-Sec.~\ref{sec:exploding-derivative-operators}, many operators containing more
+Sec.~\ref{sec:ch2-exploding-derivative-operators}, many operators containing more
 than one derivative have no model-discovery utility. These are operators
 generated past the leading order in the expansion of the heavy propagators in
 the UV theory, and their completions are always found by exploding the
@@ -1601,7 +1605,7 @@ classes that fall into this category. The four operator families
 $\mathcal{O}_{D4}$, $\mathcal{O}_{D7}$, $\mathcal{O}_{D13}$ and
 $\mathcal{O}_{D15}$ each contain two derivatives. These operators are identified
 above as fitting into the $1s4f$ topology class. It is clear from
-Fig.~\ref{fig:1s4f-topologies} that no two-fermion completions are relevant to
+Fig.~\ref{fig:ch2-1s4f-topologies} that no two-fermion completions are relevant to
 this class, and the Lorentz structure of these operators is such that the
 internal fermion can only by arrow-violating. This suggests that models
 generating these operators at tree-level will always also generate the
@@ -1627,9 +1631,9 @@ $\mathcal{O}_{D18}$.
 
 \begin{figure}
   \centering
-  \subcaptionbox{\label{fig:3s4f-topologies}}{
+  \subcaptionbox{\label{fig:ch2-3s4f-topologies}}{
     \includegraphics[scale=0.13]{3s4f_topologies.png}}
-  \subcaptionbox{\label{fig:2s4f-topologies}}{
+  \subcaptionbox{\label{fig:ch2-2s4f-topologies}}{
     \includegraphics[scale=0.13]{2s4f_topologies.png}}
   \caption[(a) The figure shows the tree-level topologies relevant to $3s4f$
   operators. (b) The two-scalar--four-fermion topologies associated with
@@ -1646,14 +1650,14 @@ $\mathcal{O}_{D18}$.
     These are topologies $2s4f_{4}$ -- $2s4f_{8}$; the other fermion propagator
     in $2s4f_{4}$ and $2s4f_{5}$ must be arrow violating. Topologies $2s4f_{1}$
     -- $2s4f_{3}$ each give rise to completions involving exotic Proca fields.}
-  \label{fig:d9-topologies}
+  \label{fig:ch2-d9-topologies}
 \end{figure}
 
 \begin{figure}
   \centering
-  \subcaptionbox{\label{fig:5s2f-topologies}}{
+  \subcaptionbox{\label{fig:ch2-5s2f-topologies}}{
     \includegraphics[scale=0.13]{5s2f_topologies.png}}
-  \subcaptionbox{\label{fig:3s2f-topologies}}{
+  \subcaptionbox{\label{fig:ch2-3s2f-topologies}}{
     \includegraphics[scale=0.13]{3s2f_topologies.png}}
   \caption[(a) The $5s2f$ topologies relevant only to the single-derivative
   operator $\mathcal{O}_{D20}$. (b) The UV diagrams associated with the $3s2f$
@@ -1665,12 +1669,12 @@ $\mathcal{O}_{D18}$.
     diagrams associated with the $3s2f$ operator $\mathcal{O}_{D21}$. Only the
     last two diagrams can generate the operator under our model-building
     assumptions.}
-  \label{fig:d9-topologies-derivs}
+  \label{fig:ch2-d9-topologies-derivs}
 \end{figure}
 
 \paragraph{Dimension eleven} By far the largest class of operators at dimension
 eleven is the $2s6f$ topology type, for which the topologies are presented in
-Fig.~\ref{fig:2s6f-topologies}. These operators are mostly formed as products of
+Fig.~\ref{fig:ch2-2s6f-topologies}. These operators are mostly formed as products of
 $0s6f$ dimension-nine operators with $H^{\dagger} H$, or $1s4f$ dimension-seven
 operators with SM Yukawa couplings. They are operators $\mathcal{O}_{21}$
 through to $\mathcal{O}_{65}$, excluding the structures associated with
@@ -1692,11 +1696,11 @@ literature~\cite{Anamiati:2018cuq}.
       our listing. A number of graphs display the feature --- less common at
       dimension nine --- that an exotic field in the diagram couples only to
       other internal lines.}
-  \label{fig:2s6f-topologies}
+  \label{fig:ch2-2s6f-topologies}
 \end{figure}
 
 \subsubsection{Model filtering}
-\label{sec:filtering}
+\label{sec:ch2-filtering}
 
 The completions constructed by exploding the $\Delta L = 2$ operators are not
 all automatically guaranteed to provide the leading-order contribution to the
@@ -1725,7 +1729,7 @@ unambiguously the operator dimension, since higher-dimensional operators are
 inevitably suppressed compared to lower-dimensional ones. With regard to the
 $\Delta L = 2$ EFT, such a dimension-focused criterion is useful for thinking
 about LNV scattering events, for example. As discussed in
-Sec.~\ref{sec:operator-closures}, the operator dimension is also a rough
+Sec.~\ref{sec:ch2-operator-closures}, the operator dimension is also a rough
 indication of the predicted neutrino-mass scale, and therefore has some utility
 in anticipating which models will dominate the neutrino mass.
 
@@ -1735,11 +1739,11 @@ This can happen, for example, when a contraction introduces an exotic particle
 transforming like a SM field. Taking $\mathcal{O}_{2}$ as an example,
 contractions like
 \begin{equation}
-  \overset{\tiny \hspace{-2em} \varphi^{\dagger} \sim (\mathbf{1}, \mathbf{2}, \tfrac{1}{2})}{\wick{L^{i} \c L^{j} L^{k} \c {\bar{e}} H^{l}} \epsilon_{ij} \epsilon_{kl}} \rightarrow L^{i} L^{k} \tilde{\varphi}^{j} H^{l} \epsilon_{ij} \epsilon_{kl}, \label{eq:weinberglike}
+  \overset{\tiny \hspace{-2em} \varphi^{\dagger} \sim (\mathbf{1}, \mathbf{2}, \tfrac{1}{2})}{\wick{L^{i} \c L^{j} L^{k} \c {\bar{e}} H^{l}} \epsilon_{ij} \epsilon_{kl}} \rightarrow L^{i} L^{k} \tilde{\varphi}^{j} H^{l} \epsilon_{ij} \epsilon_{kl}, \label{eq:ch2-weinberglike}
 \end{equation}
 with $\tilde{\varphi}$ a second Higgs doublet, always imply that further
 contractions will produce seesaw fields, since the RHS of
-Eq.~\eqref{eq:weinberglike} has the same structure as the Weinberg operator. We
+Eq.~\eqref{eq:ch2-weinberglike} has the same structure as the Weinberg operator. We
 note that for fermions the situation is more subtle because of the Lorentz
 structure. Specifically, although $H \bar{u}$ transforms like $Q^{\dagger}$
 under $G_{\text{SM}}$, the Lorentz transformation properties are different. The
@@ -1749,8 +1753,8 @@ $\mathrm{SU}(2)_{+} \otimes \mathrm{SU}(2)_{-} \otimes G_{\text{SM}}$ and that
 makes a number of such contractions forbidden if one is interested in only
 dominant contributions according to the mass-dimension criterion. This is the
 same phenomenon as that seen in the paradigmatic opening of the derivative
-operator $\mathcal{O}_{D3}$ given in Sec.~\ref{sec:deriv-op-examples}, where an
-exotic field transforming like $L$ [see Eq.~\eqref{eq:contraction-choices}] lead
+operator $\mathcal{O}_{D3}$ given in Sec.~\ref{sec:ch2-deriv-op-examples}, where an
+exotic field transforming like $L$ [see Eq.~\eqref{eq:ch2-contraction-choices}] lead
 to a similar Weinberg-like operator at an intermediate stage in the completion
 procedure. We note that this does not completely rule out exotic copies of SM
 fields featuring in radiative neutrino mass models. Using $\mathcal{O}_{2}$
@@ -1775,7 +1779,7 @@ $U$, does transform like $\bar{u}$, but this plays no role in the operator.
 Since we are most interested in radiative neutrino mass, a more direct and
 relevant filtering criterion in our case is the neutrino-mass estimate from the
 closure graph of the operator. This is the metric we use to compare and filter
-models in the results we present in Sec.~\ref{sec:models}. Whichever filtering
+models in the results we present in Sec.~\ref{sec:ch2-models}. Whichever filtering
 criterion is chosen, the conditions for generating the lower-dimensional
 operator or the dominant neutrino self-energy graph still depend on the
 filtering philosophy.
@@ -1812,7 +1816,7 @@ turned off, so that the forbidden coupling is not generated at some higher order
 in perturbation theory. We call this approach \textit{stringent} filtering,
 since the conditions for removing a model are more difficult to satisfy.
 
-For our results in Sec.~\ref{sec:models} we take an intermediate view, leaning
+For our results in Sec.~\ref{sec:ch2-models} we take an intermediate view, leaning
 more towards the democratic side. We filter on the basis of particle content,
 but always keep track of the baryon-number assignment of the field. We then keep
 models with identical SM quantum numbers if the baryon-number assignments of the
@@ -1844,13 +1848,13 @@ could check the full gauge- and Lorentz-invariant Lagrangian for each model
 against Table 1 of Ref.~\cite{Sierra:2014rxa}, for example. We do not include
 this in our default filtering procedure, since it would require generating the
 full Lagrangian of each model. This is a computationally prohibitive task,
-especially since Table~\ref{tab:topology-data} suggests that the completions of
+especially since Table~\ref{tab:ch2-topology-data} suggests that the completions of
 some operators can contain up to six exotic fields. Should any model from our
 database be chosen for further study, the full Lagrangian can be generated with
 the functions in our example code and studied for the presence such heavy loops.
 We note that sometimes the presence of a heavy loop can be diagnosed from the
 neutrino self-energy graph, or even the tree-level topology, and we give a
-detailed example of such a case in Sec.~\ref{sec:simple-models}. An additional
+detailed example of such a case in Sec.~\ref{sec:ch2-simple-models}. An additional
 filter on the models that goes beyond our initial tree-level filtering analysis
 is the possibility of exotic fields gaining vacuum expectation values. In this
 case, diagrams may exist that imply larger contributions to the neutrino mass
@@ -1866,16 +1870,16 @@ both the unfiltered completions of the operators in Table~\ref{tab:long}, as
 well as the models filtered according to the above method. Our example code also
 includes functions for filtering on interactions rather than fields, and finding
 $\mathrm{U}(1)$ symmetries present in models' Lagrangians. Thus, the results
-presented in Sec.~\ref{sec:models} and Table~\ref{tab:long} can be readily
+presented in Sec.~\ref{sec:ch2-models} and Table~\ref{tab:long} can be readily
 reproduced with alternative filtering criteria, philosophies or approaches.
 
 \section{Models}
-\label{sec:models}
+\label{sec:ch2-models}
 
 In this section we present the radiative models derived by exploding the
 $\Delta L = 2$ operators catalogued in Table~\ref{tab:long}. We give an overview
 of the models, and explore their particle content and the effects of the partial
-model-filtering method we present in Sec.~\ref{sec:filtering}. We do not provide
+model-filtering method we present in Sec.~\ref{sec:ch2-filtering}. We do not provide
 the entire listing of models here because there are very many, but instead give
 some examples. We point the interested reader to our database for the full
 searchable listing.
@@ -1897,13 +1901,13 @@ tree-level completions have already been studied in the
 literature~\cite{Anamiati:2018cuq}.
 
 \subsection{Overview}
-\label{sec:modelsoverview}
+\label{sec:ch2-modelsoverview}
 
 The models are generated by running the algorithm summarised in
-Sec.~\ref{sec:algorithm}, as found in our example code, on our catalogue of the
+Sec.~\ref{sec:ch2-algorithm}, as found in our example code, on our catalogue of the
 $\Delta L = 2$ operators. The results for the number of completions before and
 after filtering are presented in Table~\ref{tab:long}. In the language of
-Sec.~\ref{sec:filtering}, we use the democratic filtering procedure with the
+Sec.~\ref{sec:ch2-filtering}, we use the democratic filtering procedure with the
 neutrino-mass scale as the filtering criterion for these data. We note again
 that this leaves us with an overestimate of the actual number of genuine
 neutrino-mass models. Even so, one can see that 54 operators end up with no
@@ -1934,7 +1938,7 @@ suppressed by more than one loop factor, since the models presented in
 Ref.~\cite{Bonnet:2012kz} generate the Weinberg operator at one loop.
 
 We visualise the number of models with democratic and no filtering in
-Fig.~\ref{fig:filter-bar-dimension} broken down by mass dimension. After
+Fig.~\ref{fig:ch2-filter-bar-dimension} broken down by mass dimension. After
 filtering there are three models at dimension five, 16 models at dimension
 seven, 244 models at dimension nine and 10,969 models at dimension
 eleven\footnote{We note that the sum of these numbers is not 11,216 since one
@@ -1958,19 +1962,19 @@ filtering odds, evidently the combinatorial explosion of different models wins.
     orange bars show the number of distinct unfiltered models. The blue bars
     show the number after democratic filtering. The number of filtered
     completions grows with mass dimension.}
-  \label{fig:filter-bar-dimension}
+  \label{fig:ch2-filter-bar-dimension}
 \end{figure}
 
-In Fig.~\ref{fig:number-of-fields} we present data relevant to the number of
-fields present in the models. Fig.~\ref{fig:scalar-fermion-heatmap} shows the
+In Fig.~\ref{fig:ch2-number-of-fields} we present data relevant to the number of
+fields present in the models. Fig.~\ref{fig:ch2-scalar-fermion-heatmap} shows the
 number of exotic scalars and fermions present in the completions. Despite the
 fact that the UV topologies associated with some derivative operators allow
 completions containing no scalars, we find that only the Weinberg-like operators
 keep their fermion-only models after the democratic filtering procedure. By far
 the most common kinds of models contain five heavy fields, especially three
 fermions and two scalars, or two fermions and three scalars. This is due to the
-fact that, as is clear from Fig.~\ref{fig:filter-bar-dimension}, most of the
-models generate dimension-eleven operators. In Fig.~\ref{fig:lambda-fields} we
+fact that, as is clear from Fig.~\ref{fig:ch2-filter-bar-dimension}, most of the
+models generate dimension-eleven operators. In Fig.~\ref{fig:ch2-lambda-fields} we
 show the estimated new-physics scale $\Lambda$ against the number of fields
 featuring in the models. With the exception of one model with two fields, those
 required to lie at collider-accessible energies contain three or more fields.
@@ -1990,14 +1994,14 @@ model contains the fields
 $\Pi_{1} \sim (\mathbf{3}, \mathbf{1}, \tfrac{1}{6})_{S}$ and
 $Q_{7} \sim (\mathbf{3}, \mathbf{2}, \tfrac{7}{6})_{F}$. We list the models
 containing three exotic fields that are required to lie below $\SI{100}{\TeV}$
-in Sec.~\ref{sec:example-models}.
+in Sec.~\ref{sec:ch2-example-models}.
 
 \begin{figure}
   \centering
-  \subcaptionbox{\label{fig:scalar-fermion-heatmap}}{
+  \subcaptionbox{\label{fig:ch2-scalar-fermion-heatmap}}{
     \includegraphics[width=0.6\linewidth]{heatmap_scalars_fermions}
   }
-  \subcaptionbox{\label{fig:lambda-fields}}{
+  \subcaptionbox{\label{fig:ch2-lambda-fields}}{
     \includegraphics[width=0.6\linewidth]{lambda_fields.pdf}
   }
   \caption[(a) The number of filtered models containing different numbers of
@@ -2014,14 +2018,14 @@ in Sec.~\ref{sec:example-models}.
     histogram of the number of models having a given $\Lambda$ as the
     new-physics upper bound for the specified number of fields. A sizeable class
     of models are testable at current or future collider experiments.}
-  \label{fig:number-of-fields}
+  \label{fig:ch2-number-of-fields}
 \end{figure}
 
 Of the unfiltered 430,810 models, close to $67\%$ (290,492) contain at least one
 of the seesaw fields: $N \sim (\mathbf{1}, \mathbf{1}, 0)_{F}$,
 $\Xi_{1} \sim (\mathbf{1}, \mathbf{3}, 1)_{S}$ or
 $\Sigma \sim (\mathbf{1}, \mathbf{3}, 0)_{F}$. We present the exact breakdown by
-the interactions involved in the models in Table~\ref{tab:models-with-seesaws}.
+the interactions involved in the models in Table~\ref{tab:ch2-models-with-seesaws}.
 These are by far the most common fields appearing in the list of unfiltered
 models. Since our default filtering philosophy in this analysis is democratic,
 all of these are absent from the filtered list of models, and they only appear
@@ -2051,7 +2055,7 @@ in completions of the Weinberg operator and $\mathcal{O}_{D2}$.
     $L \varphi N$, where one of the SM fields in the interaction has been
     replaced with an exotic copy, as well as couplings involving other exotic
     fields whose quantum numbers are unrelated to those of SM fields.}
-  \label{tab:models-with-seesaws}
+  \label{tab:ch2-models-with-seesaws}
 \end{table}
 
 The distinct exotic fields appearing in the completions number 171, although
@@ -2067,7 +2071,7 @@ and dileptons. For exotic fermions we differentiate between those arising from
 contractions between the Higgs and a SM quark (vectorlike quarks), and the Higgs
 and a SM lepton (vectorlike leptons). The relative frequencies with which these
 field classes appear in the filtered completions are shown in
-Fig.~\ref{fig:field-piecharts} as pie charts. The wedges represent the number of
+Fig.~\ref{fig:ch2-field-piecharts} as pie charts. The wedges represent the number of
 Lagrangians in which the field couples as a leptoquark, diquark, dilepton,
 vectorlike quark or vectorlike lepton. We label fields coupling in all other
 ways as `other' in the figure. The most represented family of scalars are
@@ -2090,7 +2094,7 @@ are vectorlike quarks, with the most common being
 $T_{2}\sim (\mathbf{3}, \mathbf{3}, \tfrac{2}{3})_{F}$. It contains components
 that mix with both the up- and down-type SM quarks. We emphasise that the plots
 and numbers presented here are directly related to our filtering and
-model-counting conventions. In Fig.~\ref{fig:field-piecharts} for example, we do
+model-counting conventions. In Fig.~\ref{fig:ch2-field-piecharts} for example, we do
 not count fields just by their quantum numbers, but also include coupling
 information as discussed above. Additionally, we count independent Lagrangians
 as different models rather than just counting distinct sets of fields, which is
@@ -2102,10 +2106,10 @@ specific questions they may have of the data.
 
 \begin{figure}
   \centering
-  \subcaptionbox{\label{fig:scalar-piechart}}{
+  \subcaptionbox{\label{fig:ch2-scalar-piechart}}{
     \includegraphics[width=0.8\linewidth]{scalar_piechart.pdf}
   }
-  \subcaptionbox{\label{fig:fermion-piechart}}{
+  \subcaptionbox{\label{fig:ch2-fermion-piechart}}{
     \includegraphics[width=0.8\linewidth]{fermion_piechart.pdf}
   }
   \caption[The number of models in which each field appears in the completions
@@ -2117,21 +2121,21 @@ specific questions they may have of the data.
     assignment allows only the diquark couplings. (b) The pie chart of fermion
     fields appearing in the completions. See Table~\ref{tab:appA-field-labels}
     or Ref.~\cite{deBlas:2017xtg} for the convention used for the field names.}
-  \label{fig:field-piecharts}
+  \label{fig:ch2-field-piecharts}
 \end{figure}
 
 We are also interested in the connectivity between fields as they feature in the
 models. To explore this we study a graph in which each vertex represents one of
 the 163 exotic fields introduced in the completions that contain at least two
 fields, and an edge is drawn between fields featuring together in a model. The
-graph is shown shown Fig.~\ref{fig:model-graph}. The exterior sectors at each
+graph is shown shown Fig.~\ref{fig:ch2-model-graph}. The exterior sectors at each
 node represent the number of degree of the node. The edges in the graph are
 weighted by the number of times the corresponding pair of fields appears in the
 models; this is shown with a linear colour scaling in the figure. There are 3036
 edges in the graph, and the average node degree is approximately 37. About a
 fifth of all possible connections in the graph are realised. The ten most
 heavily weighted edges, representing the ten most common pairs of fields
-appearing in the models, are shown in Table~\ref{tab:graph-info}. Many of these
+appearing in the models, are shown in Table~\ref{tab:ch2-graph-info}. Many of these
 correlations can be understood on the basis of common contractions in the
 derivation of the models, especially those involving $H$ or $L$. There is a
 propensity for scalars and fermions with the same gauge quantum numbers to
@@ -2175,7 +2179,7 @@ $(\mathbf{\bar{3}}, \mathbf{2}, \tfrac{5}{6})_{F} \otimes \bar{d} \sim (\mathbf{
     and
     $(\mathbf{3}, \mathbf{3}, \tfrac{2}{3})_{S} \otimes H \sim (\mathbf{3}, \mathbf{2}, \tfrac{7}{6})_{S}$.
     All of the fields in the table have $|B| = \tfrac{1}{3}$.}
-  \label{tab:graph-info}
+  \label{tab:ch2-graph-info}
 \end{table}
 
 \begin{figure}[t]
@@ -2189,11 +2193,11 @@ $(\mathbf{\bar{3}}, \mathbf{2}, \tfrac{5}{6})_{F} \otimes \bar{d} \sim (\mathbf{
     \textit{i.e.} the number of times the two nodes appear in models together.
     The graph is clustered into roughly five communities within which there are
     many mutual connections. Only a handful of node labels are shown.}
-  \label{fig:model-graph}
+  \label{fig:ch2-model-graph}
 \end{figure}
 
 \subsection{Example models}
-\label{sec:example-models}
+\label{sec:ch2-example-models}
 
 In this section we present some example neutrino-mass models, illustrating use
 cases of the model database, aspects to be careful of in its use, and
@@ -2201,20 +2205,20 @@ representative features of the novel models derived from dimension-eleven and
 dimension-nine operators.
 
 \subsubsection{Simple models at the TeV scale}
-\label{sec:simple-models}
+\label{sec:ch2-simple-models}
 
 We are particularly interested in models that are simple, in the sense that they
 involve few exotic fields, and testable, in that they predict new physics at
 currently or nearly accessible energy ranges. We query our model database to
 return models featuring three fields or fewer with the estimated upper bound on
 the new-physics scale required to be between \SI{700}{\GeV} and \SI{100}{\TeV}.
-The results of the query are presented in Table~\ref{tab:simple-models}. There
+The results of the query are presented in Table~\ref{tab:ch2-simple-models}. There
 are twelve\footnote{We note that there are technically more models: those for
-  which the colour-sextet fields in Table~\ref{tab:simple-models} are replaced
+  which the colour-sextet fields in Table~\ref{tab:ch2-simple-models} are replaced
   with colour triplets, with a corresponding baryon-number assignment such that
   the same interactions as the sextet are picked out.} models listed, only one
 of which has explicitly appeared before in the literature to our knowledge: the
-completion of $\mathcal{O}_{8}$ discussed in Sec.~\ref{sec:modelsoverview}. It
+completion of $\mathcal{O}_{8}$ discussed in Sec.~\ref{sec:ch2-modelsoverview}. It
 is interesting to note that the scalar leptoquark\footnote{We mention
   parenthetically that although this leptoquark does not possess diquark
   couplings, baryon-number violation does occur through a term in the scalar
@@ -2223,7 +2227,7 @@ is interesting to note that the scalar leptoquark\footnote{We mention
 $\Pi_{1} \sim (\mathbf{3}, \mathbf{2}, \tfrac{1}{6})_{S}$ appears in almost
 every model listed in the table. This suggests that our general analysis of the
 frequency of fields appearing in the completions in
-Sec.~\ref{sec:modelsoverview} may look different if specific selection criteria
+Sec.~\ref{sec:ch2-modelsoverview} may look different if specific selection criteria
 are placed on the data. We have checked the full Lagrangians implied by the
 field content of each model and found that seven of the models listed in the
 table imply the generation of the Weinberg operator through heavy loops. We
@@ -2286,7 +2290,7 @@ the table:
     particle content was derived. This means, among other things, that the upper
     bound on the scale of the new physics associated with the model will differ
     to that presented here.}
-  \label{tab:simple-models}
+  \label{tab:ch2-simple-models}
 \end{table}
 
 \paragraph{Model derived from $\mathcal{O}_{62b}$} The model derived from
@@ -2310,16 +2314,16 @@ which we now show is sufficient to generate the Weinberg operator through a
 two-loop diagram containing one heavy loop.
 
 The tree-level completion diagram and the neutrino-mass diagram relevant to the
-model are shown in Fig.~\ref{fig:leptonic-model-diagrams}. There are two- and
+model are shown in Fig.~\ref{fig:ch2-leptonic-model-diagrams}. There are two- and
 three-loop neutrino self-energies, where the three-loop models arise by
 connecting the $H$ and $H^{\dagger}$ lines in
-Fig.~\ref{fig:leptonic-model-neutrinomass} in all possible ways. In this case,
+Fig.~\ref{fig:ch2-leptonic-model-neutrinomass} in all possible ways. In this case,
 the first part of the fermion line (highlighted in
-Fig.~\ref{fig:leptonic-model-neutrinomass}) can be replaced with the
+Fig.~\ref{fig:ch2-leptonic-model-neutrinomass}) can be replaced with the
 aforementioned $L\bar{\Delta}_{1}\mathcal{S}_{1}$ vertex so that the left loop
 contains only $\mathcal{S}_{1}$, $\chi$ and the Dirac fermion
 $\Delta_{1} + \bar{\Delta}_{1}^{\dagger}$. (It can also be noticed from the
-tree-level opening in Fig.~\ref{fig:leptonic-model-treelevel} that the
+tree-level opening in Fig.~\ref{fig:ch2-leptonic-model-treelevel} that the
 $\Delta_{1}$ line can be connected directly to one of the $LL\mathcal{S}_{1}$
 vertices, giving rise to a loop-level completion of $\mathcal{O}_{2}$.) This
 heavy-loop neutrino-mass diagram, although interesting in its own right,
@@ -2328,10 +2332,10 @@ and a different structure for the neutrino-mass matrix.
 
 \begin{figure}[t]
   \centering
-  \subcaptionbox{\label{fig:leptonic-model-treelevel}}{
+  \subcaptionbox{\label{fig:ch2-leptonic-model-treelevel}}{
     \includegraphics[width=0.35\linewidth]{leptonic_example_treelevel.pdf}
   }
-  \subcaptionbox{\label{fig:leptonic-model-neutrinomass}}{
+  \subcaptionbox{\label{fig:ch2-leptonic-model-neutrinomass}}{
     \includegraphics[width=0.6\linewidth]{leptonic_example_neutrinomass.pdf}
   }
   \caption[(a) The furnishing of the tree-level topology, labelled $2s6f_4$ in
@@ -2350,7 +2354,7 @@ and a different structure for the neutrino-mass matrix.
     loop involving $\Delta_{1}$, $\chi$ and $\mathcal{S}_{1}$, which dominates
     the neutrino masses. In both cases, the relevant topology is CLBZ-7 in the
     classification of Ref.~\cite{Sierra:2014rxa}.}
-  \label{fig:leptonic-model-diagrams}
+  \label{fig:ch2-leptonic-model-diagrams}
 \end{figure}
 
 \paragraph{A genuine low-scale model} Below we present a brief exploration of
@@ -2363,16 +2367,16 @@ particle content should live roughly below \SI{10}{\TeV}. The corresponding
 $\Delta L = 2$ Lagrangian we write again as
 $\Delta \mathscr{L} = \mathscr{L}_{Y} - \mathcal{V}$, with
 \begin{align}
-  -\mathscr{L}_{Y} &= x_{rs} L^{i}_{r} \bar{d}_{sa} \Pi_{1}^{aj} \epsilon_{ij} + y_{r} \phi^{\{ab\}i} \bar{u}_{ra} \bar{Q}^{j}_{5 b} \epsilon_{ij} + z_{r} \bar{d}_{ra} H^{i} Q^{aj}_{5} \epsilon_{ij} + \text{h.c.} \label{eq:low-scale-yuks} \\
+  -\mathscr{L}_{Y} &= x_{rs} L^{i}_{r} \bar{d}_{sa} \Pi_{1}^{aj} \epsilon_{ij} + y_{r} \phi^{\{ab\}i} \bar{u}_{ra} \bar{Q}^{j}_{5 b} \epsilon_{ij} + z_{r} \bar{d}_{ra} H^{i} Q^{aj}_{5} \epsilon_{ij} + \text{h.c.} \label{eq:ch2-low-scale-yuks} \\
   \mathcal{V} &= \lambda \tilde{\Pi}_{1a}^{i} \tilde{\Pi}_{1b}^{j} \phi^{\{ab\}k} H^{l} (\epsilon_{ik}\epsilon_{jl} + \epsilon_{il}\epsilon_{jk}) \ .
 \end{align}
 We note that $\mathrm{U}(1)_{B}$ must be imposed on the Lagrangian to prevent
 terms like $\Pi^{3}_{1} H^{\dagger}$, $|\phi|^{2}\phi^{\dagger}\Pi_{1}$ and
 $|\Pi_{1}|^{2} \Pi_{1} \phi$ that destabilise the proton in the presence of the
-Yukawa interactions of Eq.~\eqref{eq:low-scale-yuks}. The field $\phi$ only
+Yukawa interactions of Eq.~\eqref{eq:ch2-low-scale-yuks}. The field $\phi$ only
 couples to SM fermions together with $Q_{5}$ in this model, and so it generates
 no dimension-six operators at tree level. The completion graph and one of the
-neutrino self-energy diagrams are shown in Fig.~\ref{fig:lowscale-example}. The
+neutrino self-energy diagrams are shown in Fig.~\ref{fig:ch2-lowscale-example}. The
 tree-level topology is again $2s6f_{4}$, and the neutrino masses are realised at
 three and four loops, with the additional loop arising from the connection of an
 $H$ and $H^{\dagger}$. One of the loops involves a $W$ boson, and so the diagram
@@ -2403,10 +2407,10 @@ reproduce the measured pattern of neutrino masses and mixings.
 
 \begin{figure}[t]
   \centering
-  \subcaptionbox{\label{fig:lowscale-model-treelevel}}{
+  \subcaptionbox{\label{fig:ch2-lowscale-model-treelevel}}{
     \includegraphics[width=0.35\linewidth]{lowscale_example_treelevel.pdf}
   }
-  \subcaptionbox{\label{fig:lowscale-model-neutrinomass}}{
+  \subcaptionbox{\label{fig:ch2-lowscale-model-neutrinomass}}{
     \includegraphics[width=0.6\linewidth]{lowscale_example_neutrinomass.pdf}
   }
   \caption[(a) The tree-level completion diagram for the model derived from
@@ -2417,7 +2421,7 @@ reproduce the measured pattern of neutrino masses and mixings.
     The topology is $2s6f_{4}$ in our classification scheme. The closure
     involves an arrow-preserving loop connecting the $\bar{d}^{\dagger}$ to one
     of the $\bar{d}$ lines, and the $W$-boson closure motif discussed in
-    Sec.~\ref{sec:operator-closures}. (b) One of the neutrino-mass diagrams
+    Sec.~\ref{sec:ch2-operator-closures}. (b) One of the neutrino-mass diagrams
     relevant to the model derived from $\mathcal{O}_{50}$. There is a three-loop
     diagram with the $H$ line broken into an $H^{\dagger}, H$ pair that
     generates the dimension-seven generalised Weinberg operator. The four-loop
@@ -2426,7 +2430,7 @@ reproduce the measured pattern of neutrino masses and mixings.
     diagram, although it must couple to the $Q$ line. The four-loop diagrams
     will give larger contributions to the neutrino mass than the three-loop
     diagrams for $\Lambda \gtrsim \SI{2}{\TeV}$.}
-  \label{fig:lowscale-example}
+  \label{fig:ch2-lowscale-example}
 \end{figure}
 
 \subsubsection{A model derived from a derivative operator}
@@ -2453,7 +2457,7 @@ also has the nice feature that no baryon-number violating interactions are
 present.
 
 The tree-level completion diagram and one of the neutrino-mass diagrams are
-shown in Fig.~\ref{fig:derivative-example-diagrams}. The completion diagram has
+shown in Fig.~\ref{fig:ch2-derivative-example-diagrams}. The completion diagram has
 topology $2s4f_{8}$, which requires one of the heavy fermions to have an
 arrow-preserving propagator. The neutrino-mass diagram shown is
 cocktail-like~\cite{Gustafsson:2012vj}, although there are also two-loop diagrams generating
@@ -2466,7 +2470,7 @@ The flavour structure of the neutrino-mass matrix has the approximate form
   [\mathbf{m}_{\nu}]_{rs} = \frac{g^{2}}{(16\pi^{2})^{3}} \frac{1}{\Lambda} \sum_{t,u} y_{r} x_{s} w^{*}_{t} z_{t} [\mathbf{m}_{d}]_{t} V_{ut} [\mathbf{m}_{u}]_{u} I_{rstu} + (r \leftrightarrow s) \ .
 \end{equation}
 The dependence on the up- and down-type mass matrices, as in the example
-presented in Sec.~\ref{sec:simple-models}, means that the couplings $w_{1,2}$
+presented in Sec.~\ref{sec:ch2-simple-models}, means that the couplings $w_{1,2}$
 and $z_{1,2}$ will not play an important role in generating the observed pattern
 of neutrino masses and mixings. In this case the matrix has at least rank 2,
 even if the leptonic-flavour structure of the loop integrals $I_{rstu}$ is flat.
@@ -2475,10 +2479,10 @@ from the six parameters $x_{r}$ and $y_{r}$.
 
 \begin{figure}[t]
   \centering
-  \subcaptionbox{\label{fig:derivative-example-treelevel}}{
+  \subcaptionbox{\label{fig:ch2-derivative-example-treelevel}}{
     \includegraphics[width=0.5\linewidth]{derivative_example_treelevel.pdf}
   }
-  \subcaptionbox{\label{fig:derivative-example-neutrinomass}}{
+  \subcaptionbox{\label{fig:ch2-derivative-example-neutrinomass}}{
     \includegraphics[width=0.4\linewidth]{derivative_example_neutrinomass.pdf}
   }
   \caption[(a) The tree-level completion diagram for the model that generates
@@ -2491,7 +2495,7 @@ from the six parameters $x_{r}$ and $y_{r}$.
     relevant to single-derivative operators, and contains an arrow-preserving
     fermion propagator, that of $Q_{5}$ in the diagram. The closure of the
     diagram involves a $W$-boson loop, similar to that required in
-    Fig.~\ref{fig:lowscale-example}. (b) One of the neutrino-mass diagrams
+    Fig.~\ref{fig:ch2-lowscale-example}. (b) One of the neutrino-mass diagrams
     relevant to the model generating $\mathcal{O}_{D10a,b,c}$. The diagram
     generates the Weinberg operator as drawn, but additional diagrams exist with
     the central $H$ line cut into an $H,H^{\dagger}$ pair that generate
@@ -2503,7 +2507,7 @@ from the six parameters $x_{r}$ and $y_{r}$.
     non-trivial $\mathrm{SU}(2)_{L}$ charge. The topology is
     cocktail-like~\cite{Gustafsson:2012vj}, and resembles $D^{M}_{15}$ in
     Ref.~\cite{Cepedello:2018rfh}.}
-  \label{fig:derivative-example-diagrams}
+  \label{fig:ch2-derivative-example-diagrams}
 \end{figure}
 
 \subsubsection{A model of neutrino mass and the flavour anomalies}
@@ -2521,22 +2525,22 @@ $\Pi_{7} \sim (\mathbf{3}, \mathbf{2}, \tfrac{7}{6})_{S}$ can provide an
 explanation of the anomalies in $R_{D^{(*)}}$ with contributions to the SMEFT
 operators
 \begin{align}
-  \label{eq:rdrdstar-relation}
+  \label{eq:ch2-rdrdstar-relation}
   [C_{lequ}^{(1)}]_{3332} = \begin{cases}
     - 4 [C_{lequ}^{(3)}]_{3332} &\text{for } \omega_{1} \\
     4 [C_{lequ}^{(3)}]_{3332}  &\text{for } \Pi_{7} \\
   \end{cases} \ ,
 \end{align}
 since they have Yukawa couplings to left- and right-handed SM fields. [We note
-that Eq.~\eqref{eq:rdrdstar-relation} holds at the high scale, and the relation
+that Eq.~\eqref{eq:ch2-rdrdstar-relation} holds at the high scale, and the relation
 between the operators is altered by running.] The Yukawa terms are
 \begin{align}
-  - \mathcal{L}_{\omega_{1}} &= f_{rs} L_{r} Q_{s} \omega_{1} + g_{rs} \bar{e}^{\dagger}_{r} \bar{u}^{\dagger}_{s} \omega_{1} + \text{h.c.} \label{eq:omega1-coup} \\
-  - \mathcal{L}_{\Pi_{7}} &= x_{rs} L_{r} \bar{u}_{s} \Pi_{7} + y_{rs} \bar{e}^{\dagger}_{r} Q^{\dagger}_{s} \Pi_{7} + \text{h.c.} \label{eq:pi7-coup}
+  - \mathcal{L}_{\omega_{1}} &= f_{rs} L_{r} Q_{s} \omega_{1} + g_{rs} \bar{e}^{\dagger}_{r} \bar{u}^{\dagger}_{s} \omega_{1} + \text{h.c.} \label{eq:ch2-omega1-coup} \\
+  - \mathcal{L}_{\Pi_{7}} &= x_{rs} L_{r} \bar{u}_{s} \Pi_{7} + y_{rs} \bar{e}^{\dagger}_{r} Q^{\dagger}_{s} \Pi_{7} + \text{h.c.} \label{eq:ch2-pi7-coup}
 \end{align}
 and these imply
 \begin{align}
-  \label{eq:omega1-pi7-clequ}
+  \label{eq:ch2-omega1-pi7-clequ}
   [C_{lequ}^{(1)}]_{3332} = \begin{cases}
     \dfrac{f_{33} g_{32}^{*}}{2 m_{\omega_{1}}^{2}} &\text{for } \omega_{1} \\
     \dfrac{x_{32}^{*}y_{33}}{2 m_{\Pi_{7}}^{2}} &\text{for } \Pi_{7} \\
@@ -2572,13 +2576,13 @@ for $\ell \in \{e, \mu, \tau\}$. A potential source of this universal
 contribution to $C_{9}$ is new physics in four-quark operators
 like~\cite{Aebischer:2019mlg}
 \begin{equation}
-  \label{eq:ouq}
+  \label{eq:ch2-ouq}
   [\mathcal{O}_{qu}^{(1)}]_{2322} = (\bar{Q}_{2} \gamma_{\mu} Q_{3}) (\bar{u}_{2} \gamma^{\mu} \bar{u}_{2}) \ ,
 \end{equation}
 which can be generated, for example, by
 $\Phi \sim (\mathbf{8}, \mathbf{2}, \tfrac{1}{2})_{S}$. The relevant Yukawa terms are
 \begin{equation}
-  \label{eq:phi-yuks}
+  \label{eq:ch2-phi-yuks}
   - \mathscr{L}_{\Phi} = w_{rs} Q_{r}^{ai} \bar{u}_{sb} \Phi^{bj}_{\ a} \epsilon_{ij} + \text{h.c.}
 \end{equation}
 and a contribution of about the right size to $C_{9}^{bs\ell\ell}$ can be
@@ -2601,10 +2605,10 @@ returns a number of models, and we choose one to study briefly below. We note
 that none of the models involve the leptoquark $\omega_{1}$, and none feature
 the interaction $\bar{e}^{\dagger} Q^{\dagger} \Pi_{7}$, implying some freedom
 in the explanation of $R_{D^{(*)}}$ since the couplings $y_{rs}$ of
-Eqs.~\eqref{eq:pi7-coup} and \eqref{eq:omega1-pi7-clequ} will be
+Eqs.~\eqref{eq:ch2-pi7-coup} and \eqref{eq:ch2-omega1-pi7-clequ} will be
 unrelated\footnote{Expanding our search criteria, we find no viable models in
   the database in which both sets of couplings presented in
-  Eqs.~\eqref{eq:omega1-coup} and \eqref{eq:pi7-coup} feature. This can be
+  Eqs.~\eqref{eq:ch2-omega1-coup} and \eqref{eq:ch2-pi7-coup} feature. This can be
   understood in the following way. Any neutrino self-energy diagram containing
   both couplings will also imply another where
   $\bar{e}^{\dagger} \bar{u}^\dagger \omega_{1}$ or
@@ -2625,7 +2629,7 @@ violation. It generates $\mathcal{O}_{29b}$, which implies an upper bound on the
 new-physics scale of roughly $\SI{e7}{\TeV}$. The additional piece of the
 Lagrangian is $\Delta \mathscr{L} = \mathscr{L}_{Y} - \mathcal{V}$, with
 \begin{align}
-  -\mathscr{L}_{Y} &= x_{rs} L^{i}_{r}\bar{u}_{sa} \Pi^{ja}_{7} \epsilon_{ij} +  y_{rs} \bar{e}^{\dagger}_{r} Q_{sai}^{\dagger} \Pi^{ai}_{7} + z_{rs}L^{i}_{r} Q^{ja}_{s} \zeta_{a}^{\{kl\}} \epsilon_{ik} \epsilon_{jl} + w_{rs} Q^{ai}_{r} \bar{u}_{sb} \Phi^{bj}_{\ a} \epsilon_{ij}  + \text{h.c.} \label{eq:flav-anom-yuks} \\
+  -\mathscr{L}_{Y} &= x_{rs} L^{i}_{r}\bar{u}_{sa} \Pi^{ja}_{7} \epsilon_{ij} +  y_{rs} \bar{e}^{\dagger}_{r} Q_{sai}^{\dagger} \Pi^{ai}_{7} + z_{rs}L^{i}_{r} Q^{ja}_{s} \zeta_{a}^{\{kl\}} \epsilon_{ik} \epsilon_{jl} + w_{rs} Q^{ai}_{r} \bar{u}_{sb} \Phi^{bj}_{\ a} \epsilon_{ij}  + \text{h.c.} \label{eq:ch2-flav-anom-yuks} \\
   \mathcal{V} &= \kappa H^{i} \Phi^{a j}_{\ b} \eta^{\dagger b}_{\ \ a} \epsilon_{ij} + \lambda H^{i} \eta^{a}_{\ b} \tilde{\Pi}^{j}_{7a} \tilde{\zeta}^{b \{kl\}} \epsilon_{ik}\epsilon_{jl} + \text{h.c.} + \cdots \ ,
 \end{align}
 where we have only shown the part of the scalar potential relevant to
@@ -2638,17 +2642,17 @@ parameters, although not all of them are necessary to address the flavour
 anomalies and generate viable neutrino masses.
 
 The tree-level completion diagram and the neutrino self-energy diagram are shown
-in Fig.~\ref{fig:flavour-anomalies-model-diagrams}. The neutrino mass arises at
+in Fig.~\ref{fig:ch2-flavour-anomalies-model-diagrams}. The neutrino mass arises at
 two loops, and the topology has the feature that no fermion propagators are
 arrow-violating. This implies that the neutrino masses are not proportional to
 any SM-fermion masses. This feature has been studied before in the context of a
 specific UV model in Ref.~\cite{Gargalionis:2019drk}. The phenomenon is
 particular to models derived from operators whose closures feature
-arrow-preserving loops, as discussed in Sec.~\ref{sec:operator-closures}. From a
+arrow-preserving loops, as discussed in Sec.~\ref{sec:ch2-operator-closures}. From a
 model-building perspective, one consequence is that the neutrino masses need not
 be dominated by Yukawa couplings to SM fermions of the third generation. Indeed,
 motivated by the pattern of operators required to explain the flavour anomalies,
-we adopt textures for the Yukawa couplings of Eq.~\eqref{eq:flav-anom-yuks} that
+we adopt textures for the Yukawa couplings of Eq.~\eqref{eq:ch2-flav-anom-yuks} that
 imply dominance of the bottom-quark couplings for $\zeta$, but the charm-quark
 couplings for $\Pi_{7}$:
 \begin{equation}
@@ -2675,14 +2679,14 @@ $[\mathcal{O}_{lq}^{(1,3)}]_{2232}$ and $[\mathcal{O}_{lequ}^{(1,3)}]_{3332}$ is
     \end{pmatrix} \ ,
   \end{equation}
   which is exactly the correct set required to also generate the operator given
-  in Eq.~\eqref{eq:ouq}. Thus, there is a natural connection in this model
+  in Eq.~\eqref{eq:ch2-ouq}. Thus, there is a natural connection in this model
   between the explanation of the charged- and neutral-current anomalies through
   the neutrino masses. With the exception of $y_{33}$, all of the couplings
   featuring in the explanation of the flavour anomalies also play a role in the
   generation of the neutrino masses. The structure of the neutrino-mass matrix
   is
   \begin{equation}
-    \label{eq:flav-anom-mv}
+    \label{eq:ch2-flav-anom-mv}
     \begin{aligned}
       [\mathbf{m}_{\nu}]_{rs} &\simeq \frac{\lambda \kappa}{(16 \pi^{2})^{2}} \frac{v^{2}}{\Lambda^{2}} \sum_{t,u} [z_{rt} w_{tu} x_{su} + (r \leftrightarrow s)] \\
       &= \frac{\lambda \kappa}{(16 \pi^{2})^{2}} \frac{v^{2}}{\Lambda^{2}} [z_{r2} w_{22} x_{s2} + z_{r3}w_{32}x_{s2} + (r \leftrightarrow s)] \ .
@@ -2703,7 +2707,7 @@ $[\mathcal{O}_{lq}^{(1,3)}]_{2232}$ and $[\mathcal{O}_{lequ}^{(1,3)}]_{3332}$ is
   implies $\lambda \kappa \sim \SI{0.05}{\GeV}$ for neutrino masses saturating
   the atmospheric bound. This choice is technically natural, since in the limit
   of vanishing $\lambda$ or $\kappa$ the Lagrangian regains $\mathrm{U}(1)_{L}$.
-  We rewrite Eq.~\eqref{eq:flav-anom-mv} as
+  We rewrite Eq.~\eqref{eq:ch2-flav-anom-mv} as
   \begin{equation}
     [\mathbf{m}_{\nu}]_{rs} = m_{0} [ x_{s2}(z_{r2}w_{22} + z_{r3}w_{32}) + (r \leftrightarrow s) ] \ ,
   \end{equation}
@@ -2736,10 +2740,10 @@ $[\mathcal{O}_{lq}^{(1,3)}]_{2232}$ and $[\mathcal{O}_{lequ}^{(1,3)}]_{3332}$ is
 
 \begin{figure}[t]
   \centering
-  \subcaptionbox{\label{fig:flavour-anomalies-model-treelevel}}{
+  \subcaptionbox{\label{fig:ch2-flavour-anomalies-model-treelevel}}{
     \includegraphics[width=0.38\linewidth]{flavour_anomalies_treelevel.pdf}
   }
-  \subcaptionbox{\label{fig:flavour-anomalies-model-neutrinomass}}{
+  \subcaptionbox{\label{fig:ch2-flavour-anomalies-model-neutrinomass}}{
     \includegraphics[width=0.53\linewidth]{flavour_anomalies_neutrinomass.pdf}
   }
   \caption[(a) The figure shows the tree-level completion diagram for the model
@@ -2759,12 +2763,12 @@ $[\mathcal{O}_{lq}^{(1,3)}]_{2232}$ and $[\mathcal{O}_{lequ}^{(1,3)}]_{3332}$ is
     involved in generating the pattern of dimension-six operators that motivates
     this example, and so provides for a more intimate connection between the
     flavour anomalies and neutrino masses.}
-  \label{fig:flavour-anomalies-model-diagrams}
+  \label{fig:ch2-flavour-anomalies-model-diagrams}
 \end{figure}
 
 
 \section{Conclusions}
-\label{sec:conclusions}
+\label{sec:ch2-conclusions}
 
 We have described a procedure for building UV-complete models from effective
 operators in a way amenable to automation. We have applied the algorithm, as

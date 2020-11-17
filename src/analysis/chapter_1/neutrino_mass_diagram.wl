@@ -7,10 +7,10 @@ styles = Style[#, FontSize -> 18] & /@ {
 
 fig = Show[
  ListLogLinearPlot[{
-   {{0.0005, 1}, {0.005, 2}, {0.07, 3}},
-   {{500 10^3, 1 - 0.1}, {106 10^6, 2 - 0.1}, {1.78 10^9, 3 - 0.1}},
-   {{3 10^6, 1}, {100 10^6, 2}, {4.2 10^9, 3}},
-   {{6 10^6, 1 + 0.1}, {1.3 10^9, 2 + 0.1}, {171 10^9, 3 + 0.1}}
+   {{0.0005, 1}, {0.005, 2}, {0.07, 3}}, (* neutrinos *)
+   {{511 10^3, 1 - 0.1}, {106 10^6, 2 - 0.1}, {1.78 10^9, 3 - 0.1}}, (* charged leptons *)
+   {{7 10^6, 1}, {120 10^6, 2}, {4.3 10^9, 3}}, (* down quarks *)
+   {{3 10^6, 1 + 0.1}, {1.2 10^9, 2 + 0.1}, {174 10^9, 3 + 0.1}} (* up quarks *)
    },
   (*PlotStyle\[Rule]colors,*)
   PlotTheme -> "Detailed",
@@ -28,7 +28,7 @@ fig = Show[
   Epilog -> {Rotate[
      Inset[Style["\!\(\*SubscriptBox[\(m\), \(\[Nu]\)]\) < 0.12 eV", 
        FontSize -> 18, 
-       FontColor ->(*ColorData[97,"ColorList"][[1]]*)Gray], {-1, 
+       FontColor -> Gray], {-1, 
        3}], \[Pi]/2],
     Rotate[
      Inset[Style["\!\(\*SubscriptBox[\(m\), \(max\)]\) > 0.05 eV", 
