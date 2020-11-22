@@ -29,3 +29,5 @@ drafts/
 *.glsdefs
 *.el
 Icon[]
+.ipynb_checkpoints
+__pycache__/

@@ -40,14 +40,24 @@
 * Chapter 3: Reconsidering the BN scenario
 - [X] Sort out introduction
 - [X] Fix references
-- [ ] Add in new references
+- [X] Add in new references
 - [ ] Update experimental constraints under eq. 3.5 with newer results
-- [ ] Replace fit with recent one from paper with Innes
+- [X] Replace fit with recent one from paper with Innes
 - [ ] Make new plots with updated measurements
   - RKStar_nunu < 2.7 (!) (1702.03224)
   - UTfit updated CBs and phi_Bs (http://www.utfit.org/UTfit/ResultsSummer2018NP)
   - D_s to mu nu: 5.49 pm 0.16 (new measurement in 2019, take from PDG)
-  - Measurement of B to tau nu: 1712.04123
+  - Measurement of B to mu nu: 1712.04123
+- [ ] Write out new data for both scans
+- [ ] Update text with new value of RKStar_nunu
+- [ ] Update text with new value of CBs and phi_Bs
+- [ ] Update text with new value of D_s to mu nu
+- [ ] Update text with new measurement of B -> tau nu
+- [ ] Remake 3.8b and 3.8c with new constraints and new yellow points
+- [X] New plot of CLL vs CLR
+- [ ] Remake 3.9 plots
+- [X] New fig 3.11 and 3.13
+- [ ] Remake Fig. 3.12 with new calculation
 
 * Chapter 4: Models of neutrino mass and the flavour anomalies
 - [ ] General introduction
