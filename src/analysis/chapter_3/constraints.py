@@ -231,3 +231,34 @@ def rdstar_ratios(m, x, y):
     rd = flavio.np_prediction("Rtaul(B->Dlnu)", wwet)
 
     return rd, rdstar
+
+
+def loop(x):
+    return 1 - 3 / (x - 1) + 3 * np.log(x) / (x - 1) ** 2
+
+
+def cll_clr(m, x, y):
+    z = x * CKM.H
+    mt = 162.3
+    aem = 1 / 127
+    term_1_prefactor = mt ** 2 / (8 * np.pi * aem * m ** 2)
+    prefactor = np.sqrt(2) / (64 * np.pi * aem * GF * m ** 2 * np.conj(CKM[2, 1]))
+
+    sum_xx = 0
+    sum_z = 0
+    sum_y = 0
+    for i in (0, 1, 2):
+        sum_xx += x[i, 2] * np.conj(x[i, 1])
+        sum_z += np.abs(z[1, i]) ** 2
+        sum_y += np.abs(y[1, i]) ** 2
+
+    cll = term_1_prefactor * np.abs(z[1, 2]) ** 2 - prefactor * sum_xx * sum_z
+    clr = (
+        0.5
+        * term_1_prefactor
+        * np.abs(y[1, 2]) ** 2
+        * (np.log(m ** 2 / mt ** 2) - loop(mt ** 2 / MW ** 2))
+        - prefactor * sum_xx * sum_y
+    )
+
+    return np.real(cll), np.real(clr)

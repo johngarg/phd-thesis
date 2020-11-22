@@ -109,25 +109,22 @@ throughout this work. Note that in our notation $x_{22} = x_{\nu_\mu s}$,
 couplings to the up-quark cannot be avoided since they are generated through the
 quark mixing of Eq.~\eqref{eq:ch3-mixing}.
 
-{\color{red}This paragraph needs to be updated.} Approximate bounds on the mass
-of the $S_{1}$ can be inferred from collider searches. After pair-production,
-the final states of interest for this work are $\ell\ell j j$,
-$\ell j j + \slashed{E}_T$ and $jj + \slashed{E}_T$, where
+Approximate bounds on the mass of the $S_{1}$ can be inferred from collider
+searches. After pair-production, the final states of interest for this work are
+$\ell\ell j j$, $\ell j j + \slashed{E}_T$ and $jj + \slashed{E}_T$, where
 $\ell \in \{\mu, \tau\}$. The current most stringent results from these channels
 are presented here. Experimental limits are usually presented in
 $(m_{\text{LQ}}, \beta)$ space, where $\beta$ represents the branching ratio to
 the charged lepton and quark. The CMS collaboration places an upper limit of
-$1080\text{ (}760\text{)} \text{ GeV}$ on the mass of second generation scalar
-leptoquarks in the $\mu \mu j j$ channel assuming $\beta = 1\text{
-  (}0.5\text{)}$, while in the combined $\mu \mu j j$ and
-$\mu j j + \slashed{E}_T$ channel, the mass exclusion reach for $\beta < 1$ is
-improved: for $\beta = 0.5$, for example, second generation leptoquark masses
-below $800 \text{ GeV}$ are excluded~\cite{Khachatryan:2015vaa}. The most
-stringent limits in the $b b + \slashed{E}_T$ channel come from ATLAS. Their
-analysis excludes third generation leptoquark masses below $625 \text{ GeV}$ at
-95\% confidence for $\beta = 0$~\cite{Aad:2015caa}. Ref.~\cite{Dumont:2016xpj}
-finds a lower bound between $400 \text{ -- } 640 \text{ GeV}$ for the BN
-leptoquark, although this range is specific to certain parameter choices.
+\SI{1530}{\GeV} (\SI{1285}{\GeV}) on the mass of second generation scalar
+leptoquarks in the $\mu \mu j j$ channel assuming
+$\beta = 1 (0.5)$~\cite{Sirunyan:2018ryt}. The most stringent limits on
+third-generation decays come from ATLAS. Their analysis excludes third
+generation leptoquark masses below $\SI{800}{\GeV}$ at 95\% confidence for
+$\beta = 0$ and $\beta = 1$, while the exclusion reaches \SI{1}{\TeV} for
+$\beta=0.5$~\cite{Aaboud:2019bye}. Ref.~\cite{Dumont:2016xpj} finds a lower
+bound between \SI{400}{\GeV} -- \SI{640}{\GeV} for the BN leptoquark, although
+this range is specific to certain parameter choices.
 
 \section{Phenomenological analysis}
 \label{sec:ch3-phenomenologicalanalysis}
@@ -148,7 +145,7 @@ For notational convenience, we remove the breve from the neutrino
 flavour-eigenstate fields, since we work exclusively with these in this section.
 We also define
 \begin{equation}
-  \hat{m}_{S_{1}} = \frac{m_{S_{1}}}{\text{TeV}}.
+  \hat{m}_{S_{1}} = \frac{m_{S_{1}}}{\TeV}.
 \end{equation}
 
 \subsection{Signals}
@@ -228,17 +225,19 @@ not run due to the Ward identity of QCD. At leading logarithmic order
     C_T (\mu_b) &= \left[ \frac{\alpha_s(m_t)}{\alpha_s(\mu_b)} \right]^{\frac{\gamma_T}{2\beta_0^{(5)}}} \left[ \frac{\alpha_s(\Lambda)}{\alpha_s(m_t)} \right]^{\frac{\gamma_T}{2\beta_0^{(6)}}}C_T(\Lambda),
   \end{align}
 \end{subequations}
-where $\gamma_S = -8$, $\gamma_T = 8/3$ and $\beta_0^{(n_f)} = 11 -
-2n_f/3$~\cite{Dorsner:2013tla}. We use the \textit{Mathematica} package
-\textsf{RunDec}~\cite{Chetyrkin:2000yt} to run $\alpha_s$ from $\Lambda \sim
-\text{TeV}$ to $\mu_b = \overline{m_b} = 4.2 \text{ GeV}$. This results in a
-modification of the relation between the scalar and tensor Wilson coefficients:
+where $\gamma_S = -8$, $\gamma_T = 8/3$ and
+$\beta_0^{(n_f)} = 11 - 2n_f/3$~\cite{Dorsner:2013tla}. We use the
+\textit{Mathematica} package \textsf{RunDec}~\cite{Chetyrkin:2000yt} to run
+$\alpha_s$ from $\Lambda \sim \TeV$ to
+$\mu_b = \overline{m_b} = \SI{4.2}{\GeV}$. This results in a modification of the
+relation between the scalar and tensor Wilson coefficients:
 $C_T(\Lambda) = -\frac{1}{4} C_S(\Lambda)$. Although most of the running occurs
 at the low scale (between $\mu_b$ and $m_t$), the relationship between these
 coefficients still depends non-negligibly on the chosen high scale. To
 illustrate this dependence, we plot the ratio $C_S(\mu_b)/C_T(\mu_b)$ against
-$\Lambda$ in Fig.~\ref{fig:ch3-runrat}. Running down to $\mu_b$ from higher scales
-increases the magnitude of the scalar coefficient relative to the tensor one.
+$\Lambda$ in Fig.~\ref{fig:ch3-runrat}. Running down to $\mu_b$ from higher
+scales increases the magnitude of the scalar coefficient relative to the tensor
+one.
 
 \begin{figure}[t]
   \centering%
@@ -249,7 +248,7 @@ new-physics scale $\Lambda$, at which the ratio is $-4$.]{The dependence of the
   ratio of the tensor and scalar Wilson coefficients evaluated at $\mu_b$ in
   $b \to c \ell \nu$ as a function of the new-physics scale $\Lambda$, at which
   the ratio is $-4$. The figure depicts the values down to which the ratio
-  $C_S/C_T$ evolves at $\mu_b$. For example, running from $1 \text{ TeV}$ to
+  $C_S/C_T$ evolves at $\mu_b$. For example, running from $\SI{1}{\TeV}$ to
   $\mu_b$ implies $C_S/C_T= -7.8$.}
 \label{fig:ch3-runrat}
 \end{figure}
@@ -260,16 +259,16 @@ a fit of all measurements of $R_{D}$ and $R_{D^*}$ using the fitting software
   include the measurements of $f_L^{D^*}$ and $R_{J/\psi}$, since errors here
   are still large. Instead, we take the central values from our fits and discuss
   predictions for these observables in section~\ref{sec:blah}.}. The fit
-contours are shown in Fig.~\ref{fig:fit}, with the fit excluding the new Belle
+contours are shown in Fig.~\ref{fig:ch3-fit}, with the fit excluding the new Belle
 measurement shown with dashed contours to indicate its effect. We find the
 best-fit point
 \begin{equation}
 ({C}_{V_L}, {C}_{S_L}) \approx (-0.18, 0.36),
 \end{equation}
 for the 2D fit to $\text{Re} C_{V_L}$ and
-$\text{Re} C_{S_L} (\Lambda) = -4 C_T(\Lambda)$ at $\Lambda = 2 \text{ TeV}$. We
+$\text{Re} C_{S_L} (\Lambda) = -4 C_T(\Lambda)$ at $\Lambda = \SI{2}{\TeV}$. We
 also fit to $C_{V_L}$ with $C_{S_L}(\Lambda)=0$ and vice versa. These results
-are summarised in Table~\ref{tab:fitresults}. We comment here that even for
+are summarised in Table~\ref{tab:ch3-fitresults}. We comment here that even for
 $S_{1}$ contributing to the direction $C_{S_L}(\Lambda) = - 4 C_T(\Lambda)$, the
 vector operator will also always be non-zero. This follows from the relation in
 Eq.~\eqref{eq:ch3-mixing}. The leading contribution where only $x_{33}$ is
@@ -285,10 +284,10 @@ still be sizeable if $x_{33}$ is chosen to be large.
       Belle measurement~\cite{Abdesselam:2019dgh}. Contours show the $1$, $2$
       and $3\sigma$ regions of the fit, dashed lines show the fit results
       without the recent Belle measurement. The scalar and tensor coefficients
-      are run to the $b$-quark mass scale from $2 \text{ TeV}$. See
-      Table~\ref{tab:fitresults} for central values and the text for more
+      are run to the $b$-quark mass scale from $\SI{2}{\TeV}$. See
+      Table~\ref{tab:ch3-fitresults} for central values and the text for more
       details.}
-    \label{fig:fit}
+    \label{fig:ch3-fit}
 \end{figure}
 
 \begin{table}[t]
@@ -306,12 +305,12 @@ still be sizeable if $x_{33}$ is chosen to be large.
       Belle combined measurement~\cite{Abdesselam:2019dgh}. The first row shows
       the best fit point and $\sigma$-regions fitting to $C_{V_L}$ with all
       other operator coefficients vanishing. The second row shows the same for
-      $C_{S_L}(\Lambda) = -4 C_T(\Lambda)$ for $\Lambda = 2 \text{ TeV}$ and all
+      $C_{S_L}(\Lambda) = -4 C_T(\Lambda)$ for $\Lambda = \SI{2}{\TeV}$ and all
       other coefficients set to zero. The third row shows the best fit point for
       a 2D fit to $\text{Re}\, C_{V_L}$ and
       $\text{Re}\, C_{S_L}(\Lambda)= -4 \text{Re}\, C_T(\Lambda)$, again for
-      $\Lambda = 2 \text{ TeV}$.}
-    \label{tab:fitresults}
+      $\Lambda = \SI{2}{\TeV}$.}
+    \label{tab:ch3-fitresults}
 \end{table}
 
 \subsubsection{Neutral current processes}
@@ -418,10 +417,11 @@ $a_\mu^{S_{1}} = (287 \pm 80) \cdot 10^{-11}$~\cite{Davier:2010nc}.
 
 The top-mass enhancement in the first term makes this the dominant contribution
 in this model, and we illustrate the interesting values of $y_{32}$ and $z_{32}$
-in Fig.~\ref{fig:ch3-gm2plots} for leptoquark mass values of $m_{S_{1}}=1 \text{ TeV}$
-and $m_{S_{1}}=5 \text{ TeV}$. Large $z_{23}$ values assist the model's explanation
-of $R_{K^{(*)}}$, hence a combined explanation of this and the $(g-2)_\mu$ anomaly
-prefers a small $y_{23}$. Explicitly, the condition~\cite{Bauer:2015knc}
+in Fig.~\ref{fig:ch3-gm2plots} for leptoquark mass values of
+$m_{S_{1}}=\SI{1}{\TeV}$ and $m_{S_{1}}=\SI{5}{\TeV}$. Large $z_{23}$ values
+assist the model's explanation of $R_{K^{(*)}}$, hence a combined explanation of
+this and the $(g-2)_\mu$ anomaly prefers a small $y_{23}$. Explicitly, the
+condition~\cite{Bauer:2015knc}
 \begin{equation} \label{eq:ch3-bnamueq}
   -20.7 (1 + 1.06 \ln\hat{m}_{S_{1}}) \text{Re}(y_{23} z_{23}) \approx 0.08 \hat{m}_{S_{1}}^2
 \end{equation}
@@ -440,10 +440,10 @@ this minimal case.
 \phantomsubcaption \label{fig:ch3-gm2plot2}
 \end{minipage}
 \caption[The $1$ and $2\sigma$ allowed regions for $a_\mu$ in the
-$y_{23}$--$z_{23}$ plane for leptoquark masses of $m_{S_{1}} = 1 \text{ TeV}$
-(left) and $m_{S_{1}} = 5 \text{ TeV}$ (right).]{The $1$ and $2\sigma$ allowed
+$y_{23}$--$z_{23}$ plane for leptoquark masses of $m_{S_{1}} = \SI{1}{\TeV}$
+(left) and $m_{S_{1}} = \SI{5}{\TeV}$ (right).]{The $1$ and $2\sigma$ allowed
   regions for $a_\mu$ in the $y_{23}$--$z_{23}$ plane for leptoquark masses of
-  $m_{S_{1}} = 1 \text{ TeV}$ (left) and $m_{S_{1}} = 5 \text{ TeV}$ (right). The
+  $m_{S_{1}} = \SI{1}{\TeV}$ (left) and $m_{S_{1}} = \SI{5}{\TeV}$ (right). The
   top-mass enhancement in the first term of Eq.~\eqref{eq:ch3-amu} allows the model
   to accommodate $a_\mu$ with very small values for $|y_{23}|$ with
   $z_{23} \neq 0$.}\label{fig:ch3-gm2plots}
@@ -489,16 +489,16 @@ a negative value for $C^{S_{1}}_{LL}$. The leptoquark also contributes to
 $B_s$--$\bar{B}_s$ mixing through box diagrams similar to those given in
 Fig.~\ref{fig:ch3-boxes} with neutrinos running through both internal fermion
 lines. We find measurements of $B_s$--$\bar{B}_s$ mixing to be more constraining
-than those of FCNC decays for leptoquark masses larger than a few TeV. For small
-leptoquark masses, precision electroweak measurements of the $Z\ell \bar{\ell}$
-couplings place upper bounds on the sum of the absolute squares of left-handed
-couplings, and a relative sign difference between couplings to the
-third-generation quarks and those to the second implies the possibility of a
-mild cancellation taming these effects. A very important constraint on the
-left-handed coupling $|x_{22}|$ can be derived from the meson decay
-$D^0 \to \mu \mu$, a large value of which aids the explanation of $R_{K^{(*)}}$
-in this scenario. It has also recently been pointed out~\cite{Becirevic:2016oho}
-that the LFU evident in the ratio
+than those of FCNC decays for leptoquark masses larger than a few \TeV. For
+small leptoquark masses, precision electroweak measurements of the
+$Z\ell \bar{\ell}$ couplings place upper bounds on the sum of the absolute
+squares of left-handed couplings, and a relative sign difference between
+couplings to the third-generation quarks and those to the second implies the
+possibility of a mild cancellation taming these effects. A very important
+constraint on the left-handed coupling $|x_{22}|$ can be derived from the meson
+decay $D^0 \to \mu \mu$, a large value of which aids the explanation of
+$R_{K^{(*)}}$ in this scenario. It has also recently been pointed
+out~\cite{Becirevic:2016oho} that the LFU evident in the ratio
 $R_{D}^{\mu/e} = \Gamma(B\rightarrow D \mu \nu) / \Gamma(B\rightarrow D e \nu)$
 represents a significant hurdle to the leptoquark's explanation of the $b \to s$
 data, and we discuss this constraint below.
@@ -555,9 +555,9 @@ by~\cite{Becirevic:2016oho}
 where $f_P$ is the pseudoscalar meson decay constant. As before, we account for
 the effect of the running of $\alpha_s$ from the high scale to the scales
 appropriate for each decay for the scalar operator. We take the relevant scale
-to be $\mu = \overline{m_c} = 1.27 \text{ GeV}$ for the $D$ meson decays and $\mu = 2
-\text{ GeV}$ for the $K$ decays, since this is the matching scale used in
-Ref.~\cite{Aoki:2016frl}, from which we take the decay constants. Explicitly,
+to be $\mu = \overline{m_c} = \SI{1.27}{\GeV}$ for the $D$ meson decays and
+$\mu = \SI{2}{\GeV} $ for the $K$ decays, since this is the matching scale used
+in Ref.~\cite{Aoki:2016frl}, from which we take the decay constants. Explicitly,
 \begin{equation}
   C_{1,S} (\mu) = \left[\frac{\alpha_s(m_b)}{\alpha_s(\mu)} \right]^{\frac{\gamma_S}{2\beta_0^{(4)}}} \left[\frac{\alpha_s(m_t)}{\alpha_s(m_b)} \right]^{\frac{\gamma_S}{2\beta_0^{(5)}}} \left[\frac{\alpha_s(\Lambda)}{\alpha_s(m_t)} \right]^{\frac{\gamma_S}{2\beta_0^{(6)}}} C_{1,S}(\Lambda),
 \end{equation}
@@ -668,20 +668,20 @@ Ref.~\cite{Becirevic:2016oho}, where it was concluded that the leptoquark model
 cannot respect this constraint while explaining the suppression of $R_K$ in the
 absence of the right-handed couplings $y_{rs}$. The ratio has been measured to
 be $R_D^{\mu/e} = 0.995 \pm 0.022 \pm 0.039$~\cite{Glattauer:2015teq}, while the
-reciprocal is presented for the $D^*$ ratio: $R_{D^{*}}^{e/\mu} = 1.04 \pm 0.05
-\pm 0.01$~\cite{Abdesselam:2017kjf}. In the case of $R_D^{\mu/e}$, $2\sigma$
-consistency with the measurement allows for an approximately $10\%$ deviation
-from the SM prediction, a weaker bound than that presented in
-Ref.~\cite{Becirevic:2016oho}, while the recent Belle result for
+reciprocal is presented for the $D^*$ ratio:
+$R_{D^{*}}^{e/\mu} = 1.04 \pm 0.05 \pm 0.01$~\cite{Abdesselam:2017kjf}. In the
+case of $R_D^{\mu/e}$, $2\sigma$ consistency with the measurement allows for an
+approximately $10\%$ deviation from the SM prediction, a weaker bound than that
+presented in Ref.~\cite{Becirevic:2016oho}, while the recent Belle result for
 $R_{D^{*}}^{e/\mu}$ permits only a $4\%$ deviation for contributions to the
 muonic mode. We find that these constraints become less important for leptoquark
-masses larger than $ 1 \text{ TeV}$, permitting sizeable contributions to $R_K$
-in this model. We illustrate this point in the top plot of
+masses larger than $\SI{1}{\TeV}$, permitting sizeable contributions to $R_K$ in
+this model. We illustrate this point in the top plot of
 Fig.~\ref{fig:ch3-LFUratios}, where random points passing all of the constraints
 presented in our analysis except $R_{D^{*}}^{e/\mu}$ are presented in the
 $R_K$--$R_D^{\mu/e}$ plane. The parameters and ranges taken in our scan are the
-same as those of scan I in Sec.~\ref{sec:ch3-resultsanddiscussion} in which masses
-are sampled randomly from the range $[1,5] \text{ TeV}$. The complementary
+same as those of scan I in Sec.~\ref{sec:ch3-resultsanddiscussion} in which
+masses are sampled randomly from the range $[1,5]~\TeV$. The complementary
 set-up for $R_{D^{*}}^{e/\mu}$ is shown in the bottom figure of
 Fig.~\ref{fig:ch3-LFUratios}, \textit{mutatis mutandis}.
 
@@ -696,15 +696,15 @@ Fig.~\ref{fig:ch3-LFUratios}, \textit{mutatis mutandis}.
   \end{minipage}
   \caption[The results of our random scan showing $R_K$ against $R_D^{\mu/e}$
   (top) and $R^{e/\mu}_{D^*}$ (bottom) for the parameter choices detailed in
-  Sec.~\ref{sec:ch3-resultsanddiscussion} for `scan I', in which the leptoquark mass
-  is allowed to vary to values as large as $5 \text{ TeV}$.]{The results of our
-    random scan showing $R_K$ against $R_D^{\mu/e}$ (top) and $R^{e/\mu}_{D^*}$
-    (bottom) for the parameter choices detailed in
-    Sec.~\ref{sec:ch3-resultsanddiscussion} for `scan I', in which the leptoquark
-    mass is allowed to vary to values as large as $5 \text{ TeV}$. For
-    leptoquark masses between $3$ and $5 \text{ TeV}$, the tension in $R_K$ can
-    be significantly resolved while keeping LFU effects between electron and
-    muon modes mild.}
+  Sec.~\ref{sec:ch3-resultsanddiscussion} for `scan I', in which the leptoquark
+  mass is allowed to vary to values as large as \SI{5}{\TeV}.]{The results of
+    our random scan showing $R_K$ against $R_D^{\mu/e}$ (top) and
+    $R^{e/\mu}_{D^*}$ (bottom) for the parameter choices detailed in
+    Sec.~\ref{sec:ch3-resultsanddiscussion} for `scan I', in which the
+    leptoquark mass is allowed to vary to values as large as \SI{5}{\TeV}. For
+    leptoquark masses between 3 and \SI{5}{\TeV}, the tension in $R_K$ can be
+    significantly resolved while keeping LFU effects between electron and muon
+    modes mild.}
   \label{fig:ch3-LFUratios}
 \end{figure}
 
@@ -719,14 +719,15 @@ defined in Eq.~\eqref{eq:ch3-CCHam}. Here, we wish to point out that the $B_c \t
 the tensor contribution $C_T^{3i}$, and thus that measurements of the $B_c$
 lifetime do not constitute a serious constraint on the model.
 
-In Fig.~\ref{fig:ch3-bctaunu1} we plot the branching ratio $\text{Br}(B_c \to \tau
-\nu)$ in this leptoquark model against interesting values of $R_{D^*}$, in the
-spirit of Fig.~1 of Ref.~\cite{Alonso:2016oyd}. The blue curve represents the
-contribution from only the Wilson coefficient $C_S$, while the orange curve
-represents the contribution from the scalar leptoquark $S_{1}$ where the scalar
-and tensor contributions are related through Eq.~\eqref{eq:ch3-ccops3}. The presence
-of both the scalar and tensor contributions results renders the branching ratio
-SM-like, or slightly suppressed, in the region of interest.
+In Fig.~\ref{fig:ch3-bctaunu1} we plot the branching ratio
+$\text{Br}(B_c \to \tau \nu)$ in this leptoquark model against interesting
+values of $R_{D^*}$, in the spirit of Fig.~1 of Ref.~\cite{Alonso:2016oyd}. The
+blue curve represents the contribution from only the Wilson coefficient $C_S$,
+while the orange curve represents the contribution from the scalar leptoquark
+$S_{1}$ where the scalar and tensor contributions are related through
+Eq.~\eqref{eq:ch3-ccops3}. The presence of both the scalar and tensor
+contributions results renders the branching ratio sufficiently small in the
+region of interest.
 
 \begin{figure}[t]
   \centering \includegraphics[scale=0.75]{bctaunu.pdf}
@@ -739,7 +740,8 @@ SM-like, or slightly suppressed, in the region of interest.
     $C_S / C_T = -7.8$ (dashed orange). The $30\%$ limit is shown in red
     (dot-dashed). The dark and light grey regions represent the $1$ and
     $2\sigma$ regions for $R_{D^{(*)}}$. In this leptoquark model,
-    $\text{Br}(B_c\to \tau \nu)$ remains SM-like in the region of interest.}
+    $\text{Br}(B_c\to \tau \nu)$ remains $\lesssim 30\%$ in the region of
+    interest.}
   \label{fig:ch3-bctaunu1}
 \end{figure}
 
@@ -829,17 +831,14 @@ inequality~\cite{Bauer:2015knc}:
 where we have assumed $\text{Arg}(x_{r2}^*x_{r3}) = \text{Arg}(V_{tb}V_{ts}^*)$.
 We emphasise that this bound represents an insufficient condition for the model
 to respect the experimental limits. In Fig.~\ref{fig:ch3-rknunuallowed} we present
-the allowed region for non-zero $x_{32}$ and $x_{33}$ and $m_{S_{1}} = 1 \text{
-  TeV}$---a coupling texture interesting for explaining $R_{D^{(*)}}$, although
+the allowed region for non-zero $x_{32}$ and $x_{33}$ and $m_{S_{1}} = \SI{1}{\TeV}$---a coupling texture interesting for explaining $R_{D^{(*)}}$, although
 heavily constrained by $R_{K^{*}}^{\nu\nu}$.
 
 \begin{figure}[t]
   \centering \includegraphics[scale=0.85]{rknunuallowed.pdf}
   \caption[The region allowed by experimental limits on the decay
-  $B \to K^{*} \nu \nu$ in the $|x_{33}|$--$|x_{32}|$ plane for $m_{S_{1}} = 1 \text{
-    TeV}$.]{The region allowed by experimental limits on the decay
-    $B \to K \nu \nu$ in the $|x_{33}|$--$|x_{32}|$ plane for $m_{S_{1}} = 1 \text{
-      TeV}$. All other couplings are switched off. A large value of $|x_{33}|$
+  $B \to K^{*} \nu \nu$ in the $|x_{33}|$--$|x_{32}|$ plane for $m_{S_{1}} = \SI{1}{\TeV}$.]{The region allowed by experimental limits on the decay
+    $B \to K \nu \nu$ in the $|x_{33}|$--$|x_{32}|$ plane for $m_{S_{1}} = \SI{1}{\TeV}$. All other couplings are switched off. A large value of $|x_{33}|$
     is essential to explaining $R_{D^{(*)}}$, and the figure implies that such a
     requirement keeps $|x_{32}|$ small.}
   \label{fig:ch3-rknunuallowed}
@@ -922,9 +921,10 @@ For the leptonic decay, we find
     \end{split}
   \end{align}
 \end{subequations}
-where $\beta_\mu = (1 - 4m_\mu^2/m_D^2)^{1/2} \approx 0.99$, $f_D = 212(2)
-\text{ MeV}$~\cite{Aoki:2016frl} and $\eta = C_{3,S_{L}}^{2122}(\overline{m_c}) / C_{3,S_{L}}^{2122}(m_{S_{1}})$. In the limit that the left-handed
-contribution dominates, the bound
+where $\beta_\mu = (1 - 4m_\mu^2/m_D^2)^{1/2} \approx 0.99$,
+$f_D = \SI{212(2)}{\MeV}$~\cite{Aoki:2016frl} and
+$\eta = C_{3,S_{L}}^{2122}(\overline{m_c}) / C_{3,S_{L}}^{2122}(m_{S_{1}})$. In
+the limit that the left-handed contribution dominates, the bound
 \begin{equation} \label{eq:ch3-zmc}
   |x_{2 2}| < 0.46 \hat{m}_{S_{1}}
 \end{equation}
@@ -948,14 +948,14 @@ bins are
   \text{Br}(D^+ \to \pi^+ \mu^+ \mu^-)_{q^2 \in [1.56, 4.00]}   &< 2.9 \cdot 10^{-8},\label{eq:ch3-Dpimumu1}\\
   \text{Br}(D^+ \to \pi^+ \mu^+ \mu^-)_{q^2 \in [0.0625, 0.276]} &< 2.5 \cdot 10^{-8},\label{eq:ch3-Dpimumu2}
 \end{align}
-where $q^2$ ranges are given in GeV$^2$. Both Eq.~\eqref{eq:ch3-Dpimumu1} and
+where $q^2$ ranges are given in $\GeV^{2}$. Both Eq.~\eqref{eq:ch3-Dpimumu1} and
 Eq.~\eqref{eq:ch3-Dpimumu2} are imposed in our numerical scans.
 
 \subsubsection{Meson mixing}
 
 A complementary constraint on the left-handed couplings can be derived from
 $B_s$--$\bar{B}_s$ mixing, providing a stronger bound than $R_K^{\nu\nu}$ for
-leptoquark masses larger than a few TeV. The UT\textit{fit} collaboration
+leptoquark masses larger than a few \TeV. The UT\textit{fit} collaboration
 determines constraints on $\Delta F = 2$ processes in terms of the quotient of
 the meson mixing amplitude and the SM prediction:
 \begin{equation}
@@ -1119,10 +1119,10 @@ Fig.~\ref{fig:ch3-boxes}, however the limit from $D^0 \to \mu \mu$ [see
 Eq.~\eqref{eq:ch3-zmc}] prohibits such a scenario. Indeed, the analysis of
 Ref.~\cite{Becirevic:2016oho} indicates that the constraint following from the
 LFU evident in $R_D^{\mu/e}$ also constitutes a very serious stumbling-block for
-the model's explanation of the $b \to s$ data for $m_{S_{1}} \lesssim 1 \text{
-  TeV}$. We make progress by performing a random scan in which the leptoquark
-mass is allowed to vary up to $5 \text{ TeV}$---such large masses have the
-effect of lifting the suppression on the last term in
+the model's explanation of the $b \to s$ data for
+$m_{S_{1}} \lesssim \SI{1}{\TeV}$. We make progress by performing a random scan
+in which the leptoquark mass is allowed to vary up to \SI{5}{\TeV}---such large
+masses have the effect of lifting the suppression on the last term in
 Eq.~\eqref{eq:ch3-rknncond} and permitting larger values for $z_{22}$ according
 to Eq.~\eqref{eq:ch3-zmc}. In addition to the $x_{rs}$, we turn on the $y_{2r}$
 with $i \neq 1$ in order to study the extent to which $C_{LR}^{S_{1}}$ can
@@ -1135,7 +1135,7 @@ we cite in Table~\ref{tbl:ch3-rdrdstartable}. {\color{red}I think this table is
   gone now. Rephrase.} Consistent with our comments in
 Section~\ref{sec:ch3-semileptonicchargedcurrentprocesses}, we find that any
 phenomenologically viable explanation of the anomalous $b \to s$ data in this
-leptoquark model requires $m_{S_{1}} \gtrsim 2.5 \text{ TeV}$. Additionally,
+leptoquark model requires $m_{S_{1}} \gtrsim \SI{2.5}{\TeV}$. Additionally,
 constraints from the $\tau \to \mu$ flavour-changing observables require
 $|x_{32}| > |x_{33}|$ for large $|x_{32}|$. Although the benchmark value
 $C_{LL}^{S_{1}} \approx -1.0$ is unattainable in light of the constraints we
@@ -1148,22 +1148,22 @@ all of the $b \to s$ data can be slightly better than $3\sigma$.
 \begin{figure}
   \centering
   \begin{minipage}[t]{\linewidth}
-    \centering \includegraphics[width=0.6\linewidth]{newcllclr.png}
+    \centering \includegraphics[width=0.7\linewidth]{newcllclr.png}
     \subcaption[The results of scan I (black) and scan II (red) projected onto
-    the $C_{LL}^{S_{1}}$--$C_{LR}^{S_{1}}$ plane.]{{\color{red}Needs to be
-        updated, original figure depricated.}The results of scan I (black) and
-      scan II (red) projected onto the $C_{LL}^{S_{1}}$--$C_{LR}^{S_{1}}$ plane.
-      The coloured contours correspond to those in Fig.~\ref{fig:ch3-cllclr}:
-      the orange represent the fit to only LFU observables while the blue take
-      into account all $b\to s$ observables. The model can alleviate the
-      tensions in LFU observables to just within the $1\sigma$ region, a
-      significant improvement on the SM. In this region,
-      $C_{LR}^{S_{1}} \approx 0$, implying a suppression of the $y_{2r}$.
-      Agreement with all of the $b \to s$ data is not as good.\\}
+    the $C_{LL}^{S_{1}}$--$C_{LR}^{S_{1}}$ plane.]{The results of scan I (black)
+      and scan II (red) projected onto the $C_{LL}^{S_{1}}$--$C_{LR}^{S_{1}}$
+      plane. The contours are those of Fig.~\ref{fig:ch1-c9-c10-fit} projected
+      onto the chiral basis, originally from Ref.~\cite{Aebischer:2019mlg}. The
+      blue contours represent the fit to only LFU observables, the green the fit
+      to the other $b \to s$ data, while the global fit contours are shown in
+      orange. The model can alleviate the tensions in LFU observables to just
+      shy of the $1\sigma$ region, a significant improvement on the SM. In this
+      region, $C_{LR}^{S_{1}} \approx 0$, implying a suppression of the
+      $y_{2r}$. Agreement with only the LFU observables is not as good.\vspace{1em}}
     \label{fig:ch3-cllclrpts1}
   \end{minipage}
   \begin{minipage}[t]{.45\linewidth}
-    \centering \includegraphics[scale=0.085]{cllm.png}
+    \centering \includegraphics[width=\linewidth]{cllm.png}
     \subcaption[A scatter plot showing the results of scan II projected onto the
       $C_{LL}^{S_{1}}$--$\hat{m}_{S_{1}}$ plane.]{A scatter plot showing the results of scan II projected onto the
       $C_{LL}^{S_{1}}$--$\hat{m}_{S_{1}}$ plane. Yellow points imply SM-like values
@@ -1174,7 +1174,7 @@ all of the $b \to s$ data can be slightly better than $3\sigma$.
   \end{minipage}
   \hfill
   \begin{minipage}[t]{.45\linewidth}
-    \centering \includegraphics[scale=0.085]{x33x23rat.png}
+    \centering \includegraphics[width=\linewidth]{x33x23rat.png}
     \subcaption[A scatter plot of $C_{LL}^{S_{1}}$ against the ratio
       $x_{33}/x_{23}$ for parameters subject to scan II.]{A scatter plot of $C_{LL}^{S_{1}}$ against the ratio
       $x_{33}/x_{23}$ for parameters subject to scan II. Again, yellow points
@@ -1186,7 +1186,7 @@ all of the $b \to s$ data can be slightly better than $3\sigma$.
   \caption[The key results probing the extent to which the model can explain the
     tensions in $R_{K^{(*)}}$.]{The key results probing the extent to which the model can explain the
     tensions in $R_{K^{(*)}}$. Significant improvement from the SM is possible
-    for leptoquark masses between $3$ and $5 \text{ TeV}$, $|x_{23}| > |x_{33}|$
+    for leptoquark masses between $3$ and $\SI{5}{\TeV}$, $|x_{23}| > |x_{33}|$
     and suppressed $y_{2r}$. The grey areas in (b) and (c) are the $1$ and
     $2\sigma$ allowed regions for $R_{K^{(*)}}$.}
   \label{fig:ch3-cllclrpts}
@@ -1218,56 +1218,55 @@ all of the $b \to s$ data can be slightly better than $3\sigma$.
 
 \paragraph{Explaining $R_{D^{(*)}}$.} We move on to consider the extent to which
 the leptoquark can explain the anomalies in the $b\to c$ transition. The fit
-presented in Fig.~\ref{fig:ch3-rdrdstarregions} suggests two scenarios for
-explaining the measured tensions in the $b \to c \ell \nu$ decays in the region
-$A$: (i) new physics only in $C_V^{33}$, or (ii) new-physics in $C_V^{33}$ along
-with contributions from $C_S^{33}$ and $C_T^{33}$. Possibility (i) is consistent
-with the best-fit value, and this is the region of parameter space considered in
-the model's original form. However, we emphasise that the conditions presented
-in Eq.~\eqref{eq:ch3-bnunucond} and Eq.~\eqref{eq:ch3-eqZll} are sufficient to
-preclude that effects in $C_V^{33}$ alone could be responsible for the
-enhancement of the $R_{D^{(*)}}$ ratios. The product $x_{32}^* x_{33}$ is
-heavily constrained from $R_K^{\nu\nu}$ and $B_s$--$\bar{B}_s$ mixing, as
-indicated in Fig.~\ref{fig:ch3-rknunuallowed}. One could consider generating
-$z_{23}$, and therefore $C_V^{33}$, through quark mixing, thus making do only
-with a non-zero $x_{33}$ and avoiding these constraints. This set-up, however,
-requires excessively large values of $x_{33}$ to explain $R_{D^{(*)}}$, causing
-the leptoquark's contributions to the $Z\tau\bar{\tau}$ coupling to exceed
-current experimental limits---a result we illustrate in
-Fig.~\ref{fig:ch3-rDRes}. In addition, we find the effects of lepton-flavour
-violation to be subdued, since such contributions add incoherently to the
-$W$-mediated SM processes, and thus entail couplings large enough to conflict
-with measurements of $B_s$--$\bar{B}_s$ mixing and precision electroweak
-observables. Scenario (ii) involves new physics in $C_S^{rs}$ and $C_T^{rs}$.
-The most minimal approach here is to turn on only the bottom--tau-neutrino
-interaction $x_{33}$ and the right-handed tau--charm coupling $y_{32}$. A
-non-zero $x_{33}$ will generate $C_V^{33}$ through quark-mixing. We find the
-coupling $y_{32}$ to be weakly constrained by the precision electroweak
-measurements discussed earlier: in the limit $|y_{32}| \gg |y_{3 (1,3)}|$, the
-bound
+presented in Fig.~\ref{fig:ch3-fit} suggests two scenarios for explaining the
+measured tensions in the $b \to c \ell \nu$ decays: (i) new physics only in
+$C_V^{33}$; or (ii) new-physics in $C_S^{33}$ and $C_T^{33}$, perhaps along with
+contributions in $C_{V}^{33}$. Possibility (i) is the region of parameter space
+considered in the model's original form. However, we emphasise that the
+conditions presented in Eq.~\eqref{eq:ch3-bnunucond} and
+Eq.~\eqref{eq:ch3-eqZll} are sufficient to preclude that effects in $C_V^{33}$
+alone could be responsible for the enhancement of the $R_{D^{(*)}}$ ratios. The
+product $x_{32}^* x_{33}$ is heavily constrained from $R_K^{\nu\nu}$ and
+$B_s$--$\bar{B}_s$ mixing, as indicated in Fig.~\ref{fig:ch3-rknunuallowed}. One
+could consider generating $z_{23}$, and therefore $C_V^{33}$, through quark
+mixing, thus making do only with a non-zero $x_{33}$ and avoiding these
+constraints. This set-up, however, requires excessively large values of $x_{33}$
+to explain $R_{D^{(*)}}$, causing the leptoquark's contributions to the
+$Z\tau\bar{\tau}$ coupling to exceed current experimental limits---a result we
+illustrate in Fig.~\ref{fig:ch3-rDRes}. In addition, we find the effects of
+lepton-flavour violation to be subdued, since such contributions add
+incoherently to the $W$-mediated SM processes, and thus entail couplings large
+enough to conflict with measurements of $B_s$--$\bar{B}_s$ mixing and precision
+electroweak observables. Scenario (ii) involves new physics in $C_S^{rs}$ and
+$C_T^{rs}$. The most minimal approach here is to turn on only the
+bottom--tau-neutrino interaction $x_{33}$ and the right-handed tau--charm
+coupling $y_{32}$. A non-zero $x_{33}$ will generate $C_V^{33}$ through
+quark-mixing. We find the coupling $y_{32}$ to be weakly constrained by the
+precision electroweak measurements discussed earlier: in the limit
+$|y_{32}| \gg |y_{3 (1,3)}|$, the bound
 \begin{equation}
   |y_{32}| < \frac{3.69 \hat{m}_{S_{1}}}{\sqrt{1 + 0.39 \ln \hat{m}_{S_{1}}}},
 \end{equation}
-follows from Eq.~\eqref{eq:ch3-eqZll}. In addition, small values of the muon--top
-coupling $y_{23}$ will allow sizeable contributions to $(g-2)_\mu$ in the
-presence of $x_{23} \neq 0$ because of the top-mass enhancement in the
-mixed-chirality term of Eq.~\eqref{eq:ch3-amu}. This minimal texture involving only
-third-generation couplings to left-handed quarks comes with the additional
+follows from Eq.~\eqref{eq:ch3-eqZll}. In addition, small values of the
+muon--top coupling $y_{23}$ will allow sizeable contributions to $(g-2)_\mu$ in
+the presence of $x_{23} \neq 0$ because of the top-mass enhancement in the
+mixed-chirality term of Eq.~\eqref{eq:ch3-amu}. This minimal texture involving
+only third-generation couplings to left-handed quarks comes with the additional
 benefit that the leptoquark can evade the constraints from measurements of
 $R_K^{\nu\nu}$ and $B_s$--$\bar{B}_s$ mixing. In fact, the only serious
 constraint is that arising from the modification of the $Z\tau\bar{\tau}$
-coupling from a large $x_{33}$, a situation that can be remedied for $y_{32}
-\sim \mathscr{O}(1)$, allowing a good fit to the $R_{D^{(*)}}$ data for slightly
-smaller values of $x_{33}$. A sizeable $y_{32}$ is thus a necessary requirement
-for this leptoquark model to explain the experimental anomalies in $R_D$ and
-$R_{D^*}$. For example, the parameter choices $m_{S_{1}} = 1 \text{ TeV}$, $x_{33}
-= 1.3$ and $y_{32} = 0.3$ are sufficient to explain $R_{D^{(*)}}$ to within
-$1\sigma$, and this choice of couplings passes all the constraints we impose.
-Note also that the measured tension in $(g-2)_\mu$ can be accommodated at the
-same time since the couplings involved are unimportant for $b \to c \tau \nu$.
-Saturating both $x_{33}$ and $y_{32}$ at the perturbativity bound $\sqrt{4\pi}$,
-we find that an explanation of $R_{D^{(*)}}$ loses viability at $\sim 10 \text{
-  TeV}$.
+coupling from a large $x_{33}$, a situation that can be remedied for
+$y_{32} \sim \mathscr{O}(1)$, allowing a good fit to the $R_{D^{(*)}}$ data for
+slightly smaller values of $x_{33}$. A sizeable $y_{32}$ is thus a necessary
+requirement for this leptoquark model to explain the experimental anomalies in
+$R_D$ and $R_{D^*}$. {\color{red}Fix this.} For example, the parameter choices
+$m_{S_{1}} = \SI{1}{\TeV}$, $x_{33} = 1.3$ and $y_{32} = 0.3$ are sufficient to
+explain $R_{D^{(*)}}$ to within $1\sigma$, and this choice of couplings passes
+all the constraints we impose. Note also that the measured tension in
+$(g-2)_\mu$ can be accommodated at the same time since the couplings involved
+are unimportant for $b \to c \tau \nu$. Saturating both $x_{33}$ and $y_{32}$ at
+the perturbativity bound $\sqrt{4\pi}$, we find that an explanation of
+$R_{D^{(*)}}$ loses viability at $\sim \SI{10}{\TeV}$.
 
 \begin{figure}[t]
   \centering
@@ -1280,9 +1279,9 @@ we find that an explanation of $R_{D^{(*)}}$ loses viability at $\sim 10 \text{
   \end{minipage}
   \caption[The solid blue lines represents the dependence of $R_D$ (left) and
   $R_{D^{(*)}}$ (right) on $|x_{33}|$ when all other couplings are set to zero
-  and $m_{S_{1}} = 1 \text{ TeV}$.]{The solid blue lines represents the dependence
+  and $m_{S_{1}} = \SI{1}{\TeV}$.]{The solid blue lines represents the dependence
     of $R_D$ (left) and $R_{D^{(*)}}$ (right) on $|x_{33}|$ when all other
-    couplings are set to zero and $m_{S_{1}} = 1 \text{ TeV}$. A non-zero $x_{33}$
+    couplings are set to zero and $m_{S_{1}} = \SI{1}{\TeV}$. A non-zero $x_{33}$
     generates a small $z_{32}$ through the quark mixing of
     Eq.~\eqref{eq:ch3-mixing}, although the $|x_{33}|$ values required to meet the
     anomalies become large enough to dangerously modify the $Z \to \tau\tau$
@@ -1293,20 +1292,17 @@ we find that an explanation of $R_{D^{(*)}}$ loses viability at $\sim 10 \text{
   \label{fig:ch3-rDRes}
 \end{figure}
 
-In Fig.~\ref{fig:ch3-money1} we present the results of scan II in the
-$R_D$--$R_{D^*}$ plane, while Fig.~\ref{fig:ch3-ObsScans} displays the values of the
-Yukawa couplings from the same scan that lead to interesting $R_D$ values.
-Limits on the $B \to K \nu \nu$ rate and measurements of $B_s$--$\bar{B}_s$
-mixing constrain the $x_{i2}$ to be small, while large values for $x_{33}$ and
-$y_{32}$ are necessary since their product appears in the expressions for $C_{ V
-}^{33}$, $C_{ S }^{33}$ and $C_{ T }^{33}$. As discussed above, these large
-$x_{33}$ values imply dangerous contributions to $Z \to \tau \tau$, causing few
-points to stray into the $1\sigma$ region. The model can, however, significantly
-reduce the tension in the $b\to c \tau \nu$ measurements in a large region of
-parameter space. Agreement with the Belle result from
-Ref.~\cite{Huschle:ch3-2015rga} is better than the combined fit, since this model
-predicts slightly smaller values of $R_{D^*}$ than those suggested by the BaBar
-and LHC\textit{b} measurements.
+{\color{red}Fix this.} In Fig.~\ref{fig:ch3-money1} we present the results of
+scan II in the $R_D$--$R_{D^*}$ plane, while Fig.~\ref{fig:ch3-ObsScans}
+displays the values of the Yukawa couplings from the same scan that lead to
+interesting $R_D$ values. Limits on the $B \to K \nu \nu$ rate and measurements
+of $B_s$--$\bar{B}_s$ mixing constrain the $x_{i2}$ to be small, while large
+values for $x_{33}$ and $y_{32}$ are necessary since their product appears in
+the expressions for $C_{ V }^{33}$, $C_{ S }^{33}$ and $C_{ T }^{33}$. As
+discussed above, these large $x_{33}$ values imply dangerous contributions to
+$Z \to \tau \tau$, causing few points to stray into the $1\sigma$ region. The
+model can, however, significantly reduce the tension in the $b\to c \tau \nu$
+measurements in a large region of parameter space.
 
 \begin{figure}[t]
   \centering \includegraphics[scale=0.1]{money1.png}
@@ -1344,6 +1340,47 @@ and LHC\textit{b} measurements.
       same.}
   \label{fig:ch3-ObsScans}
 \end{figure}
+
+The fit we present in section~\ref{sec:ch3-signals} does not include the
+less-precisely measured observables $R_{J/\psi}$, $f_L^{D^*}$ and
+$\mathcal{P}_\tau^*$, introduced in
+section.~\ref{sec:ch1-chargedcurrentanomalies}. We instead use the preferred
+values from our fit to make predictions for these observables, concentrating on
+the scalar--tensor solution, since we find this to be the easiest to accommodate
+with the leptoquark. We note that this solution gives negligible efficiency
+variation from the SM for the measurement in the $D^*$ mode~\cite{Sato:2016svk}
+and displays a $q^2$ spectrum that agrees well with
+experiment~\cite{Freytsis:2015qca}.
+
+In figure~\ref{fig:ch3-btocpredictions} we project the $2\sigma$ preferred
+region for $C_{S_L}$ (see Table~\ref{tab:ch3-fitresults}) onto combinations of
+$b \to c$ related observables to illustrate the ability of combined measurements
+to close in on this scenario. Were possible, we have also shown Belle II
+$50 \text{ ab}^{-1}$ sensitivity~\cite{Alonso:2017ktd} in grey centred around
+the SM prediction in black. Current measurements are shown in red with their
+$1 \sigma$ errors in orange. With contributions in the scalar--tensor direction,
+the $S_{1}$ leptoquark's contributions to $f_L^{D^*}$ are in the opposite
+direction to current measurements, although still within the $2\sigma$ region.
+If the central value of $f_L^{D^*}$ stays close to where it is, or moves down
+slightly, the model would then predict $\mathcal{P}_\tau \approx 0.4$, which
+compromises the potential mild improvement in $R_{J/\psi}$ the model can offer.
+This scenario leads to a SM-like $\mathcal{P}_{\tau}^*$, but potentially large
+deviations in the $\mathcal{P}_{\perp}^{(*)}$ observables.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\textwidth]{pairplot}
+  \caption{A grid plot of the various $b \to c$ related observables in addition
+    to $R_{D}$ and $R_{D^*}$ considered in our analysis. Solid black lines
+    represent the SM predictions around which the grey shaded regions are the
+    Belle II $50 \text{ ab}^{-1}$ sensitivities~\cite{Alonso:2017ktd}, bordered
+    by the black dashed lines. Red lines are current measurements and orange
+    regions are their $1\sigma$ errors. Where the Belle II sensitivity is
+    unavailable we present only the SM prediction without a shaded region. The
+    blue points explain $R_{D^{(*)}}$ to $2 \sigma$.}
+  \label{fig:ch3-btocpredictions}
+\end{figure}
+
 
 \paragraph{Explaining both $R_{K^{(*)}}$ and $R_{D^{(*)}}$.} In order to
 establish the full power of the model to explain both $R_{D^{(*)}}$ and

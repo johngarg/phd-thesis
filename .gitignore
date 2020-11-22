@@ -31,3 +31,4 @@ drafts/
 Icon[]
 .ipynb_checkpoints
 __pycache__/
+data/
