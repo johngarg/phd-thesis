@@ -3,73 +3,73 @@
 - [X] Neutrino oscillations, description, experimental situation
 - [X] Other probes of neutrino masses
 - [X] Tree-level and Radiative neutrino mass models
-- [ ] Fix comments about solar-neutrino oscillations
-- [ ] Check normalisation of $T^A$ and $\lambda^A$ in table 1.2
-- [ ] Add "Correspondence to four-component notation" in mathematical notation appendix
-- [ ] Fix Neutrino 1998 comment (thought I did this?)
+- [X] Fix comments about solar-neutrino oscillations
+- [X] Add "Correspondence to four-component notation" in mathematical notation appendix
+- [X] Fix Neutrino 1998 comment (thought I did this?)
 - [X] Effective operators and the SMEFT
-- [ ] Define $\bar{D}$ in SMEFT tables
-- [ ] Make sure that conventions in table actually comply with WCxF
-- [ ] Add =math-notation= as appendix
+- [X] Define $\bar{D}$ in SMEFT tables
+- [X] Add =math-notation= as appendix
 - [X] Dimension 6 operators
 - [X] Redundancies, bases, integration
 - [X] Write Hilbert series section
 - [X] (Not including) Operator mixing and running of couplings?
 - [X] Hints of LFU violation, description, theory, experimental situation
-- [-] Flavour anomalies
+- [X] Flavour anomalies
   + [X] Neutral current anomalies
     - [X] Table of most discrepant measurements
     - [X] Discussion of uncertainties
     - [X] Discuss $R_K$ and $R_K^*$ in more detail
     - [X] Fits
-  + [ ] Charged current anomalies
-    - [ ] Add discussion of LFU respected in light-lepton modes
-    - [ ] Discuss lack of form factors for $D^*$
+  + [X] Charged current anomalies
   + [X] g-2
 - [X] Math notation appendix
+- [ ] Check normalisation of $T^A$ and $\lambda^A$ in table 1.2
+- [ ] Make sure that conventions in table actually comply with WCxF
+- [ ] Discuss muon-electron conversion experiments?
 - [ ] Leptoquarks, quantum numbers, properties? Maybe move table from math appendix here?
 
 * Chapter 2: Model building from effective operators
 - [X] Sort out introduction and appendices
 - [X] Sort out references
 - [X] Paste in
-- [ ] Double check that discussion reads okay in the context of the thesis
-- [ ] Move mathematical conventions section back into chapter 2 and deal with
-  consequences of that
+- [X] Double check that discussion reads okay in the context of the thesis
 
 * Chapter 3: Reconsidering the BN scenario
 - [X] Sort out introduction
 - [X] Fix references
 - [X] Add in new references
-- [ ] Update experimental constraints under eq. 3.5 with newer results
+- [X] Update experimental constraints under eq. 3.5 with newer results
 - [X] Replace fit with recent one from paper with Innes
-- [ ] Make new plots with updated measurements
+- [X] Make new plots with updated measurements
   - RKStar_nunu < 2.7 (!) (1702.03224)
   - UTfit updated CBs and phi_Bs (http://www.utfit.org/UTfit/ResultsSummer2018NP)
   - D_s to mu nu: 5.49 pm 0.16 (new measurement in 2019, take from PDG)
   - Measurement of B to mu nu: 1712.04123
-- [ ] Write out new data for both scans
-- [ ] Update text with new value of RKStar_nunu
-- [ ] Update text with new value of CBs and phi_Bs
-- [ ] Update text with new value of D_s to mu nu
-- [ ] Update text with new measurement of B -> tau nu
-- [ ] Remake 3.8b and 3.8c with new constraints and new yellow points
+- [X] Update text with new value of RKStar_nunu
+- [X] Update text with new value of CBs and phi_Bs
+- [X] Update text with new value of D_s to mu nu
+- [X] Update text with new measurement of B -> tau nu
+- [X] Remake 3.8b and 3.8c with new constraints and new yellow points
 - [X] New plot of CLL vs CLR
-- [ ] Remake 3.9 plots
+- [X] Remake 3.9 plots
 - [X] New fig 3.11 and 3.13
-- [ ] Remake Fig. 3.12 with new calculation
+- [X] Remake Fig. 3.12 with new calculation
 
 * Chapter 4: Models of neutrino mass and the flavour anomalies
-- [ ] General introduction
-- [ ] Tail end of BN work
-- [ ] Paper with Innes, rewrite introduction and motivation to model
+- [X] General introduction
+- [X] Tail end of BN work
+- [X] Paper with Innes, rewrite introduction and motivation to model
+- [X] Remake plots with new axis labels
+- [ ] Add muon-electron conversion bound from other experiment to plot on BN model
+- [ ] Write conclusion
+- [ ] Write paragraph on $m_\nu + S_1 + S_3$ models?
+- [ ] Redo plots with new nufit results?
 
 * Chapter 5: Quirk project
 - [X] Get paper in
 - [X] Fix all cases of Ref, =\textsc= and italic Latin phrases
-- [ ] Move out of appendix
-- [ ] Redo scans with new nufit results?
-- [ ] Introduce as a parenthetical piece of work
+- [X] Move out of appendix
+- [X] Introduce as a parenthetical piece of work
 
 * References
 - [ ] Citations for ATLAS and CMS conf notes look better on CERN document server rather than inspire. Replace these citations and fix up innards with =siunitx= and other math symbols

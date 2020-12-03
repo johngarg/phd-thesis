@@ -22,11 +22,11 @@ carrying a single spacetime index $V_\mu$ we define
 \begin{equation}
   V_{\alpha \dot{\beta}} = \sigma^\mu_{\alpha \dot{\beta}} V_\mu \quad \text{
     and
-  } \quad \bar{V}_{\dot{\alpha}\beta } = \bar{\sigma}^\mu_{\dot{\alpha}\beta} V_{\mu}.
+  } \quad \bar{V}_{\dot{\alpha}\beta } = \bar{\sigma}^\mu_{\dot{\alpha}\beta} V_{\mu} \ .
 \end{equation}
 Note that in this notation
 \begin{equation}
-  \Box = \partial_{\mu} \partial^{\mu} = \tfrac{1}{2}\text{Tr}[\partial \bar{\partial}] = \tfrac{1}{2}\text{Tr}[\bar{\partial} \partial],
+  \Box = \partial_{\mu} \partial^{\mu} = \tfrac{1}{2}\text{Tr}[\partial \bar{\partial}] = \tfrac{1}{2}\text{Tr}[\bar{\partial} \partial] \ ,
 \end{equation}
 and we will often just use $\Box$ to represent the contraction of two covariant
 derivatives $D_{\mu}D^{\mu}$ where this is clear from context. For
@@ -35,9 +35,16 @@ representations (irreps) $X_{\alpha \beta}$ and
 $\bar{X}_{\dot{\alpha} \dot{\beta}}$, where
 \begin{equation}
   X_{\{\alpha \beta\}} = 2i [\sigma^{\mu \nu}]^{~\gamma}_\alpha \epsilon_{\gamma \beta} X_{\mu \nu} \quad \text{ and } \quad
-  \bar{X}_{\{\dot{\alpha} \dot{\beta}\}} = 2i [\bar{\sigma}^{\mu \nu}]^{\dot{\gamma}}_{~\dot{\beta}} \epsilon_{\dot{\alpha} \dot{\gamma}} X_{\mu \nu},
+  \bar{X}_{\{\dot{\alpha} \dot{\beta}\}} = 2i [\bar{\sigma}^{\mu \nu}]^{\dot{\gamma}}_{~\dot{\beta}} \epsilon_{\dot{\alpha} \dot{\gamma}} X_{\mu \nu} \ ,
 \end{equation}
-or the alternate forms with one raised and one lowered index.
+or the alternate forms with one raised and one lowered index. We also define
+\begin{equation}
+  \label{eq:app-bidirectional-deriv}
+  \phi_{1} \tilde{D}^{\mu} \phi_{2} = \frac{1}{2} [\phi_{1} D^{\mu} \phi_{2} - (D^{\mu}\phi_{1})\phi_{2}] \ ,
+\end{equation}
+for some fields $\phi_{i}$. Where we use four-component spinor fields, we always
+simplify $\overline{\chi^{C}}\psi$ (where $\chi^{C}$ is the charge-conjugate
+spinor) to $\chi \psi$ to avoid clutter.
 
 Indices for $\mathrm{SU}(2)_{L}$ (isospin) are taken from the middle of the
 Latin alphabet. These are kept lowercase for the fundamental representation for

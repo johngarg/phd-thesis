@@ -86,12 +86,12 @@ recent results of work listing completions of SMEFT
 operators~\cite{deBlas:2017xtg}.
 
 The remainder of the paper is structured as follows.
-Section~\ref{sec:ch2-conventions} sets out some conventions.
-Section~\ref{sec:ch2-treelevelmatching} contains a review of tree-level matching and
-a description of the methods we use to find the tree-level completions of the
-operators. Neutrino mass model building is described in
-section~\ref{sec:ch2-modelbuilding}, while section~\ref{sec:ch2-models} presents a
-preliminary analysis of the models along with some examples.
+Sec.~\ref{sec:ch2-conventions} sets out some conventions.
+Sec.~\ref{sec:ch2-treelevelmatching} contains a description of the methods we
+use to find the tree-level completions of the operators. Neutrino mass model
+building is described in Sec.~\ref{sec:ch2-modelbuilding}, while
+Sec.~\ref{sec:ch2-models} presents a preliminary analysis of the models along
+with some examples.
 
 \section{Conventions}
 \label{sec:ch2-conventions}
@@ -401,7 +401,7 @@ maximises the number of non-vanishing $\mathrm{SU}(2)_{L}$ structures, so that
 they can all be labelled. Often this means that derivatives will be carried by
 Higgs fields.
 
-\section{Tree-level matching forwards and backwards}
+\section{Tree-level matching in reverse}
 \label{sec:ch2-treelevelmatching}
 
 In this section we outline the procedure we use for opening up operators of the
@@ -503,21 +503,20 @@ couple to the contracted fields.
   \includegraphics[width=0.3\linewidth]{typeI_seesaw.pdf}
   \includegraphics[width=0.3\linewidth]{typeII_seesaw.pdf}
   \includegraphics[width=0.3\linewidth]{typeIII_seesaw.pdf}
-  \caption[\textit{Above:} Scalar-only and fermion-only topologies which
-  complete dimension-five two-scalar--two-fermion operators, like the Weinberg
-  operator $\mathcal{O}_{1}$. \textit{Below:} The three minimal tree-level
-  completions of $\mathcal{O}_{1}$, each corresponding to a different
-  permutation of the fields on the external lines of the
-  topologies.]{\textit{Above:} Scalar-only and fermion-only topologies which
-    complete dimension-five two-scalar--two-fermion operators, like the Weinberg
-    operator $\mathcal{O}_{1}$. \textit{Below:} The three minimal tree-level
-    completions of $\mathcal{O}_{1}$, each corresponding to a different
-    permutation of the fields on the external lines of the topologies. These are
-    traditionally called (read from left to right) the type-I, type-II and
-    type-III seesaw models. The $\mathrm{SU}(2)_{L}$ indices are included
+  \caption[(top) Scalar-only and fermion-only topologies which complete
+  dimension-five two-scalar--two-fermion operators, like the Weinberg operator
+  $\mathcal{O}_{1}$. (bottom) The three minimal tree-level completions of
+  $\mathcal{O}_{1}$, each corresponding to a different permutation of the fields
+  on the external lines of the topologies.]{(top) Scalar-only and fermion-only
+    topologies which complete dimension-five two-scalar--two-fermion operators,
+    like the Weinberg operator $\mathcal{O}_{1}$. (bottom) The three minimal
+    tree-level completions of $\mathcal{O}_{1}$, each corresponding to a
+    different permutation of the fields on the external lines of the topologies.
+    These are traditionally called (read from left to right) the type-I, type-II
+    and type-III seesaw models. The $\mathrm{SU}(2)_{L}$ indices are included
     explicitly to distinguish type-I and type-III, while making a more clear
-    connection to Eq.~\eqref{eq:ch2-seesaw-contractions}. The exotic propagators are
-    shown in bold.}
+    connection to Eq.~\eqref{eq:ch2-seesaw-contractions}. The exotic propagators
+    are shown in bold.}
   \label{fig:ch2-seesaw-figs}
 \end{figure}
 
@@ -1029,12 +1028,13 @@ This model was studied in Ref.~\cite{Law:2013dya} and identified as the simplest
 neutrino mass model according to their assumptions. It has remarkably few free
 parameters since the scalar $\Xi$ does not have Yukawa couplings to SM fermions,
 and the couplings of $\mathcal{S}_{1}$ to leptons are antisymmetric in flavour.
-As in the minimal Zee--Wolfenstein scenario~\cite{Wolfenstein:1980sy}, this
-model implies a neutrino-mass matrix with zeros down the diagonal and is
-therefore incompatible with neutrino oscillation data~\cite{He:2003ih}. It is,
-however, a good example of how interesting models can be missed when overlooking
-operators with derivatives in this model-building framework. The model generates
-the following combination of basis operators at the low scale
+As in the minimal Zee--Wolfenstein scenario~\cite{Wolfenstein:1980sy} (see
+Eq.~\eqref{eq:ch1-zee-wolfenstein-mv} and surrounding discussion), this model
+implies a neutrino-mass matrix with zeros down the diagonal and is therefore
+incompatible with neutrino oscillation data~\cite{He:2003ih}. It is, however, a
+good example of how interesting models can be missed when overlooking operators
+with derivatives in this model-building framework. The model generates the
+following combination of basis operators at the low scale
 \begin{equation}
   \mathcal{O}^{[rs]}_{\mathcal{S}_{1} + \Xi} = (L_{r}^{i}L_{s}^{j}) H^{k} H^{l} \Box( H^{m} \tilde{H}^{n}) \epsilon_{ij} \epsilon_{km} \epsilon_{ln} .
 \end{equation}
@@ -1204,9 +1204,9 @@ the new physics.
 \begin{longtable}[t]{ccc}
   \caption[The table shows an assortment of $\Delta L = 2$ operator closures, displaying a number of paradigmatic motifs.]{The table shows an assortment of $\Delta L = 2$ operator closures, displaying a number of paradigmatic motifs. We represent flavour indices in a sans-serif typeface here to avoid confusion with subscripts labelling the Yukawa couplings. The expressions given for $m_{\nu}^{\textsf{rs}}$ needs to be symmetrised in $\textsf{rs}$, something we do not explicitly indicate in the table. These expressions carry flavour indices in alphabetical order on the fields as they appear in Table~\ref{tab:long}. Here $\kappa$ represents the operator coefficient, $V$ is the CKM matrix and $y^{\textsf{r}}_{e,u,d}$ are the diagonal electron, up-type and down-type Yukawa couplings in the SM. A number of operators require an external electron to be converted into a neutrino. This often necessitates the introduction of a $W$ boson or an unphysical charged Higgs $H^{+}$. Operator $\mathcal{O}_{8}$ generates the dimension-seven analogue of the Weinberg operator with the two-loop diagram shown. (There is a lower order diagram with an $H^{+}$ in place of the $W$ that happens to vanish~\cite{Babu:2010vp}.) A three-loop diagram in which two of the external Higgs lines are looped off leads to mixing with the Weinberg operator. Operator $\mathcal{O}_{76}$ generates the dimension-nine operator $LLHH(H^{\dagger}H)^{2}$, and hence five- and six-loop diagrams are also implied. There is usually more than one choice about where to attach the $W$ boson if one is present in a diagram, and the additional diagrams with the $W$ connecting in other possible ways are left implicit.\label{tab:ch2-example-closures}}\\
   \toprule
-  Operator & Diagram & $m_{\nu}^{\textsf{rs}}$ \\
+  Op. & Diagram & $m_{\nu}^{\textsf{rs}}$ \\
   \midrule \endfirsthead \toprule
-  Operator & Diagram & $m_{\nu}^{\textsf{rs}}$ \\
+  Op. & Diagram & $m_{\nu}^{\textsf{rs}}$ \\
   \midrule \endhead $4b$ &
 \begin{minipage}{0.2\linewidth}
   \centering
@@ -2511,11 +2511,12 @@ from the six parameters $x_{r}$ and $y_{r}$.
 \end{figure}
 
 \subsubsection{A model of neutrino mass and the flavour anomalies}
+\label{sec:ch2-anomalies-mv}
 
 Here we present a model designed specifically to generate a particular set of
-dimension-six operators. The example is motivated by the recent flavour
-anomalies, discussed in detail in Sec.~\ref{sec:ch1-flavour-anomalies}. In the
-following we adhere to the conventions\footnote{These can be accessed easily at
+dimension-six operators. The example is motivated by the flavour anomalies,
+discussed in detail in Sec.~\ref{sec:ch1-flavour-anomalies}. In the following we
+adhere to the conventions\footnote{These can be accessed easily at
   \url{https://flav-io.github.io/docs/operators.html}.} of
 Ref.~\cite{Aebischer:2017ugx} relevant to the Warsaw basis for the SMEFT and the
 \textsf{flavio} basis~\cite{Straub:2018kue} for the Weak Effective Theory (WET).
@@ -2556,9 +2557,11 @@ $\zeta \sim (\mathbf{\bar{3}}, \mathbf{3}, \tfrac{1}{3})_{S}$, which generates
 \begin{equation}
   [C_{lq}^{(1)}]_{2223} = 3 [C_{lq}^{(3)}]_{2223} \ ,
 \end{equation}
-relevant for the neutral-current anomalies. Fits are usually performed to
-four-fermion operators in the WET, defined below the electroweak scale. For the
-$b \to s \ell \ell$ data, a good fit is given for~\cite{Aebischer:2019mlg}
+relevant for the neutral-current anomalies. We saw in
+Sec.~\ref{sec:ch1-neutral-current-anomalies} that fits are performed to the
+four-fermion operators $C^{bs\mu\mu}_{9}$ and $C^{bs\mu\mu}_{10}$ in the WET.
+For the $b \to s \ell \ell$ data, a good fit is given
+for~\cite{Aebischer:2019mlg}
 \begin{equation}
   C_{9}^{bs\mu\mu} = - C_{10}^{bs\mu\mu} = \frac{1}{2} \left(  V_{tb} V_{ts}^{*} \frac{e^{2}}{16\pi^{2}} \frac{4 G_{F}}{\sqrt{2}} \right)^{-1} \left[ C_{lq}^{(1)} + C_{lq}^{(3)} \right]_{2232} \approx -0.5 \ ,
 \end{equation}
@@ -2709,6 +2712,7 @@ $[\mathcal{O}_{lq}^{(1,3)}]_{2232}$ and $[\mathcal{O}_{lequ}^{(1,3)}]_{3332}$ is
   of vanishing $\lambda$ or $\kappa$ the Lagrangian regains $\mathrm{U}(1)_{L}$.
   We rewrite Eq.~\eqref{eq:ch2-flav-anom-mv} as
   \begin{equation}
+    \label{eq:ch2-mv-ci-structure}
     [\mathbf{m}_{\nu}]_{rs} = m_{0} [ x_{s2}(z_{r2}w_{22} + z_{r3}w_{32}) + (r \leftrightarrow s) ] \ ,
   \end{equation}
   where $m_{0} \approx \lambda \kappa v^{2} (16\pi^{2})^{-2} m_{\eta}^{-2}$.
@@ -2718,10 +2722,13 @@ $[\mathcal{O}_{lq}^{(1,3)}]_{2232}$ and $[\mathcal{O}_{lequ}^{(1,3)}]_{3332}$ is
     \mathbf{Z} = \begin{pmatrix} z_{13}w_{32} \\ z_{22}w_{22} + z_{23}w_{32} \\ z_{33} w_{32} \end{pmatrix} \ ,
   \end{equation}
   so that~\cite{Cai:2014kra}
-  \begin{align}
+  \begin{equation}
+    \label{eq:ch2-ci-anomalies}
+    \begin{split}
     x_{r2} &= \frac{\xi}{\sqrt{2m_{0}}} \left(\sqrt{m_{2}} u_{2}^{*} + i \sqrt{m_{3}} u_{3}^{*} \right) \ , \\
     Z_{r} &= \frac{1}{\xi \sqrt{2m_{0}}} \left(\sqrt{m_{2}} u_{2}^{*} - i \sqrt{m_{3}} u_{3}^{*} \right) \ ,
-  \end{align}
+    \end{split}
+  \end{equation}
   where the $u_{i}$ are the $i$th columns of the PMNS matrix; $m_{i}$ are the
   neutrino masses, fixed by the measured squared mass differences and the choice
   of normal ordering; and $\xi$ is a free complex parameter. We find, for

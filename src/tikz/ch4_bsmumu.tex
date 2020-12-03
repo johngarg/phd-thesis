@@ -1,0 +1,15 @@
+\directlua{pdf.setminorversion(4)}
+
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{tikz-feynman}
+
+\begin{document}
+
+\feynmandiagram [layered layout, horizontal=a to b] {
+a [particle=\(b\)] -- [fermion] b -- [anti fermion] f1 [particle=\(\mu\)], b -- [anti charged scalar, edge label'=\(S^{4/3}_{3}\)] c,
+c -- [fermion] f2 [particle=\(s\)],
+c -- [fermion] f3 [particle=\(\mu\)],
+};
+
+\end{document}

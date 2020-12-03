@@ -245,6 +245,9 @@ oscillations become clear.
   account for the deficit of electron neutrinos measured from the sun, and
   $\nu_{\mu} \to \nu_{\tau}$ oscillations \textit{in vacuo} explain the shortage
   of muon neutrinos from cosmic-ray-induced production in the upper atmosphere.
+  Today, it is understood that the latter effect is rather due to
+  non-oscillatory adiabatic flavour conversion~\cite{Smirnov:2016xzf}, although
+  both are consequences of neutrino mixing.
 
   The measurement and resolution of these puzzles is an interesting and exciting
   chapter in the recent history of physics. Experiments as early as the 1960s
@@ -260,10 +263,10 @@ oscillations become clear.
   SAGE~\cite{Abdurashitov:1999zd} had Gallium as the detecting material. All of
   these experiments showed a deficit of solar electron neutrinos, although they
   were sensitive to neutrinos of different energies. The Sudbury Neutrino
-  Observatory gave the final word on the oscillation solution to the solar
-  neutrino puzzle with accurate confirmation of the electron-neutrino deficit,
-  along with a measurement of the \textit{total} neutrino flux which was found
-  to be in agreement with the solar models~\cite{Ahmad:2001an, Ahmad:2002jz}.
+  Observatory gave the final word on the solution to the solar neutrino puzzle
+  with accurate confirmation of the electron-neutrino deficit, along with a
+  measurement of the \textit{total} neutrino flux which was found to be in
+  agreement with the solar models~\cite{Ahmad:2001an, Ahmad:2002jz}.
 
   Atmospheric neutrinos were known to come about from helicity-suppressed kaon
   and pion decays to muons and muon neutrinos. A zenith-angle and
@@ -271,7 +274,7 @@ oscillations become clear.
   measured by the Kamiokande and Irvine--Michigan--Brookhaven
   experiments~\cite{Hirata:1992ku, BeckerSzendy:1995vr} in the early 1990s, and
   after the upgrade to Super-Kamiokande the deficit was confirmed to high
-  precision with results presented at the `Neutrino 1998'
+  precision with results presented at the `Neutrino 2002'
   conference~\cite{Fukuda:1998mi, vonFeilitzsch:2003mh, shiozawa:2002,
     Smy:2002rz}.
 
@@ -352,8 +355,8 @@ oscillations become clear.
   \end{equation}
   For the PMNS matrix we take the best fit values for the normal mass ordering
   including the Super-Kamiokande results, \textit{i.e.} the numbers in the
-  top-left quadrant of Fig.~\ref{fig:ch1-nufit-results}. The same numbers also imply
-  an upper bound on the mass of the heaviest neutrino at
+  top-left quadrant of Fig.~\ref{fig:ch1-nufit-results}. The same numbers also
+  imply a lower bound on the mass of the heaviest neutrino at
   \begin{equation}
     \label{eq:ch1-atmospheric-bound}
     m_{\text{heaviest}} \leq \sqrt{|\Delta m_{\text{atm}}^{2}|} \approx \SI{0.05}{\eV} \ .
@@ -486,8 +489,9 @@ of the neutrino masses.
 In the SM the neutrino fields appear only within the lepton doublet $L$, and one
 cannot write down---in analogy to the up-type Yukawa---a renormalisable operator
 that leads to neutrino masses because of the absence of the right-handed fields.
-A simple model of neutrino mass then involves introducing right-handed neutrino
-fields $\bar{\nu} \sim (\mathbf{1}, \mathbf{1}, 0)_{(\mathbf{2}, \mathbf{1})}$,
+A simple model of neutrino mass then involves introducing a gauge-singlet
+fermion field
+$\bar{\nu} \sim (\mathbf{1}, \mathbf{1}, 0)_{(\mathbf{2}, \mathbf{1})}$,
 extending the Yukawa sector of the SM accordingly to
 \begin{equation}
   -\mathscr{L}_{Y} \supset y_{e}\bar{e}LH^{\dagger} + y_{d}\bar{d}QH^{\dagger} + y_{u} \bar{u}QH + y_{\nu}\bar{\nu}LH \ ,
@@ -636,14 +640,14 @@ model, for example, is non-trivially constrained by same-sign dilepton searches
 performed by ATLAS~\cite{ATLAS:2012hi, ATLAS:2014kca, Aaboud:2017qph} and
 CMS~\cite{Chatrchyan:2012ya, CMS:2016cpz, CMS:2017pet}. Additionally, the
 predicted dependence of the neutrino-mass matrix on SM parameters, as is clear
-from Eqs.~\eqref{eq:ch1-zee-mv} and \eqref{eq:ch1-zee-babu-mv}, can make these models
-very predictive as far as neutrino phenomenology is concerned. For example, the
-minimal version of the Zee model has the charged-lepton masses arising from
-couplings to $\varphi$, allowing for a simplification of the expression
-Eq.~\eqref{eq:ch1-zee-mv} such that the leptonic flavour index $t$ is identified
-with $s$. The antisymmetry in the leptonic flavour indices implied by $x_{[rs]}$
-must be accounted for by an antisymmetry in the loop integral such that
-$I \sim I_{r} - I_{s}$. The flavour structure then
+from Eqs.~\eqref{eq:ch1-zee-mv} and \eqref{eq:ch1-zee-babu-mv}, can make these
+models very predictive as far as neutrino phenomenology is concerned. For
+example, the minimal version of the Zee model has the charged-lepton masses
+arising from couplings to $\varphi$, allowing for a simplification of the
+expression Eq.~\eqref{eq:ch1-zee-mv} such that the leptonic flavour index $t$
+must be the same as $s$. The antisymmetry in the leptonic flavour indices
+implied by $x_{[rs]}$ must be accounted for by an antisymmetry in the loop
+integral such that $I \sim I_{r} - I_{s}$. The flavour structure then
 becomes~\cite{Wolfenstein:1980sy}
 \begin{equation}
   \label{eq:ch1-zee-wolfenstein-mv}
@@ -764,13 +768,13 @@ for the fermion propagators with reversed arrows follow from
 $\bar{\sigma}^{\mu} \to \sigma^{\mu}$ and interchanging dotted and undotted
 indices (see Ref.~\cite{Dreiner:2008tw} Sec.~4.2 for the Lorentz structure).
 
-Equivalently, the integration can be performed using the classical EOM of the
-$\Pi_{i}$. For some heavy field $\Pi$, the linearised solution to its classical
-EOM can be used to remove it from the Lagrangian completely. This procedure is
-mildly different for scalars and fermions, and we briefly outline these
-separately below. In both cases, we begin with a Lagrangian
-$\mathscr{L}_{\text{UV}}$ for which we imagine that kinetic and mass mixing
-terms between heavy and light fields have been removed.
+Equivalently, the integration can be performed using the classical equations of
+motion (EOM) of the $\Pi_{i}$. For some heavy field $\Pi$, the linearised
+solution to its classical EOM can be used to remove it from the Lagrangian
+completely. This procedure is mildly different for scalars and fermions, and we
+briefly outline these separately below. In both cases, we begin with a
+Lagrangian $\mathscr{L}_{\text{UV}}$ for which we imagine that kinetic and mass
+mixing terms between heavy and light fields have been removed.
 
 There are tree-level contributions to $\mathscr{L}^{\text{eff}}$ as long as
 there are interaction terms linear in $\Pi$. For scalar $\Pi$, the UV Lagrangian
@@ -942,7 +946,7 @@ the four-quark operators, since there is an additional space of indices to
 handle. In the case of operators with field content $Q^{4}$, there seem to
 naively be four invariants, which can be written as vector currents
 \begin{equation}
-  (Q^{\dagger} \bar{\sigma}_{\mu} \Gamma Q) (Q^{\dagger} \bar{\sigma}_{\mu} \Gamma Q) \ ,
+  (Q^{\dagger} \bar{\sigma}_{\mu} \Gamma Q) (Q^{\dagger} \bar{\sigma}^{\mu} \Gamma Q) \ ,
 \end{equation}
 where the possible structures $\Gamma \otimes \Gamma$ can be expressed schematically as
 \begin{equation}
@@ -1124,10 +1128,10 @@ Ref.~\cite{Aebischer:2017ugx}.
       table shows the four-fermion operators in the dimension-six SMEFT in the
       Warsaw basis~\cite{Buchmuller:1985jz, Grzadkowski:2010es}. The operators
       are listed in four-component spinor notation, and a full correspondence to
-      the two-component notation we use elsewhere can be found in
-      Appendix~\ref{chapter:notation}. We remind the reader that combinations
-      like $(Q Q)$ stand for $(\bar{Q}^{C} Q)$, where $Q^{C}$ is the
-      charge-conjugated spinor. Flavor indices are omitted, and should be
+      the two-component notation we use elsewhere can be found in Appendix G of
+      Ref.~\cite{Dreiner:2008tw}. We remind the reader that we intend
+      combinations like $(Q Q)$ stand for $(\bar{Q}^{C} Q)$, where $Q^{C}$ is
+      the charge-conjugated spinor. Flavour indices are omitted, and should be
       understood to label the fermions in the order $\{r, s, t, u\}$ as they
       appear. \label{tab:ch1-smeft-d6-psi4}}
   \end{center}
@@ -1252,35 +1256,35 @@ Ref.~\cite{Aebischer:2017ugx}.
       \midrule[0.25mm]
       % psi^2 phi^2 D
       \multirow{5}{*}{$\psi^2 H^2 D$} &
-      $(H^{\dagger} i\bar{D}_\mu H)
+      $(H^{\dagger} i\tilde{D}_\mu H)
       (\bar{L} \gamma^\mu L )$ &
       $\mathcal{O}_{H l}^{(1)}$ &
       &
-      $(H^{\dagger} i\bar{D}^{I}_\mu H)
+      $(H^{\dagger} i\tilde{D}^{I}_\mu H)
       (\bar{L} \gamma^\mu \tau^{I} L )$ &
       $\mathcal{O}_{H l}^{(3)}$ \\
       %
       &
-      $(H^{\dagger} i\bar{D}_\mu H)
+      $(H^{\dagger} i\tilde{D}_\mu H)
       (\bar{e}_R \gamma^\mu e_R)$ &
       $\mathcal{O}_{H e}$ &
       & & \\
       %
       &
-      $(H^{\dagger} i\bar{D}_\mu H)
+      $(H^{\dagger} i\tilde{D}_\mu H)
       (\bar{Q} \gamma^\mu Q)$ &
       $\mathcal{O}_{H q}^{(1)}$ &
       &
-      $(H^{\dagger} i\bar{D}^{I}_\mu H)
+      $(H^{\dagger} i\tilde{D}^{I}_\mu H)
       (\bar{Q} \gamma^\mu \tau^{I} Q )$ &
       $\mathcal{O}_{H q}^{(3)}$ \\
       %
       &
-      $(H^{\dagger} i\bar{D}_\mu H)
+      $(H^{\dagger} i\tilde{D}_\mu H)
       (\bar{u}_R \gamma^\mu u_R)$ &
       $\mathcal{O}_{H u}$ &
       &
-      $(H^{\dagger} i\bar{D}_\mu H)
+      $(H^{\dagger} i\tilde{D}_\mu H)
       (\bar{d}_R \gamma^\mu d_R)$ &
       $\mathcal{O}_{H d}$ \\
       %
@@ -1296,12 +1300,13 @@ Ref.~\cite{Aebischer:2017ugx}.
     SMEFT that are not four-fermion operators.]{The table shows the operators
       featuring in the Warsaw basis~\cite{Buchmuller:1985jz, Grzadkowski:2010es}
       of the dimension-six SMEFT that are not four-fermion operators. We point
-      the reader to Appendix~\ref{chapter:notation} for the correspondence
-      between the four-component notation used here and the two-component
-      notation used elsewhere in this work for spinors, along with the
-      definition of $\bar{D}^{\mu}$. Flavor indices are omitted and should be
-      understood to act on fermions in the order $\{r, s\}$ as they appear in
-      each operator. \label{tab:ch1-smeft-d6-other}}
+      the reader to Appendix G of Ref.~\cite{Dreiner:2008tw} for the
+      correspondence between the four-component notation used here and the
+      two-component notation used elsewhere in this work for spinors, while the
+      definition of $\tilde{D}^{\mu}$ can be found in
+      Eq.~\eqref{eq:app-bidirectional-deriv}. Flavour indices are omitted and
+      should be understood to act on fermions in the order $\{r, s\}$ as they
+      appear in each operator. \label{tab:ch1-smeft-d6-other}}
   \end{center}
 \end{table}
 
@@ -1330,8 +1335,8 @@ The previous section introduced some of the difficulties involved with writing
 down a basis of four-fermion operators for a complex EFT like the SMEFT.
 Additional redundancy can occur once operators with (covariant) derivatives are
 included. These include operator relations through integration by parts (IBP)
-and field redefinitions involving the classical equations of motion
-(EOM)~\cite{Buchmuller:1985jz, Arzt:1993gz, Georgi:1991ch}. At mass-dimensions
+and field redefinitions involving the classical equations of
+motion~\cite{Buchmuller:1985jz, Arzt:1993gz, Georgi:1991ch}. At mass-dimensions
 larger than six, these come to be a large source of the difficulty in writing
 down a complete operator basis, but the problem can be addressed through
 Hilbert-series methods~\cite{Lehman:2015via, Henning:2015daa, Lehman:2015coa,
@@ -1458,7 +1463,7 @@ for systematically with the Hilbert series.
 \subsubsection{The Hilbert series}
 
 In the following we discuss the Hilbert series (HS), also known as the Molien or
-Poincar\'{e} function, as a tool for writing down Lagrangian invariants in a
+Poincar\'{e} function, as a tool for enumerating Lagrangian invariants in a
 conceptually clean and efficient way. The Hilbert series is a generating
 function that contains information about the number and structure of the
 invariants that can be constructed from a set of multiplets. The approach has
@@ -1482,8 +1487,8 @@ can be computed from the general formula for the HS:
   \label{eq:ch1-hs-g}
   \mathfrak{H}(\chi) = \int_{G} d\mu_{G} \exp \left[ \sum_{r=1}^{\infty} \frac{\Delta(r) \chi^{r} \chi_{R}(z_{j}^{r})}{r} \right] \ ,
 \end{equation}
-where $d\mu_{G}$ is Haar measure of the group, the invariant measure one can use
-to integrate over the manifold of $G$, and $\chi_{R}(z_{j}^{r})$ is the
+where $d\mu_{G}$ is the Haar measure of the group, the invariant measure one can
+use to integrate over the manifold of $G$, and $\chi_{R}(z_{j}^{r})$ is the
 character function associated with the representation $R$ in which $\chi$
 transforms under $G$. The character functions can be found using character
 generating functions~\cite{Hanany:2014dia} in general, but the functions
@@ -1519,9 +1524,9 @@ the mass-dimension of the field $\chi_{r}$ and
 \end{equation}
 with $x_{\pm}$ the $\mathrm{SU}(2)_{\pm}$ integration variables. The function
 $\Delta \mathfrak{H}$ can be obtained from a general formula presented in
-Ref.~\cite{Henning:2017fpj}. It's role is to cancel unwanted terms (of mass-dimension
-$d \leq 4$) from the HS that come about because the character functions of the
-conformal group are not orthonormal~\cite{Henning:2017fpj}.
+Ref.~\cite{Henning:2017fpj}. Its role is to cancel unwanted terms (of
+mass-dimension $d \leq 4$) from the HS that come about because the character
+functions of the conformal group are not orthonormal~\cite{Henning:2017fpj}.
 
 We illustrate the use of Eq.~\eqref{eq:ch1-hs-full} with a simple example: the
 independent invariants built out of the SM Higgs doublet $H$. The Higgs doublet
@@ -1552,12 +1557,13 @@ case, and $\chi_{(0,0)}$ is the scalar character function:
 \end{equation}
 The contour integrals can be done by expanding the integrand in $H$ and
 $\tilde{H}$, and integrating up to the required order~\cite{Pouliot:1998yv}. For
-this example, the first few terms in the HS are
+this example, the dimension-six terms are
 \begin{equation}
-  \mathfrak{H}(H, \tilde{H}) = \text{\color{red}Fill this in}\ .
+  \mathfrak{H}(H, \tilde{H}) = \frac{n_{f}^{2}}{36} (n_{f} + 1)^{2} (5n_{f}^{2}-4n_{f}+8) H^{3}\tilde{H}^{3} + n_{f}^{2}(3n_{f}^{2}+1) H^{2}\tilde{H}^{2}D^{2} + n_{f}^{2} H \tilde{H} D^{4} \ ,
 \end{equation}
+where we have allowed for the possibility of $n_{f}$ Higgs generations.
 
-The HS approach has an attractive module structure. For example, if one wanted
+The HS approach has an attractive modular structure. For example, if one wanted
 to count the number of invariants while not accounting for IBP and EOM
 redundancies, one need only remove the Lorentz integrals, character functions
 and $\Delta \mathfrak{H}$. Something that is perhaps less clear is that the HS
@@ -1581,9 +1587,9 @@ written as a contour integral, making a more clear connection\footnote{The
 Eq.~\eqref{eq:ch1-hs-g}:
 \begin{equation}
   \label{eq:ch1-u1-ex-oint}
-  \mathfrak{H}(\phi, \phi^{*}) = \frac{1}{2\pi i} \oint_{|z|=1} \frac{dz}{z} \frac{1}{(1 - \phi z)(1 - \phi^{*}/z)} \ .
+  \mathfrak{H}(\phi, \phi^{*}) = \frac{1}{2\pi i} \oint_{|z|=1} \frac{dz}{z} \frac{1}{(1 - \phi z)(1 - \phi^{*}/z)} \ ,
 \end{equation}
-This connection is made more clear by expanding:
+whose integrand we expand
 \begin{equation}
   \label{eq:ch1-expand-integrand-hs}
   \begin{aligned}
@@ -1614,7 +1620,7 @@ established a large set of significant and unresolved deviations from SM
 prediction. Many of these measurements involve semileptonic $B$-meson decays,
 and these can be placed into two broad classes:
 \begin{description}
-  \item[Neutral-current] These involve flavour-changing neutral-current (FCNC) $b \to s$ transitions and include branching-ratio measurements in final states with muons, anomalous angular observables in $B \to K^{*} \mu\mu$, and violations of $\mu$--$e$ LFU in $B \to K^{(*)} \ell \ell$ processes. This class corresponds to hundreds of discrepant measurements in total, and single-operator fits suggest a preference for new-physics at roughly $6\sigma$, \textit{e.g.}~\cite{Aebischer:2019mlg}.
+  \item[Neutral-current] These involve flavour-changing neutral-current (FCNC) $b \to s$ transitions and include branching-ratio measurements in final states with muons, anomalous angular observables in $B \to K^{*} \mu\mu$, and violations of $\mu$--$e$ LFU in $B \to K^{(*)} \ell \ell$ processes, where $\ell$ represents a charged lepton. This class corresponds to hundreds of discrepant measurements in total, and single-operator fits suggest a preference for new-physics at roughly $6\sigma$, \textit{e.g.}~\cite{Aebischer:2019mlg}.
   \item[Charged-current] These involve $b \to c \ell \nu$ transitions and shown apparent deviations from $\tau$--$\mu$ and $\tau$--$e$ LFU. The main observables measured in this case are LFU ratios in $B \to D^{(*)} \ell \nu$, for which the combined deviation from the SM expectation is just over $3\sigma$~\cite{Amhis:2019ckw}.
 \end{description}
 Excitingly there is a high-degree of self-consistency between the measurements,
@@ -1626,13 +1632,14 @@ In addition to these classes, the most precise measurement of the anomalous
 magnetic moment of the muon $(g-2)_{\mu}$~\cite{Bennett:2006fi}, is in tension
 with the SM expectation~\cite{Blum:2013xva} at roughly $3.5\sigma$. More
 recently, a smaller discrepancy has also been measured in
-$(g-2)_{e}$~\cite{Parker_2018}. Taken together, these anomalies paint a picture
+$(g-2)_{e}$~\cite{Articleparker}. Taken together, these anomalies paint a picture
 of new-physics coupling to leptons in way that violates the LFU present in the
 SM. In the following we discuss the experimental situation relevant to each of
 these classes, and the extent to which new contributions to dimension-six
 operator coefficients can reconcile the discrepancies.
 
 \subsection{Neutral-current anomalies}
+\label{sec:ch1-neutral-current-anomalies}
 
 The neutral-current anomalies represent a large family of measurements in
 tension with SM prediction with a common underlying $b\to s$ transition at the
@@ -1752,7 +1759,7 @@ the LHC\textit{b} collaboration has measured a suppression in the ratios
 \end{equation}
 in the $q^{2} \in [1, 6]~\GeV^{2}$ bin. In the SM the prediction of the
 observables outside of the low-$q^2$ region is determined by physics which is
-wholly independent of the flavor of the lepton pair in the final state, making
+wholly independent of the flavour of the lepton pair in the final state, making
 $R_K$ and $R_{K^*}$ finely sensitive to violations of LFU. LHC\textit{b}
 finds~\cite{Aaij:2019wad}
 \begin{equation}
@@ -1853,7 +1860,7 @@ semileptonic decays. Importantly, no large deviation in the electronic modes is
 necessary for a good fit. An example of one of the recent global
 fits~\cite{Aebischer:2019mlg} to $C_{9}$ and $C_{10}$ is shown in
 Fig.~\ref{fig:ch1-c9-c10-fit}. The authors find the single-operator best-fit
-scenario to be in the $\mathrm{SU}_{L}(2)$-invariant direction
+scenario to be in the $\mathrm{SU}(2)_{L}$-invariant direction
 $C_{9} = -C_{10}$, with $C_{9} = -C_{10} = -0.53$ giving a pull from the SM of
 $6.6\sigma$. We note that following the updated measurements of
 $R_{K}$~\cite{Aaij:2019wad} and $R_{K^{*}}$~\cite{Abdesselam:2019wac} presented
@@ -1939,7 +1946,7 @@ The first of these is the LFU ratio $R_{J/\psi}$:
   \label{eq:ch1-rjpsi}
   R_{J/\psi} = \frac{\mathrm{Br}(B_{c} \to J/\psi \tau \nu)}{\mathrm{Br}(B_{c} \to J/\psi \mu \nu)} \ ,
 \end{equation}
-has recently been measured by LHC$b$ to be
+which has recently been measured by LHC$b$ to be
 $R_{J/\psi} = 0.71 \pm 0.17 \pm 0.18$~\cite{Aaij:2017tyk}. Although the ratio is
 also measured to be enhanced with respect to the SM prediction
 $R_{J/\psi}^{\text{SM}} \approx 0.25$--$0.29$~\cite{Anisimov:1998uk,
@@ -1955,10 +1962,10 @@ $B \to D^* \tau \nu$, also differs from the SM expectation by $\sim 1.6 \sigma$:
 \end{equation}
 as measured by the Belle collaboration~\cite{Abdesselam:2019wbt}, and has been
 shown to have good discriminating power for BSM explanations of $R_{D^{(*)}}$.
-The third class of observables we consider are tau polarisation asymmetries [see
-Ref.~\cite{Asadi:2018sym} for a detailed discussion in the context of explaining
-$R_{D^{(*)}}$]. The polarisation asymmetry in the longitudinal direction of the
-$\tau$ in the $D^*$ mode has also recently been measured by
+The third class of observables we consider are tau polarisation asymmetries
+\{see Ref.~\cite{Asadi:2018sym} for a detailed discussion in the context of
+explaining $R_{D^{(*)}}$\}. The polarisation asymmetry in the longitudinal
+direction of the $\tau$ in the $D^*$ mode has also recently been measured by
 Belle~\cite{Hirose:2016wfn}:
 \begin{equation}
 \mathcal{P}_{\tau}^{*} = -0.38 \pm 0.51^{+0.21}_{-0.16} .
@@ -1983,10 +1990,6 @@ charm and up quarks: $f_{c}/f_{u}$. The range of values given for the limit in
 Eq.~\eqref{eq:ch1-bctaunu-limits} corresponds only to a change in $f_{c}/f_{u}$ of a
 factor of five~\cite{Bardhan:2019ljo}.
 
-{\color{red} John, When you put in chapter 3, move discussion of agreement in
-  LFU between light-lepton modes and absence of lattice results for
-  $B \to D^{*}$ form factors here.}
-
 \subsubsection{Fits}
 
 The charged-current $b \to c$ anomalies can be interpreted in terms of
@@ -1998,6 +2001,7 @@ Hamiltonian for $b \to c \ell_{r} \nu_{s}$ is
 \end{equation}
 where
 \begin{equation}
+  \label{eq:ch1-rdrdstar-ops}
     \mathcal{O}^{rs}_{V_{X}} = (\bar{c} \gamma^{\mu} P_{X} b) (\bar{e}_{r} \gamma_{\mu} P_{L} \nu_{s}) \ , \, \mathcal{O}^{rs}_{S_{X}} = (\bar{c} P_{X} b) (\bar{e}_{r} P_{L} \nu_{s}) \ , \, \mathcal{O}^{rs}_{T} = (\bar{c} \sigma^{\mu\nu} P_{X} b) (\bar{e}_{r} \sigma_{\mu\nu} P_{L} \nu_{s}) \ ,
 \end{equation}
 and $X \in \{L, R\}$. The left-handed vector operator is the same one generated
@@ -2028,18 +2032,20 @@ lifetime, discussed above.
 Hamiltonian in different observables ($\Delta X \equiv X-X_{\text{SM}}$):
 correlation between $\Delta {\cal R}_D$ and $\Delta {\cal R}_{D^*}$, and
 $\Delta \mathcal{R}_{D^*}$, $\Delta \mathcal{P}_\tau^{D^{*}}$ and
-$\Delta {\cal F}_L^{D^{*}}$ as a function of the Wilson
-coefficients.]{{\color{red}Fix this caption.} Individual contributions of the
-  Wilson coefficients of the WET Hamiltonian in different observables
-  ($\Delta X \equiv X-X_{\text{SM}}$): correlation between $\Delta {\cal R}_D$
-  and $\Delta {\cal R}_{D^*}$, and $\Delta \mathcal{R}_{D^*}$,
-  $\Delta \mathcal{P}_\tau^{D^{*}}$ and $\Delta {\cal F}_L^{D^{*}}$ as a
-  function of the Wilson coefficients. Left-top panel: the experimental central
-  value is denoted by a black cross and the $1\sigma, 2\sigma$ and $3\sigma$
-  uncertainties by yellow rings. Right-top and bottom panels: experimental
-  central values are displayed by a solid yellow line and their $1\sigma$
-  uncertainty by a yellow band. Dashed lines indicate regions excluded by the
-  constraint $\mathrm{Br}(B_c \to \tau \nu) < 0.1$.}
+$\Delta {\cal F}_L^{D^{*}}$ as a function of the Wilson coefficients.]{The
+  figure shows the contributions of the coefficients of the operators presented
+  in Eq.~\eqref{eq:ch1-rdrdstar-ops} in different observables, where
+  $\Delta X = X - X_{\text{SM}}$. (top left) The directions implied by
+  contributions to the operator coefficients in
+  $\Delta R_{D}$--$\Delta R_{D^{*}}$ space. The experimental central value is
+  denoted by a black cross and the $1\sigma, 2\sigma$ and $3\sigma$
+  uncertainties by yellow contours. (top right and bottom) Similar directions
+  for $\Delta R_{D^{*}}$, $\Delta \mathcal{P}_{\tau}^{D^{*}}$ and
+  $\Delta f_{L}^{D^{*}}$. The experimental central values are displayed by a
+  solid yellow line and their $1\sigma$ uncertainty by a yellow band. Dashed
+  lines indicate regions excluded by the constraint
+  $\mathrm{Br}(B_c \to \tau \nu) < 0.1$. The figure is taken from
+  Ref.~\cite{Murgui:2019czp}.}
 \label{fig:ch1-rd-rdstar-fit}
 \end{figure}
 
@@ -2050,14 +2056,14 @@ The most precise measurement of the anomalous magnetic moment of the muon
   a_{\mu} \equiv \frac{(g-2)_{\mu}}{2}
 \end{equation}
 shows a sizeable tension with the SM prediction. The difference between the
-measured value~\cite{Chapelain:2017syu, Blum:2013xva} and the {\color{red}SM
-  prediction~\cite{}} is
+measured value~\cite{Chapelain:2017syu, Blum:2013xva} and the SM
+prediction~\cite{Davier:2010nc} is
 \begin{equation}
 \Delta a_\mu= a_\mu^{\text{exp}} - a_\mu^{\text{SM}}= (286 \pm 63 \pm 43) \cdot 10^{-11} \ ,
 \end{equation}
 corresponding to a $3.6\sigma$ discrepancy. More recently, the measured value
 $a_{e}$, the anomalous magnetic moment of the electron, has also been found to
-disagree with the SM value at $2.5\sigma$~\cite{articleParker}.
+disagree with the SM value at $2.5\sigma$~\cite{Articleparker}.
 
 
 \myglossaryentry{lipsum}{lipsum}{Lorem Ipsum, a special type of fudge}{}
