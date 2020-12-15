@@ -32,3 +32,4 @@ Icon[]
 .ipynb_checkpoints
 __pycache__/
 data/
+*.gl*-abr
