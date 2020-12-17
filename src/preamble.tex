@@ -64,13 +64,12 @@
 
 % Index
 \usepackage{makeidx}
-\makeindex
+% \makeindex
 
 % Glossary --> defitions of symbols and acronyms
 \usepackage[toc,nonumberlist,nopostdot,abbreviations]{glossaries-extra}
 \makeglossaries
 \setglossarystyle{treegroup}
-\input{indices}
 
 % ------
 % Layout
@@ -88,9 +87,13 @@
 %   all the same)
 %   \usepackage[outer=36.02988mm,inner=25.47697mm,top=36.0317mm,bottom=50.9565mm]{geometry}
 \usepackage[outer=36.02988mm,inner=25.47697mm,top=36.0317mm,bottom=50.9565mm]{geometry}
+
+%% For pdf copy
 \newcommand*\symmetricmargin{
     \newgeometry{outer=30.7534mm,inner=30.7534mm,top=36.0317mm,bottom=50.9565mm}
-}
+  }
+
+%% For book
 \newcommand*\bookmargin{
   \newgeometry{outer=36.02988mm,inner=25.47697mm,top=36.0317mm,bottom=50.9565mm}
 }
@@ -142,3 +145,5 @@
   exponent-product = \cdot
   ]{#1}
 }
+
+\newacronym{eft}{EFT}{Effective Field Theory}

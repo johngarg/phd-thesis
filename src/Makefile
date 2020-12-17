@@ -39,7 +39,7 @@ $(ROOT_TEX):
 	xelatex -pdf -pdflatex="pdflatex -interaction=nonstopmode" $@
 	$(BIB) $(basename $@)
 	$(GLOSSARIES) $(basename $@)
-	$(INDICES) $(basename $@)
+	# $(INDICES) $(basename $@)
 	xelatex -pdf -pdflatex="pdflatex -interaction=nonstopmode" $@
 	xelatex -pdf -pdflatex="pdflatex -interaction=nonstopmode" $@
 
